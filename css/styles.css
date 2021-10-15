@@ -7722,11 +7722,15 @@ textarea.form-control-lg {
 }
 
 .text-dark {
-  color: #212529 !important;
+  color: #000000 !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .text-black {
   color: #000 !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .text-white {
@@ -7742,7 +7746,7 @@ textarea.form-control-lg {
 }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, 0.938) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .text-grey-50 {
