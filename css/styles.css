@@ -7335,6 +7335,7 @@ textarea.form-control-lg {
 
 .mb-0 {
   margin-bottom: 0 !important;
+  padding-left: 10px;
 }
 
 .mb-1 {
@@ -7741,7 +7742,7 @@ textarea.form-control-lg {
 }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.938) !important;
 }
 
 .text-grey-50 {
