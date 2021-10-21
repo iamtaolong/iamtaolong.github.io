@@ -11,6 +11,61 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ HTML CSSResult Skip Results Iframe
+ EDIT ON
+ body {
+   background:#0b1d2a;
+ }
+ 
+ .arrows {
+   width: 60px;
+   height: 72px;
+   position: absolute;
+   left: 50%;
+   margin-left: -30px;
+   bottom: 100px;
+ }
+ 
+ .arrows path {
+   stroke: #575757;
+   fill: transparent;
+   stroke-width: 1px;  
+   animation: arrow 2s infinite;
+   -webkit-animation: arrow 2s infinite; 
+ }
+ 
+ @keyframes arrow
+ {
+ 0% {opacity:0}
+ 40% {opacity:1}
+ 80% {opacity:0}
+ 100% {opacity:0}
+ }
+ 
+ @-webkit-keyframes arrow /*Safari and Chrome*/
+ {
+ 0% {opacity:0}
+ 40% {opacity:1}
+ 80% {opacity:0}
+ 100% {opacity:0}
+ }
+ 
+ .arrows path.a1 {
+   animation-delay:-1s;
+   -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+ }
+ 
+ .arrows path.a2 {
+   animation-delay:-0.5s;
+   -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+ }
+ 
+ .arrows path.a3 { 
+   animation-delay:0s;
+   -webkit-animation-delay:0s; /* Safari 和 Chrome */
+ }
+
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -11308,8 +11363,8 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(59, 59, 59, 0.3) 5%, rgba(29, 29, 29, 0.7) 35%, #000 80%), url("../assets/img/back.gif");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
