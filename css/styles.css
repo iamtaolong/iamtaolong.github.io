@@ -11413,9 +11413,14 @@ body {
   margin-bottom: 5rem;
 }
 
+.cv-section {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/back1.gif");
+  padding-left: 0rem 0;
+}
 .projects-section {
   padding: 3rem 0;
 }
+
 .projects-section .featured-text {
   padding: 2rem;
 }
@@ -11442,7 +11447,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(82, 81, 81, 0.1) 0%, rgba(73, 73, 73, 0.5) 75%, #000 100%), url("../assets/img/back.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11478,7 +11483,7 @@ body {
   width: 3rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 .contact-section .social a {
   text-align: center;
