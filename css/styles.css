@@ -11447,11 +11447,12 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(82, 81, 81, 0.1) 0%, rgba(73, 73, 73, 0.5) 75%, #000 100%), url("../assets/img/back.gif");
-  background-position: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 00%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bottom.gif");
+  background-position: right;
+  background-color: black;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 20rem;
 }
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
