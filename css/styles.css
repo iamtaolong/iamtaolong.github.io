@@ -22,9 +22,71 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
+.snippet-result-code {
+  margin-left: 100px;
+  height: 500px
+}
+
+#photos {
+  margin-left: 5%;
+  margin-right: 5%;
+  /* Prevent vertical gaps */
+  line-height: 0;
+  padding-top: 10px;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 0;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 5px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 92% !important;
+  height: auto !important;
+  padding-bottom: 6%;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
  .arrows {
    width: 60px;
    height: 72px;
@@ -409,6 +471,7 @@ a:hover {
   color: black;
   font-weight: bold;
   background-color: white;
+  transform: scale(0.85)
 }
 
 
@@ -845,14 +908,15 @@ body{
 .img-box{
   width: 300px; 
   margin: 10px;
-  transition: all .5s;
+  /* transition: all .5s;
   cursor: pointer;
+  object-fit: contain */
 }
 .img-box img{
   width: 100%;
 }
 .img-box:hover{
-  transform: scale(1.01);
+  transform: scale(1.07);
 }
 
 .window{
@@ -4666,7 +4730,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: white;
   background-color: transparent;
-  transform: 1.05;
+  transform: scale(1.15)
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
@@ -7904,7 +7968,7 @@ textarea.form-control-lg {
 }
 
 .text-grey-50 {
-  color: rgba(153, 151, 151, 0.5) !important;
+  color: rgba(153, 151, 151, 0.9) !important;
 }
 
 .text-white-50 {
@@ -11555,8 +11619,13 @@ body {
   margin-bottom: 5rem;
 }
 
+.hyperlinkncv{
+font-size: 18px;
+color: white;
+}
+
 .cv-section {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/back1.gif");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/back1.gif " )style="width:42px;height:42px;" ;
   padding-left: 0rem 0;
 }
 .projects-section {
