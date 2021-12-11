@@ -14,8 +14,9 @@
  HTML CSSResult Skip Results Iframe
  EDIT ON
  body {
-   transform: scale(0.7);
+   transform: scale(1.05);
    background:#0b1d2a;
+   /* color: white; */
  }
  .main{
   width: 100%;
@@ -206,7 +207,7 @@ img{
 img:hover {
   filter: grayscale(10%);
   opacity: 1.0;
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 .cropped {
@@ -471,7 +472,7 @@ a:hover {
   color: black;
   font-weight: bold;
   background-color: white;
-  transform: scale(0.85)
+  transform: scale(1.05)
 }
 
 
@@ -866,6 +867,9 @@ progress {
   
 }
 
+.img-fluid:hover{
+  transform: scale(1.05);
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -4372,6 +4376,8 @@ textarea.form-control-lg {
 }
 .nav-link:hover, .nav-link:focus {
   transform: scale(1.05);
+  color: white;
+  font-weight: bold;
   /* background-color: black; */
 }
 .nav-link.disabled {
