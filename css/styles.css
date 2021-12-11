@@ -11624,10 +11624,18 @@ font-size: 18px;
 color: white;
 }
 
-.cv-section {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/back1.gif " )style="width:42px;height:42px;" ;
-  padding-left: 0rem 0;
+.background-earth{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/back1.gif " );
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position-x: -300px;
+  /* background-position-y: 7.5%; */
+  padding-bottom: 0px;
 }
+.cv-section {
+ 
+}
+
 .projects-section {
   padding: 3rem 0;
 }
