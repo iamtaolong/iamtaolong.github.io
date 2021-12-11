@@ -35,13 +35,13 @@
   margin-right: 5%;
   /* Prevent vertical gaps */
   line-height: 0;
-  padding-top: 10px;
+  padding-top: 0px;
   -webkit-column-count: 5;
   -webkit-column-gap: 5px;
   -moz-column-count: 0;
   -moz-column-gap: 0px;
   column-count: 5;
-  column-gap: 5px;
+  column-gap: 0px;
 }
 
 #photos img {
@@ -827,6 +827,13 @@ progress {
   content: "— ";
 }
 
+.video-box{
+  width: 300px; 
+  margin-left: 10px;
+  padding-bottom: 10px;
+  transition: all .5s;
+  cursor: pointer;
+} 
 .img-box{
   width: 300px; 
   margin: 10px;
