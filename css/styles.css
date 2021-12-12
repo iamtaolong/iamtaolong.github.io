@@ -7568,6 +7568,11 @@ textarea.form-control-lg {
 .mb-0 {
   margin-bottom: 0 !important;
   padding-left: 10px;
+  flex: 1;
+  /* flex: 0 0 100%; */
+}
+.in-line{
+  display: inline-block;
 }
 
 .mb-1 {
