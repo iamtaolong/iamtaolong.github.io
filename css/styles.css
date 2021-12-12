@@ -830,9 +830,10 @@ progress {
 }
 
 .video-box{
-  width: 300px; 
-  margin-left: 10px;
-  padding-bottom: 18px;
+  
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 4%;
   transition: all .5s;
   cursor: pointer;
 } 
@@ -840,7 +841,7 @@ progress {
   transform: scale(1.1);
 }
 .img-box{
-  width: 300px; 
+  width: 80%; 
   margin: 10px;
   transition: all .5s;
   cursor: pointer;
@@ -921,8 +922,8 @@ body{
   height: auto;
 }
 .img-box{
-  width: 300px; 
-  margin: 10px;
+  width: 100%; 
+  margin: 4%;
   /* transition: all .5s;
   cursor: pointer;
   object-fit: contain */
