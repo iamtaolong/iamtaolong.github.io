@@ -33,12 +33,12 @@
 
 #photos {
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 3.5%;
   /* Prevent vertical gaps */
   line-height: 0;
   padding-top: 0px;
   -webkit-column-count: 5;
-  -webkit-column-gap: 5px;
+  -webkit-column-gap: 1px;
   -moz-column-count: 0;
   -moz-column-gap: 0px;
   column-count: 5;
@@ -829,11 +829,16 @@ progress {
   content: "— ";
 }
 
+.realvideo-box{
+  display: inline-block;
+  transition: all .5s;
+  cursor: pointer;
+} 
 .video-box{
   
-  margin-left: 4%;
-  margin-right: 4%;
-  padding-bottom: 4%;
+  margin-left: 0%;
+  margin-right: 8%;
+  padding-bottom: 7%;
   transition: all .5s;
   cursor: pointer;
 } 
@@ -841,8 +846,9 @@ progress {
   transform: scale(1.1);
 }
 .img-box{
-  width: 80%; 
-  margin: 10px;
+  width: 100%; 
+  margin: 0px;
+  padding-bottom: 2px;
   transition: all .5s;
   cursor: pointer;
 }
@@ -921,13 +927,12 @@ body{
   width: 100%;
   height: auto;
 }
-.img-box{
+/* .img-box{
   width: 100%; 
-  margin: 4%;
+
   /* transition: all .5s;
   cursor: pointer;
   object-fit: contain */
-}
 .img-box img{
   width: 100%;
 }
