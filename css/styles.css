@@ -830,9 +830,9 @@ progress {
 }
 
 .realvideo-box{
-  display: inline-block;
   transition: all .5s;
   cursor: pointer;
+  display: inline-block;
 } 
 .video-box{
   
@@ -11655,11 +11655,21 @@ color: white;
 .background-earth{
   background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/back1.gif " );
   background-size: 110%;
-  background-repeat: no-repeat;
   background-position-x: -300px;
   /* background-position-y: 7.5%; */
   padding-bottom: 0px;
 }
+
+
+.background-xmas{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/chris.gif " );
+  background-size: 30.9%;
+  background-repeat: no-repeat;
+  background-position-x: 7.3%;
+  /* background-position-y: 7.5%; */
+  padding-bottom: 0px;
+}
+
 .cv-section {
  
 }
