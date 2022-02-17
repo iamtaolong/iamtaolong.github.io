@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=EWoDNCsgJL39R6YMiWg0Cow5sFW5WIfu6R-5u0hcKb0"></script>
+  
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
