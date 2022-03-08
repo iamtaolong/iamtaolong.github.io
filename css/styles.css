@@ -44,27 +44,6 @@
   column-count: 5;
   column-gap: 0px;
 }
-/* 
-html, body {
-  background: white;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 1em;
-} */
-
-.inversed {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-.bright-theme {
-  --primary-color: #ffffff;
-  --secondary-color: #fff;
-}
 
 #photos img {
   /* Just in case there are inline attributes */
