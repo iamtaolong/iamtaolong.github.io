@@ -97,6 +97,14 @@ body {
    bottom: 100px;
  }
  
+
+
+ .maaaail{
+  width: 60px;
+  display: inline;
+  filter: invert(10);
+
+ }
  .arrows path {
    stroke: #575757;
    fill: transparent;
