@@ -8,18 +8,12 @@
   }
   
   
-  @media (max-width: 900px) {  
+  @media (max-width:1024px) {  
     .intro{
-        padding: 10%;
+        padding: 8%;
     }
  }
 
- .intro{
-    padding-top: 4%;
-    padding-left: 33%;
-    padding-right: 30%;
-    padding-bottom: 6%;
-}
 
  .text{
     font-family: system-ui;
