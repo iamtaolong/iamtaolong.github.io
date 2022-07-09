@@ -1,9 +1,9 @@
 @media (max-width: 3000px) {
     .intro{
-        padding-top:4%;
-        padding-left:33%;
-        padding-right:30%;
-        padding-bottom:6%;
+        padding-top: 4%;
+        padding-left: 33%;
+        padding-right: 30%;
+        padding-bottom: 6%;
     }
   }
   
@@ -13,6 +13,13 @@
         padding: 10%;
     }
  }
+
+ .intro{
+    padding-top: 4%;
+    padding-left: 33%;
+    padding-right: 30%;
+    padding-bottom: 6%;
+}
 
 
  .text{
