@@ -33,7 +33,6 @@
 
 .blackhyperlink{
     color: black;
-    display: inline-flex;
 }
 b{
     display: inline;
@@ -55,7 +54,6 @@ i{
 }
 
 li{
-    display: inline-flex;
     font-size: 15px;
     padding-top: 5px;
     margin-left: 9px;
