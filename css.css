@@ -20,10 +20,11 @@
     font-family: system-ui;
 }
 
-.intro{  text-size-adjust: none;
+/* .intro{  
+    text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;}
+    -ms-text-size-adjust: none;} */
  
 .gif{
     display: inline;
@@ -54,7 +55,8 @@ i{
 li{
     font-size: 15px;
     padding-top: 5px;
-    width: 85%;
+    margin-left: 15px;
+    width: 90%;
 }
 
 .img-box{
