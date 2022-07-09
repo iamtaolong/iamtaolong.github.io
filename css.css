@@ -11,7 +11,7 @@
   @media (max-width:1024px) {  
     .intro{
         padding: 8%;
-        padding-top: 20%;
+        padding-top: 10%;
     }
  }
 
@@ -33,13 +33,13 @@
 
 .blackhyperlink{
     color: black;
+    display: contents;
 }
 b{
     display: inline;
 }
 a{
     color: rgb(0, 172, 210);
-    display: inline-flex;
 }
 
 i{
