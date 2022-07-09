@@ -43,11 +43,13 @@ i{
 .inline{
     display: inline-flex;
     width: 85%;
+    font-size: 15px;
 }
 
 li{
     font-size: 15px;
     padding-top: 5px;
+    width: 85%;
 }
 
 .img-box{
