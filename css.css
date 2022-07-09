@@ -11,7 +11,7 @@
   @media (max-width:1024px) {  
     .intro{
         padding: 8%;
-        padding-top: 15%;
+        padding-top: 20%;
     }
  }
 
@@ -20,6 +20,10 @@
     font-family: system-ui;
 }
 
+.intro{  text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;}
  
 .gif{
     display: inline;
