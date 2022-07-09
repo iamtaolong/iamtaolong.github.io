@@ -39,6 +39,7 @@ b{
 }
 a{
     color: rgb(0, 172, 210);
+    display: inline-flex;
 }
 
 i{
@@ -53,6 +54,7 @@ i{
 }
 
 li{
+    display: inline-flex;
     font-size: 15px;
     padding-top: 5px;
     margin-left: 15px;
