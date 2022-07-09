@@ -21,7 +21,6 @@
     padding-bottom: 6%;
 }
 
-
  .text{
     font-family: system-ui;
 }
@@ -49,7 +48,7 @@ i{
 
 .inline{
     display: inline-flex;
-    width: 80%;
+    width: 85%;
 }
 
 li{
