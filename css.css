@@ -1,5 +1,6 @@
 @media (max-width: 1200px) {
-    #photos {
+
+    .intro{
         padding-top:4%;
         padding-left:33%;
         padding-right:30%;
@@ -7,38 +8,18 @@
     }
   }
   
-  @media (max-width: 1000px) {
-    #photos {
-        padding-top:4%;
-        padding-left:33%;
-        padding-right:30%;
-        padding-bottom:6%;
-    }
-  }
   
-  @media (max-width: 800px) {
-    #photos {
-        padding: 5%;
+  @media (max-width: 800px) {  
+    .intro{
+        padding: 0;
     }
-  }
-  
-  @media (max-width: 400px) {
-    #photos {
-        padding: 5%;
-    }
-  }
+ }
+
 
  .text{
     font-family: system-ui;
 }
 
-.intro{
-    padding-top:4%;
-    padding-left:33%;
-    padding-right:30%;
-    padding-bottom:6%;
-  
-}
  
 .gif{
     display: inline;
