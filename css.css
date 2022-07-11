@@ -7,7 +7,9 @@
     }
   }
 
-  b{font-weight: 540;}
+  b{
+    font-weight: 540;
+}
   
   @media (max-width:1024px) {  
     .intro{
