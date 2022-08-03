@@ -1,26 +1,54 @@
-@media (max-width: 3000px) {
+
+@media (max-width:1000px) {  
+    .page{
+        width: 70%;
+        margin: 0;  
+        position: relative;
+    }
     .intro{
-        padding-top: 4%;
-        padding-left: 33%;
-        padding-right: 30%;
-        padding-bottom: 6%;
+        width: auto;
     }
   }
+ @media (max-width: 3000px) {
+    .page{
+        margin-top: 2%;
+        margin-left: 30%;
+        margin-right: 27%;
+        margin-bottom: 0%;
+        box-shadow: 6px 6px 8px 8px #888888;
+    }
+    .intro{
+        padding-top: 13%;
+        margin-left: 14%;
+        margin-right: 14%;
+        margin-bottom: 0%;
+    }
+  }
+  @media print {
+    .intro {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        /* padding: 15px; */
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
 
   b{
     font-weight: 540;
 }
   
-  @media (max-width:1024px) {  
-    .intro{
-        padding: 8%;
-        padding-top: 10%;
-    }
- }
+ 
 
 
  .text{
     font-family: system-ui;
+    font-size: 13.5px;
 }
 
 /* .intro{  
@@ -41,23 +69,26 @@
 b{
     display: inline;
 }
+p{
+    font-size: 8px;
+}
 a{
     color: rgb(0, 172, 210);
 }
 
 i{
     color: grey;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .inline{
     display: inline-flex;
     width: 85%;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 li{
-    font-size: 15px;
+    font-size: 10px;
     padding-top: 5px;
     margin-left: 9px;
     margin-right: 6px;
@@ -67,4 +98,5 @@ li{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     display: inline-block;
+    /* padding-top: 5%; */
 }
