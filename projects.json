@@ -44,8 +44,8 @@
     },
     {
       "id": "longitudinalworkshop",
-      "title": "Facilitating Longitudinal Research in HCI ",
-      "authors": "Tao Long, Sitong Wang, Julien Porquet, Yue Jiang, Jason Wu, Tuhin Chakrabarty, Savvas Petridis, David Ledo, Ding Li, Tiffany Tseng, Jeffrey Nickerson, Lydia Chilton",
+      "title": "Facilitating Longitudinal Interaction Studies of AI Systems",
+      "authors": "Tao Long, Sitong Wang, Émilie Fabre, Tony Wang, Anup Sathya, Jason Wu, Savvas Dimitrios Petridis, Ding Li, David Ledo, Tuhin Chakrabarty, Yue Jiang, Jingyi Li, Tiffany Tseng, Ken Nakagaki, Qian Yang, Nikolas Martelaro,  Jeffrey Nickerson, Lydia Chilton",
       "status": "<a href='assets/documents/2024_Longitudinal_Workshop.pdf' target='_blank' rel='noopener noreferrer'>&nbsp;&nbsp;&nbsp;<i class='fa fa-file'></i>&nbsp;&nbsp;Workshop Proposal&nbsp;&nbsp;&nbsp;</a>",
       "status1": "<a href='https://arxiv.org/abs/2502.05347' target='_blank' rel='noopener noreferrer'>&nbsp;&nbsp;&nbsp;<i class='fa fa-file'></i>&nbsp;&nbsp;14-week Deployment&nbsp;&nbsp;&nbsp;</a>",
       "description": "A workshop to facilitate discussion and advance research on long-term user studies in HCI.",
