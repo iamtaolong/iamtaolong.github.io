@@ -1,14 +1,5 @@
     [
       {
-        "id": "doubleagents",
-        "title": "DoubleAgents: AI Agents for Task Execution and Evaluation in Human Coordination Problems",
-        "authors": "Tao Long*, Xuanming Zhang*, Sitong Wang, Arav Dhoot, Zhou Yu, Lydia Chilton",
-        "status": "In Submission",
-        "description": "DoubleAgents helps users co-establish and execute policies, evaluated via simulated test cases.",
-        "image": "assets/images/doubleagents.png",
-        "icon": "assets/images/doubleagents.gif"
-      },
-      {
       "id": "feedquac",
       "title": "FeedQUAC: Quick Unobtrusive AI-Generated Commentary",
       "authors": "Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka",
