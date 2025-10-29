@@ -1,9 +1,19 @@
     [
       {
+        "id": "doubleagents",
+        "title": "DoubleAgents: Exploring Mechanisms of Building Trust with Proactive AI",
+        "authors": "Tao Long*, Xuanming Zhang*, Sitong Wang, Zhou Yu, Lydia Chilton",
+        "status": "Under Review",
+        "description": "DoubleAgents build trust over time through consistent performance, user control, exception handling, and transparent state-tracking UI, explainable behavior, making users more comfortable offloading tasks during day 2 usage and longer deployments.",
+        "image": "assets/images/doubleagents.png",
+        "icon": "assets/images/doubleagents.gif",
+        "pdf": "https://arxiv.org/abs/2509.12626"
+      },
+      {
       "id": "feedquac",
       "title": "FeedQUAC: Quick Unobtrusive AI-Generated Commentary",
       "authors": "Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka",
-      "status": "In Submission",
+      "status": "HAI 2025",
       "description": "FeedQUAC delivers ambient, read-aloud commentary from personas via shortcut keys and auditory cues.",
       "image": "assets/images/feedquack.png",
       "icon": "assets/images/feedquack1.webp",
@@ -116,7 +126,7 @@
       "id": "audienceimpression",
       "title": "Audience Impressions of Narrative Structures and Personal Language Style in Science Communication",
       "authors": "Grace Li, Yuanyang Teng, Juna Kawai-Yue, Unaisah Ahmed, Anatta Tantiwongse, Jessica Y. Liang, Dorothy Zhang, Kynnedy Simone Smith, Tao Long, Mina Lee, Lydia Chilton",
-      "status": "In Submission",
+      "status": "Under Review",
       "description": "Social media techniques boost science engagement, but preferences and scientist comfort levels vary widely.",
       "image": "assets/images/audienceimpression.png",
       "icon": "assets/images/audienceimpression.gif",
