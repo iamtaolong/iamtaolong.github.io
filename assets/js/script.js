@@ -19,6 +19,55 @@ $(function(){
   }, 2200);
 });
 
+// ------------------------------
+// Conference travel table helpers
+// ------------------------------
+
+function markPastConferenceTravelRows() {
+  const table = document.querySelector('.travel-table');
+  if (!table) return;
+
+  const monthIndex = {
+    Jan: 0,
+    Feb: 1,
+    Mar: 2,
+    Apr: 3,
+    May: 4,
+    Jun: 5,
+    Jul: 6,
+    Aug: 7,
+    Sep: 8,
+    Oct: 9,
+    Nov: 10,
+    Dec: 11,
+  };
+
+  const now = new Date();
+  const currentKey = now.getFullYear() * 12 + now.getMonth();
+
+  const rows = table.querySelectorAll('tbody tr');
+  rows.forEach((row) => {
+    const dateCell = row.querySelector('td.travel-date');
+    if (!dateCell) return;
+
+    const text = (dateCell.textContent || '').trim();
+    const match = text.match(/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{4})$/);
+    if (!match) return;
+
+    const month = monthIndex[match[1]];
+    const year = Number(match[2]);
+    if (!Number.isFinite(year) || month == null) return;
+
+    const rowKey = year * 12 + month;
+
+    if (rowKey < currentKey) {
+      row.classList.add('travel-past');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', markPastConferenceTravelRows);
+
 
 // async function loadProjects() {
 //   const res = await fetch('projects.json');
@@ -139,6 +188,7 @@ gtag('config', 'G-MESR77KXNS');
 
 function renderUpdates(updates) {
   const container = document.getElementById("updates-container");
+  if (!container) return;
 
   const details = document.createElement("details");
   details.setAttribute("open", true); // remove if you want it collapsed by default
@@ -181,11 +231,17 @@ function renderUpdates(updates) {
   container.appendChild(details);
 }
 
-fetch('news.json')
-.then(res => res.json())
-.then(data => renderUpdates(data))
-.catch(err => {
-  console.error("Failed to load news.json:", err);
-  document.getElementById("updates-container").innerHTML = "<p style='color:red;'>Failed to load updates.</p>";
-});
+// News section is optional; only fetch if the container exists.
+if (document.getElementById('updates-container')) {
+  fetch('news.json')
+  .then(res => res.json())
+  .then(data => renderUpdates(data))
+  .catch(err => {
+    console.error("Failed to load news.json:", err);
+    const container = document.getElementById("updates-container");
+    if (container) {
+      container.innerHTML = "<p style='color:red;'>Failed to load updates.</p>";
+    }
+  });
+}
 

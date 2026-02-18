@@ -130,6 +130,20 @@ p > a:hover {
   transform: scale(1.05);
 }
 
+/* Opt-out: allow specific links to NOT have the orange highlight */
+p > a.no-orange-highlight,
+p > a.no-orange-highlight:hover,
+p > a.no-orange-highlight:focus,
+p > a.no-orange-highlight:active,
+p > a.no-orange-highlight:visited {
+  background-image: none !important;
+  background-size: auto !important;
+  background-position: initial !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  transform: none !important;
+}
+
 
 span > a {
   position: relative;
@@ -306,6 +320,124 @@ p > a {
 h4 {
 	font-size: 1.1rem;
 	margin-bottom: 1.5rem;
+}
+
+/* Scrollable travel list inside the Travel section */
+.travel-scroll {
+  max-height: 5.75rem; /* ~2-3 lines visible; scroll for the rest */
+  overflow-y: auto;
+  padding-right: 0.5rem; /* room for scrollbar */
+}
+
+.travel-scroll p {
+  margin-bottom: 0.35rem !important;
+}
+
+/* Conference Travel: table layout */
+.travel-scroll .travel-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.travel-scroll .travel-table td {
+  vertical-align: top;
+  padding: 0.1rem 0.6rem 0.1rem 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.travel-scroll .travel-date {
+  white-space: nowrap;
+  width: 5.75rem;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.travel-scroll .travel-event {
+  white-space: nowrap;
+  padding-right: 0.75rem;
+}
+
+.travel-scroll .travel-location {
+  white-space: normal;
+}
+
+.travel-scroll tr.travel-highlight td {
+  padding-top: 0.35rem;
+}
+
+.travel-scroll tr.travel-note td {
+  padding: 0.25rem 0 0.5rem 5.75rem; /* indent to align under event/location */
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+/* Past conferences: greyed out */
+.travel-scroll tr.travel-past td {
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.travel-scroll tr.travel-past a {
+  color: rgba(0, 0, 0, 0.42) !important;
+}
+
+.travel-scroll .travel-note-title {
+  font-weight: 500;
+}
+
+.travel-scroll .travel-workshop-media {
+  margin-top: 0.35rem;
+}
+
+.travel-scroll .workshop-image {
+  width: 100%;
+  max-width: 200px;
+  border: 10px solid #fbc69164;
+  border-radius: 10px;
+  display: block;
+  margin: 10px 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.travel-scroll .workshop-image:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* Small screens: hide location column + allow event to wrap to avoid horizontal scrolling */
+@media (max-width: 575px) {
+  .travel-scroll .travel-location {
+    display: none;
+  }
+
+  .travel-scroll .travel-event {
+    white-space: normal;
+  }
+
+  .travel-scroll .travel-date {
+    width: 5.25rem;
+  }
+
+  .travel-scroll tr.travel-note td {
+    padding-left: 5.25rem;
+  }
+}
+
+/* Optional: make the scrollbar subtle (WebKit browsers) */
+.travel-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.travel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.travel-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 
 .main {

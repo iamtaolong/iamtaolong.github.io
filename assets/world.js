@@ -7,6 +7,12 @@ const gravity = 0.1;
 const friction = 1;
 const ctx = document.querySelector('.world');
 
+// If the decorative background container is not present (it’s commented out in some layouts),
+// exit early to avoid runtime errors.
+if (!ctx) {
+	return;
+}
+
 let ballSize = {
 	min : null,
 	max : null
@@ -159,9 +165,11 @@ createEls(false);
 const sliderOpacity = document.querySelector("#sliderOpacity");
 const img = document.querySelector("#world");
 
-sliderOpacity.addEventListener('input', function(){
-  img.style.opacity = (sliderOpacity.value)/200;
-// I divide by 100 because "opacity" takes a value between 0 and 1.
-});
+if (sliderOpacity && img) {
+	sliderOpacity.addEventListener('input', function(){
+	  img.style.opacity = (sliderOpacity.value)/200;
+	// I divide by 100 because "opacity" takes a value between 0 and 1.
+	});
+}
 
 });
