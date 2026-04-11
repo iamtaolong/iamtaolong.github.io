@@ -1,13 +1,14 @@
     [
       {
         "id": "doubleagents",
-        "title": "DoubleAgents: Interactive Simulations for Alignment in Agentic AI",
+        "title": "DoubleAgents: Human-Agent Alignment in a Socially Embedded Workflow",
         "authors": "Tao Long*, Xuanming Zhang*, Sitong Wang, Zhou Yu, Lydia Chilton",
-        "status": "Under Review",
+        "status": "Under Submission",
         "description": "DoubleAgents foster human–AI alignment over time by sustaining consistent performance, preserving user control, supporting exception handling, and exposing transparent state-tracking and explainable behaviors. These alignment cues progressively calibrate user trust, making people more willing to offload tasks during day-2 use and in longer-term deployments.",
         "image": "assets/images/doubleagents.png",
         "icon": "assets/images/doubleagents.gif",
-        "pdf": "https://arxiv.org/abs/2509.12626"
+        "pdf": "https://arxiv.org/abs/2509.12626",
+        "video": "https://www.youtube.com/watch?v=91sLWnRBaO4&feature=youtu.be"
       },
       {
       "id": "feedquac",
@@ -23,7 +24,7 @@
       "id": "artkritlongitudinal",
       "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
       "authors": "Catherine Liu*, Tao Long*, Asya Vaisberg, Chau Vu, Jiaju Ma, Jingyi Li",
-      "status": "Under Review",
+      "status": "DIS 2026",
       "description": "Deployed an artistic support tool for three weeks with designers embedded in 3 small, supportive artist networks.",
       "image": "assets/images/artkritlongitudinal.png",
       "icon": "assets/images/artkritlongitudinal.gif"
@@ -32,7 +33,7 @@
       "id": "katyownership",
       "title": "From Planning to Revision: How AI Writing Support at Different Stages Alters Ownership",
       "authors": "Katy Gero, Tao Long, Carly Schnitzler, Paramveer Dhillon",
-      "status": "Under Review",
+      "status": "DIS 2026",
       "description": "A study with 253 participants shows that AI writing assistance reduces ownership overall, with the largest drop when AI supports drafting rather than planning or revising.",
       "image": "assets/images/katyownership.png",
       "icon": "assets/images/katyownership.jpeg"
@@ -41,7 +42,7 @@
       "id": "behindthepaper",
       "title": "Behind The Paper: Personalized Auxiliary Blog-Form Research Reflection Creation",
       "authors": "Tony Zhou, Tao Long, Ding Li, Gary Hsieh",
-      "status": "Under Review",
+      "status": "CHI 2026 EA",
       "description": "An interview and corpus study (n=11 interviews; 15,749 reflections) presents a system that scaffolds research reflection without replacing author voice",
       "image": "assets/images/behindthepaper.png",
       "icon": "assets/images/behindthepaper.gif"
@@ -57,39 +58,15 @@
       "pdf": "https://arxiv.org/abs/2505.05660"
     },
     {
-      "id": "longitudinal",
-      "title": "Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow",
-      "authors": "Tao Long, Katy Gero, Lydia Chilton",
-      "status": "DIS 2024",
-      "description": "A 3-week longitudinal study showing a familiarization phase and increasesd AI usefulness through customization.",
-      "image": "assets/images/longitudinalslides2.png",
-      "icon": "assets/images/longitudinalworkshop.gif",
-      "pdf": "assets/documents/2024_NotJustNovelty_DIS.pdf",
-      "video": "https://www.youtube.com/watch?v=_I4fyh02Q4w",
-      "tweetorial": "https://x.com/taolongg/status/1831018388476588469",
-      "demo": "http://taolongitudinal.pythonanywhere.com/",
-      "bibtex": "assets/documents/2024_Disco.text"
-    },
-    {
       "id": "longitudinalworkshop",
       "title": "Facilitating Longitudinal Interaction Studies of AI Systems",
       "authors": "Tao Long, Sitong Wang, Émilie Fabre, Tony Wang, Anup Sathya, Jason Wu, Savvas Dimitrios Petridis, Ding Li, David Ledo, Tuhin Chakrabarty, Yue Jiang, Jingyi Li, Tiffany Tseng, Ken Nakagaki, Qian Yang, Nikolas Martelaro,  Jeffrey Nickerson, Lydia Chilton",
-      "status": "UIST 2025",
+      "status": "UIST 2025 Workshop Organized",
       "description": "A workshop to facilitate discussion and advance research on long-term user studies in HCI.",
       "image": "assets/images/longitudinalslides1.png",
       "icon": "assets/images/workshoicon.gif",
       "pdf": "assets/documents/2025_Longitudinal_Workshop.pdf",
       "project": "https://longitudinal-workshop.github.io/"
-    },
-    {
-      "id": "longitudinalreelframer",
-      "title": "The Role of Human Creativity in the Presence of AI Creativity Tools at Work: A Case Study on AI-Driven Content Transformation in Journalism",
-      "authors": "Sitong Wang, Jocelyn McKinnon-Crowley, Tao Long, Kian Lua, Keren Henderson, Kevin Crowston, Jeffrey Nickerson, Mark Hansen, Lydia Chilton",
-      "status": "HICSS 2026",
-      "description": "A 14-week study shows creators treated AI as an unquestioned expert, accepting flaws.",
-      "image": "assets/images/longitudinalreelframer.png",
-      "icon": "assets/images/journalism.gif", 
-      "pdf": "https://arxiv.org/pdf/2502.05347"
     },
     {
       "id": "generativedisco",
@@ -103,6 +80,20 @@
       "video": "https://youtu.be/q22I53jHbuU",
       "tweetorial": "https://twitter.com/taolongg/status/1648720386236850184?s=20",
       "demo": "https://github.com/hellovivian/generative-disco",
+      "bibtex": "assets/documents/2024_Disco.text"
+    },
+    {
+      "id": "longitudinal",
+      "title": "Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow",
+      "authors": "Tao Long, Katy Gero, Lydia Chilton",
+      "status": "DIS 2024",
+      "description": "A 3-week longitudinal study showing a familiarization phase and increasesd AI usefulness through customization.",
+      "image": "assets/images/longitudinalslides2.png",
+      "icon": "assets/images/longitudinalworkshop.gif",
+      "pdf": "assets/documents/2024_NotJustNovelty_DIS.pdf",
+      "video": "https://www.youtube.com/watch?v=_I4fyh02Q4w",
+      "tweetorial": "https://x.com/taolongg/status/1831018388476588469",
+      "demo": "http://taolongitudinal.pythonanywhere.com/",
       "bibtex": "assets/documents/2024_Disco.text"
     },
     {
