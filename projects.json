@@ -48,8 +48,8 @@
       "description": "A position paper argues that agentic AI evaluation should move beyond benchmarks to capture the lived, longitudinal dynamics of human-agent collaboration, including trust, delegation, and real user success.",
       "image": "assets/images/beyondbenchmark.png",
       "icon": "assets/images/beyondbenchmark.gif",
-      "pdf": "assets/documents/2026_NE_Agents_Day_Position_Paper.pdf",
-      "slides": "https://docs.google.com/presentation/d/1RBVp8iObWpBJ1uWjiwjLXpMIB6IAVNdrrfXRfSB0fWc/edit?usp=sharing"
+      "pdf": "https://iamtaolong.github.io/assets/documents/2026_BeyondBenchmarks_NEAgentsDay.pdf",
+      "project": "https://docs.google.com/presentation/d/1RBVp8iObWpBJ1uWjiwjLXpMIB6IAVNdrrfXRfSB0fWc/edit?usp=sharing"
     },
     {
       "id": "behindthepaper",
