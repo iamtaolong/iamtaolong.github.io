@@ -24,10 +24,11 @@
       "id": "artkritlongitudinal",
       "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
       "authors": "Catherine Liu*, Tao Long*, Asya Vaisberg, Chau Vu, Jiaju Ma, Jingyi Li",
-      "status": "DIS 2026",
+      "status": "DIS 2026 Honorable Mention (Top 5%)",
       "description": "Deployed an artistic support tool for three weeks with designers embedded in 3 small, supportive artist networks.",
       "image": "assets/images/artkritlongitudinal.png",
-      "icon": "assets/images/artkritlongitudinal.gif"
+      "icon": "assets/images/artkritlongitudinal.gif",
+      "pdf": "https://arxiv.org/abs/2604.26935"
     },
     {
       "id": "katyownership",
@@ -36,7 +37,19 @@
       "status": "DIS 2026",
       "description": "A study with 253 participants shows that AI writing assistance reduces ownership overall, with the largest drop when AI supports drafting rather than planning or revising.",
       "image": "assets/images/katyownership.png",
-      "icon": "assets/images/katyownership.jpeg"
+      "icon": "assets/images/katyownership.jpeg",
+      "pdf": "https://arxiv.org/abs/2604.11009"
+    },
+    {
+      "id": "beyondbenchmark",
+      "title": "Beyond Benchmarks: What Might User-Centered Evaluation of Agentic AI Look Like?",
+      "authors": "Tao Long, Bingcan Guo",
+      "status": "NE Agents Day 2026",
+      "description": "A position paper argues that agentic AI evaluation should move beyond benchmarks to capture the lived, longitudinal dynamics of human-agent collaboration, including trust, delegation, and real user success.",
+      "image": "assets/images/beyondbenchmark.png",
+      "icon": "assets/images/beyondbenchmark.gif",
+      "pdf": "assets/documents/2026_NE_Agents_Day_Position_Paper.pdf",
+      "slides": "https://docs.google.com/presentation/d/1RBVp8iObWpBJ1uWjiwjLXpMIB6IAVNdrrfXRfSB0fWc/edit?usp=sharing"
     },
     {
       "id": "behindthepaper",
@@ -45,7 +58,8 @@
       "status": "CHI 2026 EA",
       "description": "An interview and corpus study (n=11 interviews; 15,749 reflections) presents a system that scaffolds research reflection without replacing author voice",
       "image": "assets/images/behindthepaper.png",
-      "icon": "assets/images/behindthepaper.gif"
+      "icon": "assets/images/behindthepaper.gif",
+      "pdf": "https://dl.acm.org/doi/10.1145/3772363.3798731"
     },
     {
       "id": "sociolect",
