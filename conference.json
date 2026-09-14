@@ -1,0 +1,20 @@
+[
+  {"date": "Nov 2026", "event": "UIST 2026", "location": "Detroit, MI"},
+  {"date": "Sep 2026", "event": "HCOMP 2026", "location": "Alexandria, VA"},
+  {"date": "Jun 2026", "event": "DIS 2026", "location": "Singapore, SG"},
+  {"date": "Apr 2026", "event": "CHI 2026", "location": "Barcelona, ES"},
+  {"date": "Nov 2025", "event": "HAI 2025", "location": "Yokohama, JP"},
+  {"date": "Oct 2025", "event": "Meta PhD Forum 2025", "location": "Menlo Park, CA"},
+  {"date": "Sep 2025", "event": "UIST 2025", "location": "Busan, KR"},
+  {"date": "Apr 2025", "event": "CHI 2025", "location": "Yokohama, JP"},
+  {"date": "Oct 2024", "event": "UIST 2024", "location": "Pittsburgh, PA"},
+  {"date": "Jul 2024", "event": "DIS 2024", "location": "Copenhagen, DK"},
+  {"date": "Jun 2024", "event": "Autodesk Research", "location": "San Francisco, CA"},
+  {"date": "May 2024", "event": "CHI 2024", "location": "Honolulu, HI"},
+  {"date": "Apr 2024", "event": "CRA IDEALS 2024", "location": "Minneapolis, MN"},
+  {"date": "Nov 2023", "event": "UIST 2023", "location": "San Francisco, CA"},
+  {"date": "Oct 2023", "event": "CSCW 2023", "location": "Minneapolis, MN"},
+  {"date": "Jun 2023", "event": "HCIC 2023; ICCC 2023", "location": "Delavan, WI; Waterloo, ON"},
+  {"date": "Feb 2023", "event": "CRA IDEALS 2023", "location": "Honolulu, HI"},
+  {"date": "Feb 2023", "event": "AAAI 2023", "location": "Washington, DC"}
+]

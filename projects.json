@@ -1,11 +1,20 @@
     [
       {
+        "id": "parallelpilot",
+        "title": "ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding Workflows",
+        "authors": "Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn",
+        "status": "Under Review",
+        "description": "As coding assistants become autonomous, developers run parallel sessions. We identified PILOT:  five supervisory practices as Planning, Isolating, Logging, Observing, and Triaging. We present ParallelPilot, an interface support increasing ticket throughput by 63% and perceived efficiency by 1.69 pts, while reducing tracking effort, context switching, and bookkeeping.",
+        "image": "assets/images/parallelpilot.png",
+        "icon": "assets/images/parallelpilot-logo.png"
+      },
+      {
         "id": "doubleagents",
         "title": "DoubleAgents: Human-Agent Alignment in a Socially Embedded Workflow",
         "authors": "Tao Long*, Xuanming Zhang*, Sitong Wang, Zhou Yu, Lydia Chilton",
-        "status": "Under Submission",
-        "description": "DoubleAgents foster human–AI alignment over time by sustaining consistent performance, preserving user control, supporting exception handling, and exposing transparent state-tracking and explainable behaviors. These alignment cues progressively calibrate user trust, making people more willing to offload tasks during day-2 use and in longer-term deployments.",
-        "image": "assets/images/doubleagents.png",
+        "status": "HCOMP 2026",
+        "description": "DoubleAgents fosters human-AI alignment through distributed cognition by supporting exception handling, codifying reusable rules for agents, exposing transparent state tracking, and preserving user control over usages.",
+        "image": "assets/images/doubleagentsteaser.png",
         "icon": "assets/images/doubleagents.gif",
         "pdf": "https://arxiv.org/abs/2509.12626",
         "video": "https://www.youtube.com/watch?v=91sLWnRBaO4&feature=youtu.be"
@@ -66,7 +75,7 @@
       "title": "Not Like Us, Hunty: Measuring Perceptions and Behavioral Effects of  Anthropomorphic Cues in LLMs",
       "authors": "Jeffrey Basoah, Daniel Chechelnitsky, Tao Long, Katharina Reinecke, Chrysoula Zerva, Kaitlyn Zhou, Mark Díaz, Maarten Sap",
       "status": "FAccT 2025",
-      "description": "A study with 985 participants reveals sociolect-infused LLMs nfluence trust, reliance, and social presence.",
+      "description": "A study with 985 participants reveals sociolect-infused LLMs influence trust, reliance, and social presence.",
       "image": "assets/images/sociolect.png",
       "icon": "assets/images/sociolect1.gif",
       "pdf": "https://arxiv.org/abs/2505.05660"
@@ -101,7 +110,7 @@
       "title": "Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow",
       "authors": "Tao Long, Katy Gero, Lydia Chilton",
       "status": "DIS 2024",
-      "description": "A 3-week longitudinal study showing a familiarization phase and increasesd AI usefulness through customization.",
+      "description": "A 3-week longitudinal study showing a familiarization phase and increased AI usefulness through customization.",
       "image": "assets/images/longitudinalslides2.png",
       "icon": "assets/images/longitudinalworkshop.gif",
       "pdf": "assets/documents/2024_NotJustNovelty_DIS.pdf",
