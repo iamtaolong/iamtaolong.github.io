@@ -1,16 +1,17 @@
     [
       {
-        "id": "parallelpilot",
-        "title": "ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding Workflows",
-        "authors": "Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn",
-        "status": "Under Review",
-        "description": "As coding assistants become autonomous, developers run parallel sessions. We identified PILOT:  five supervisory practices as Planning, Isolating, Logging, Observing, and Triaging. We present ParallelPilot, an interface support increasing ticket throughput by 63% and perceived efficiency by 1.69 pts, while reducing tracking effort, context switching, and bookkeeping.",
-        "pdf": "project_pages/files/parallelpilot/ParallelPilot_CHI2027.pdf",
-        "bibtex": "assets/bibtex/parallelpilot.txt",
-        "image": "assets/images/parallelpilot.png",
-        "icon": "assets/images/parallelpilot-logo.png",
-        "project": "https://iamtaolong.github.io/project_pages/parallelpilot.html",
-        "webpage_image": "project_pages/files/parallelpilot/page_preview.jpg"
+        "id": "spear",
+        "title": "Interactive Human-AI Alignment: Five Principles of SPEAR",
+        "short_title": "SPEAR",
+        "authors": "Tao Long, Lydia B. Chilton",
+        "status": "HCOMP 2026",
+        "description": "A position paper reframing human-AI alignment as an ongoing interaction design problem, with five principles: Specification, Process, and Evaluation within a task, plus Adaptation and Recalibration across tasks and sessions.",
+        "bibtex": "assets/bibtex/spear.txt",
+        "image": "assets/images/spear.png",
+        "icon": "assets/images/spear.svg",
+        "pdf": "assets/documents/2026_SPEAR_HCOMP.pdf",
+        "project": "https://iamtaolong.github.io/project_pages/spear.html",
+        "webpage_image": "project_pages/files/spear/page_preview.jpg"
       },
       {
         "id": "doubleagents",
@@ -27,18 +28,17 @@
         "webpage_image": "project_pages/files/doubleagents/page_preview.jpg"
       },
       {
-        "id": "spear",
-        "title": "Interactive Human-AI Alignment: Five Principles of SPEAR",
-        "short_title": "SPEAR",
-        "authors": "Tao Long, Lydia B. Chilton",
-        "status": "HCOMP 2026",
-        "description": "A position paper reframing human-AI alignment as an ongoing interaction design problem, with five principles: Specification, Process, and Evaluation within a task, plus Adaptation and Recalibration across tasks and sessions.",
-        "bibtex": "assets/bibtex/spear.txt",
-        "image": "assets/images/spear.png",
-        "icon": "assets/images/spear.svg",
-        "pdf": "assets/documents/2026_SPEAR_HCOMP.pdf",
-        "project": "https://iamtaolong.github.io/project_pages/spear.html",
-        "webpage_image": "project_pages/files/spear/page_preview.jpg"
+        "id": "parallelpilot",
+        "title": "ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding Workflows",
+        "authors": "Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn",
+        "status": "Under Review",
+        "description": "As coding assistants become autonomous, developers run parallel sessions. We identified PILOT:  five supervisory practices as Planning, Isolating, Logging, Observing, and Triaging. We present ParallelPilot, an interface support increasing ticket throughput by 63% and perceived efficiency by 1.69 pts, while reducing tracking effort, context switching, and bookkeeping.",
+        "pdf": "project_pages/files/parallelpilot/ParallelPilot.pdf",
+        "bibtex": "assets/bibtex/parallelpilot.txt",
+        "image": "assets/images/parallelpilot.png",
+        "icon": "assets/images/parallelpilot-logo.png",
+        "project": "https://iamtaolong.github.io/project_pages/parallelpilot.html",
+        "webpage_image": "project_pages/files/parallelpilot/page_preview.jpg"
       },
       {
       "id": "feedquac",
@@ -53,7 +53,7 @@
       "project": "https://iamtaolong.github.io/project_pages/feedquac.html",
       "webpage_image": "project_pages/files/feedquac/page_preview.jpg"
     },
-    {
+      {
       "id": "artkritlongitudinal",
       "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
       "short_title": "ArtKrit Longitudinal",
@@ -67,7 +67,7 @@
       "project": "https://iamtaolong.github.io/project_pages/artkrit.html",
       "webpage_image": "project_pages/files/artkrit/page_preview.jpg"
     },
-    {
+      {
       "id": "katyownership",
       "title": "From Planning to Revision: How AI Writing Support at Different Stages Alters Ownership",
       "authors": "Katy Gero, Tao Long, Carly Schnitzler, Paramveer Dhillon",
@@ -78,7 +78,7 @@
       "icon": "assets/images/katyownership.jpeg",
       "pdf": "https://arxiv.org/abs/2604.11009"
     },
-    {
+      {
       "id": "beyondbenchmark",
       "title": "Beyond Benchmarks: What Might User-Centered Evaluation of Agentic AI Look Like?",
       "authors": "Tao Long, Bingcan Guo",
@@ -90,7 +90,7 @@
       "pdf": "https://iamtaolong.github.io/assets/documents/2026_BeyondBenchmarks_NEAgentsDay.pdf",
       "project": "https://docs.google.com/presentation/d/1RBVp8iObWpBJ1uWjiwjLXpMIB6IAVNdrrfXRfSB0fWc/edit?usp=sharing"
     },
-    {
+      {
       "id": "behindthepaper",
       "title": "Behind The Paper: A Workflow for Supporting Personal Research Reflection",
       "authors": "Tony Zhou, Tao Long, Ding Li, Gary Hsieh",
@@ -101,7 +101,7 @@
       "icon": "assets/images/behindthepaper.gif",
       "pdf": "https://dl.acm.org/doi/10.1145/3772363.3798731"
     },
-    {
+      {
       "id": "sociolect",
       "title": "Not Like Us, Hunty: Measuring Perceptions and Behavioral Effects of  Anthropomorphic Cues in LLMs",
       "authors": "Jeffrey Basoah, Daniel Chechelnitsky, Tao Long, Katharina Reinecke, Chrysoula Zerva, Kaitlyn Zhou, Mark Díaz, Maarten Sap",
@@ -112,7 +112,7 @@
       "icon": "assets/images/sociolect1.gif",
       "pdf": "https://arxiv.org/abs/2505.05660"
     },
-    {
+      {
       "id": "longitudinalworkshop",
       "title": "Facilitating Longitudinal Interaction Studies of AI Systems",
       "short_title": "Longitudinal AI Workshop",
@@ -126,7 +126,7 @@
       "project": "https://longitudinal-workshop.github.io/",
       "webpage_image": "project_pages/files/longitudinalworkshop/page_preview.jpg"
     },
-    {
+      {
       "id": "generativedisco",
       "title": "Generative Disco: Text-to-Video for Music Visualization",
       "authors": "Vivian Liu, Tao Long, Jenny Ma, Nathan Raw, Lydia Chilton",
@@ -140,7 +140,7 @@
       "demo": "https://github.com/hellovivian/generative-disco",
       "bibtex": "assets/bibtex/generativedisco.txt"
     },
-    {
+      {
       "id": "longitudinal",
       "title": "Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow",
       "authors": "Tao Long, Katy Gero, Lydia Chilton",
@@ -156,7 +156,7 @@
       "project": "https://iamtaolong.github.io/project_pages/novelty.html",
       "webpage_image": "project_pages/files/novelty/page_preview.jpg"
     },
-    {
+      {
       "id": "reelframer",
       "title": "ReelFramer: Human-AI Co-Creation for News-to-Video Translation",
       "authors": "Sitong Wang, Samia Menon, Tao Long, Keren Henderson, Ding Li, Kevin Crowston, Mark Hansen, Jeffrey Nickerson, Lydia Chilton",
@@ -169,7 +169,7 @@
       "tweetorial": "https://twitter.com/taolongg/status/1649621523877986305?s=20",
       "bibtex": "assets/bibtex/reelframer.txt"
     },
-    {
+      {
       "id": "socialdynamics",
       "title": "Social Dynamics of AI Support in Creative Writing",
       "authors": "Katy Gero, Tao Long, Lydia Chilton",
@@ -183,7 +183,7 @@
       "press": "https://www.wired.com/story/artificial-intelligence-writing-art/",
       "bibtex": "assets/bibtex/socialdynamics.txt"
     },
-    {
+      {
       "id": "tweetorial",
       "title": "Tweetorial Hooks: Generative AI Tools to Motivate Science on Social Media",
       "authors": "Tao Long, Dorothy Zhang, Grace Li, Batool Taraif, Samia Menon, Kynnedy Smith, Sitong Wang, Katy Gero, Lydia Chilton",
@@ -199,7 +199,7 @@
       "demo": "http://taolongitudinal.pythonanywhere.com/",
       "bibtex": "assets/bibtex/tweetorial.txt"
     },
-    {
+      {
       "id": "alexa",
       "title": "Challenges and Opportunities for the Design of Smart Speakers",
       "short_title": "Smart Speaker Design",
@@ -214,7 +214,7 @@
       "project": "https://iamtaolong.github.io/project_pages/alexa.html",
       "webpage_image": "project_pages/files/alexa/page_preview.jpg"
     },
-    {
+      {
       "id": "audienceimpression",
       "title": "Audience Impressions of Narrative Structures and Personal Language Style in Science Communication",
       "authors": "Grace Li, Yuanyang Teng, Juna Kawai-Yue, Unaisah Ahmed, Anatta Tantiwongse, Jessica Y. Liang, Dorothy Zhang, Kynnedy Simone Smith, Tao Long, Mina Lee, Lydia Chilton",
@@ -225,7 +225,7 @@
       "icon": "assets/images/audienceimpression.gif",
       "pdf": "https://arxiv.org/abs/2502.05287"
     },
-    {
+      {
       "id": "cyberball",
       "title": "Perspectives from Participants and Researchers on Addressing Embodiment in a Virtual Cyberball Task",
       "authors": "Tao Long, Swati Pandita, Andrea Won",
@@ -237,7 +237,7 @@
       "code": "https://github.com/iamtaolong/virtual-cyberball",
       "bibtex": "assets/bibtex/cyberball.txt"
     },
-    {
+      {
       "id": "rights4health",
       "title": "Multi-stakeholder Perspectives on Digital Tools for U.S. Asylum Applicants Seeking Healthcare and Legal Information",
       "authors": "Aparajita Bhandari, Diana Freed, Tara Pilato, Faten Taki, Gunisha Kaur, Stephen Yale-Loehr, Jane Powers, Tao Long, Natalie Bazarova",
