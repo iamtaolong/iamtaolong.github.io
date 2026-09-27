@@ -172,6 +172,7 @@
       {
       "id": "socialdynamics",
       "title": "Social Dynamics of AI Support in Creative Writing",
+      "short_title": "Social Dynamics of AI",
       "authors": "Katy Gero, Tao Long, Lydia Chilton",
       "status": "CHI 2023",
       "description": "We identify social-technical gaps in AI-assisted writing, focused on motivation, planning, and user values.",
@@ -217,6 +218,7 @@
       {
       "id": "audienceimpression",
       "title": "Audience Impressions of Narrative Structures and Personal Language Style in Science Communication",
+      "short_title": "Audience Impressions",
       "authors": "Grace Li, Yuanyang Teng, Juna Kawai-Yue, Unaisah Ahmed, Anatta Tantiwongse, Jessica Y. Liang, Dorothy Zhang, Kynnedy Simone Smith, Tao Long, Mina Lee, Lydia Chilton",
       "status": "Under Review",
       "description": "Social media techniques boost science engagement, but preferences and scientist comfort levels vary widely.",
@@ -228,6 +230,7 @@
       {
       "id": "cyberball",
       "title": "Perspectives from Participants and Researchers on Addressing Embodiment in a Virtual Cyberball Task",
+      "short_title": "Cyberball Embodiment",
       "authors": "Tao Long, Swati Pandita, Andrea Won",
       "status": "CSCW 2023 EA",
       "description": "Discusses naive participants and researchers’ perspectives on designing inclusive VR studies.",
@@ -240,6 +243,7 @@
       {
       "id": "rights4health",
       "title": "Multi-stakeholder Perspectives on Digital Tools for U.S. Asylum Applicants Seeking Healthcare and Legal Information",
+      "short_title": "Asylum Digital Tools",
       "authors": "Aparajita Bhandari, Diana Freed, Tara Pilato, Faten Taki, Gunisha Kaur, Stephen Yale-Loehr, Jane Powers, Tao Long, Natalie Bazarova",
       "status": "CSCW 2022",
       "description": "Analyzes digital tool barriers for asylum applicants seeking healthcare/legal info.",
