@@ -21,6 +21,30 @@
     --tint-4: #e3ebfc; --tint-5: #eef3fe; --tint-6: #f8faff;
     --line: #a5b9e9; --pill-border: #beccef;
 }
+/* Challenge -> component mapping (C1 red, C2 amber, C3 green) */
+.c1 { --c: #b5483e; --c-tint: #fbeeec; }
+.c2 { --c: #9a6a10; --c-tint: #fbf3e2; }
+.c3 { --c: #2f7a55; --c-tint: #e9f4ee; }
+.cx .figure-label { color: var(--c); }
+.cx .map-from { color: var(--light-text-color); font-weight: 400; }
+.ask {
+    font-style: italic; font-size: 0.9rem; line-height: 1.45; color: var(--text-color);
+    background: var(--c-tint); border-radius: 10px; padding: 10px 12px; margin-bottom: 14px;
+}
+.component-card.cx { display: flex; flex-direction: column; }
+.need {
+    display: block; margin-top: auto; padding-top: 14px; font-family: var(--mono-font); font-size: 0.7rem;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--light-text-color);
+}
+.need b {
+    display: block; margin-top: 2px; font-family: 'DM Sans', sans-serif; font-size: 0.98rem; font-weight: 600;
+    text-transform: none; letter-spacing: 0; color: var(--c);
+}
+.eg { font-size: 0.85rem; margin: 10px 0 0; color: var(--text-color); }
+.eg em { font-style: normal; font-weight: 600; color: var(--c); }
+.component-card.plus { grid-column: 1 / -1; background: var(--tint-6); }
+.component-card.plus h4 { margin-bottom: 4px; }
+.quote-tag { display: block; font-family: var(--mono-font); font-size: 0.7rem; letter-spacing: 0.04em; color: var(--c); margin-bottom: 4px; }
     </style>
 </head>
 <body>
@@ -81,8 +105,32 @@
         <div class="container">
             <span class="section-kicker">01 / the problem</span>
             <h2>1/ Why Alignment Is Hard: <span class="text-secondary">Socially Embedded Tasks</span></h2>
-            <p class="text-secondary section-intro">Aligning agentic AI with user intent is critical for delegating complex, socially embedded tasks&mdash;but user preferences are often <span class="highlight highlight-bold">implicit, evolving, and hard to specify upfront</span>. We study this in a concrete setting: organizing a university seminar series over email.</p>
-            
+            <p class="text-secondary section-intro">In a <strong>socially embedded task</strong>, an agent acts on your behalf, toward other people, over weeks. Alignment is what makes delegating it possible: the goal is to <span class="highlight highlight-bold">offload as much as possible while keeping control</span>. But alignment is hardest exactly here, in three ways. We study this in a concrete setting: organizing a university seminar series over email.</p>
+            <div class="component-grid">
+                <div class="component-card cx c1">
+                    <p class="ask">&ldquo;Who should I follow up with today?&rdquo;</p>
+                    <span class="figure-label">C1 &middot; Hard, high-stakes task</span>
+                    <p>Weeks of tracking, follow-ups, and edge cases across many people, and every action lands on a real person. You can't unsend an email.</p>
+                    <span class="need">Need<b>Offload, but keep control</b></span>
+                </div>
+                <div class="component-card cx c2">
+                    <p class="ask">&ldquo;Who's been scheduled? How many emails have I sent asking for Lydia's availability?&rdquo;</p>
+                    <span class="figure-label">C2 &middot; Opaque agent</span>
+                    <p>Users can't see where things stand or why the agent wants to act, so they can't judge a proposal before it goes out.</p>
+                    <span class="need">Need<b>Inspectability</b></span>
+                </div>
+                <div class="component-card cx c3">
+                    <p class="ask">&ldquo;A faculty member and a student both say they can only do 9/28&hellip;&rdquo;</p>
+                    <span class="figure-label">C3 &middot; Hidden intent, hard to elicit</span>
+                    <p>Tacit norms (when (not) to act, when (not) to ask, what tone to use) surface only when users see the agent act, and keep evolving.</p>
+                    <span class="need">Need<b>Elicit intent over time</b></span>
+                </div>
+                <div class="component-card plus">
+                    <h4>+ And you can't practice on real people.</h4>
+                    <p>Users discover what they want by watching the agent act, but every trial run reaches a real inbox. So alignment can't be specified upfront; it has to be reached through repeated interaction, and that needs <strong>a safe place to repeat</strong>.</p>
+                </div>
+            </div>
+
             <div class="figure-stream" style="margin-top:40px;">
                 <div class="figure-block">
                     <div class="figure-card">
@@ -109,7 +157,7 @@
             </div>
             <div class="summary-box">
                 <h4>Summary</h4>
-                <p style="margin-bottom:0;">Delegating socially embedded work is not a one-time specification problem. It is an iterative process in which the agent's reasoning has to stay legible and the user's edits have to become something the system can reuse.</p>
+                <p style="margin-bottom:0;">Delegating socially embedded work is not a one-time specification problem. Users need to offload while keeping control (C1), inspect what the agent is doing (C2), and have their intent captured as it emerges (C3), with a safe place to practice before real stakes.</p>
             </div>
         </div>
     </section>
@@ -118,8 +166,32 @@
         <div class="container">
             <span class="section-kicker">02 / system</span>
             <h2>2/ DoubleAgents: <span class="text-secondary">A Distributed-Cognition System</span></h2>
-            <p class="text-secondary section-intro">DoubleAgents organizes interaction around three components that split the cognitive work between the person and the agent, plus a simulation mode for rehearsing before going live.</p>
-            
+            <p class="text-secondary section-intro">We draw on <strong>distributed cognition</strong> (Hutchins, 1995): in hard sociotechnical systems like a cockpit, no single person holds all the cognition. It is spread across people and artifacts through three mechanisms: <strong>state tracking</strong>, <strong>representation</strong>, and <strong>adaptive policies</strong>. DoubleAgents maps each mechanism to one component that answers one challenge, plus a simulation mode for rehearsing before going live.</p>
+            <div class="component-grid">
+                <div class="component-card cx c1">
+                    <span class="figure-label">C1 &middot; Offload, but keep control</span>
+                    <h4><span class="map-from">State tracking &rarr;</span> Coordination agent</h4>
+                    <p>Tracks every thread over weeks, plans next steps, and proposes actions. The user approves before anything is sent, and the agent flags edge cases it isn't sure about.</p>
+                    <p class="eg"><em>e.g.,</em> plans who to reach out to and drafts the emails; you approve.</p>
+                </div>
+                <div class="component-card cx c2">
+                    <span class="figure-label">C2 &middot; Inspectability</span>
+                    <h4><span class="map-from">Representation &rarr;</span> Dashboard</h4>
+                    <p>Temporal, social, and procedural views make task state and the agent's reasoning legible at a glance, so users can judge a proposal before it goes out.</p>
+                    <p class="eg"><em>e.g.,</em> time constraints, availability collected so far, email history.</p>
+                </div>
+                <div class="component-card cx c3">
+                    <span class="figure-label">C3 &middot; Elicit intent</span>
+                    <h4><span class="map-from">Adaptive policies &rarr;</span> Policy module</h4>
+                    <p>Every user edit becomes a reusable artifact, so intent is captured as it emerges and carries over to future coordination tasks.</p>
+                    <p class="eg"><em>e.g.,</em> organizing policies &amp; strategies, email templates, when to escalate (stop hooks).</p>
+                </div>
+                <div class="component-card plus">
+                    <h4>+ A safe place to repeat &rarr; Interactive simulation</h4>
+                    <p>LLM-simulated speakers compress weeks of coordination into minutes, so users can exercise all three components and surface edge cases before real stakes. It works like unit testing, except that correctness is user-specific.</p>
+                </div>
+            </div>
+
             <div class="figure-stream" style="margin-top:40px;">
                 <div class="figure-block">
                     <div class="figure-card">
@@ -128,7 +200,7 @@
                             <span class="figure-label">Fig. &mdash; The Interface</span>
                             <div class="figure-title">Policies, a coordination agent, and a dashboard</div>
                             <p class="figure-caption">A snapshot of DoubleAgents coordinating four speakers across seminar slots.</p>
-                            <ul class="bullet-list"><li><strong>Policies:</strong> encode evolving user preferences and procedures, and can be added, edited, or deleted as the user learns what they want.</li><li><strong>Coordination agent:</strong> tracks state, plans next steps, suggests actions, and surfaces the policies guiding each decision.</li><li><strong>Dashboard visualization:</strong> externalizes assignments, timelines, and communication history so the user can read the situation at a glance.</li><li>User edits are turned into reusable <strong>coordination policies, email templates, and stop hooks</strong> that improve behavior over time.</li></ul>
+                            <ul class="bullet-list"><li><strong>Coordination agent (state tracking, C1):</strong> tracks state, plans next steps, suggests actions, and surfaces the policies guiding each decision.</li><li><strong>Dashboard visualization (representation, C2):</strong> externalizes assignments, timelines, and communication history so the user can read the situation at a glance.</li><li><strong>Policies (adaptive policies, C3):</strong> encode evolving user preferences and procedures, and can be added, edited, or deleted as the user learns what they want.</li><li>User edits are turned into reusable <strong>coordination policies, email templates, and stop hooks</strong> that improve behavior over time.</li></ul>
                         </div>
                     </div>
                 </div>
@@ -156,7 +228,7 @@
             <span class="section-kicker">03 / two-day study, n=10 &middot; three deployments</span>
             <h2>3/ Study, Deployments &amp; <span class="text-secondary">Discussion</span></h2>
             <p class="text-secondary section-intro">We evaluated DoubleAgents through a two-day in-lab interactive simulation study (n=10), three real-world deployments, and a technical evaluation.</p>
-            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">4.70&rarr;6.50<span style="font-size:1rem;">/7</span></span><span class="stat-label">comfort letting AI decide what needs doing each day (p&lt;0.005)</span></div><div class="stat-tile"><span class="stat-number">4.90&rarr;5.75<span style="font-size:1rem;">/7</span></span><span class="stat-label">reliance on DoubleAgents across sessions (p=0.02)</span></div><div class="stat-tile"><span class="stat-number">2.7&rarr;4.6<span style="font-size:1rem;">/7</span></span><span class="stat-label">comfort letting AI draft <em>and send</em> initial outreach emails</span></div><div class="stat-tile"><span class="stat-number">n=10</span><span class="stat-label">in-lab interactive simulation study over two days</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">real-world deployments with seminar organizers</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">distributed-cognition components: policies, agent, visualization</span></div></div>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">4.70&rarr;6.50<span style="font-size:1rem;">/7</span></span><span class="stat-label">comfort letting AI decide what needs doing each day (p&lt;0.005)</span></div><div class="stat-tile"><span class="stat-number">4.90&rarr;5.75<span style="font-size:1rem;">/7</span></span><span class="stat-label">reliance on DoubleAgents across sessions (p=0.02)</span></div><div class="stat-tile"><span class="stat-number">2.7&rarr;4.6<span style="font-size:1rem;">/7</span></span><span class="stat-label">comfort letting AI draft <em>and send</em> initial outreach emails</span></div><div class="stat-tile"><span class="stat-number">n=10</span><span class="stat-label">in-lab interactive simulation study over two days</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">real-world deployments with seminar organizers</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">distributed-cognition mechanisms, one per challenge: state tracking, representation, adaptive policies</span></div></div>
             <div class="figure-stream" style="margin-top:56px;">
                 <div class="figure-block">
                     <div class="figure-card">
@@ -173,8 +245,8 @@
                     <div class="figure-meta" style="padding:0;">
                         <span class="figure-label">In Their Words &mdash; Lab Study</span>
                         <div class="figure-title">What made delegation feel safe</div>
-                        
-                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">I found that the agent's recent actions followed exactly the policies I had in mind &mdash; super aligned.</p><span class="quote-who">&mdash; P3</span></div><div class="quote-card"><p class="quote-text">[It was] pretty good at figuring out plans, keeping track of who's responded, who's not, who's available, who's not, like what to do moving forward.</p><span class="quote-who">&mdash; P7</span></div><div class="quote-card"><p class="quote-text">It made me trust the system because I know it won't just execute something random&hellip; It flags when it doesn't know&hellip;</p><span class="quote-who">&mdash; P1, on issue flagging</span></div></div>
+                        <p class="figure-caption">Participants tied delegation to the three components, each answering its challenge.</p>
+                        <div class="quote-grid"><div class="quote-card cx c1"><p class="quote-text">[It was] pretty good at figuring out plans, keeping track of who's responded, who's not, who's available, who's not, like what to do moving forward.</p><span class="quote-who"><span class="quote-tag">C1 &middot; coordination agent</span>&mdash; P7</span></div><div class="quote-card cx c1"><p class="quote-text">It made me trust the system because I know it won't just execute something random&hellip; It flags when it doesn't know&hellip;</p><span class="quote-who"><span class="quote-tag">C1 &middot; keeping control</span>&mdash; P1, on issue flagging</span></div><div class="quote-card cx c2"><p class="quote-text">Everything is consistent inside the system &mdash; when some speakers were not followed up, I could map it back to the visualization and confirm accuracy&hellip;</p><span class="quote-who"><span class="quote-tag">C2 &middot; dashboard</span>&mdash; P6</span></div><div class="quote-card cx c3"><p class="quote-text">I found that the agent's recent actions followed exactly the policies I had in mind &mdash; super aligned.</p><span class="quote-who"><span class="quote-tag">C3 &middot; policies</span>&mdash; P3</span></div></div>
                     </div>
                 </div>
                 <div class="figure-block">
@@ -190,13 +262,13 @@
                     <div class="figure-meta" style="padding:0;">
                         <span class="figure-label">Discussion</span>
                         <div class="figure-title">What this means for alignment systems</div>
-                        <ul class="bullet-list"><li><strong>Distributed cognition works as a design lens.</strong> Comfort and reliance tracked the three components: policies, a state-tracking agent, and legible visualizations.</li><li><strong>Control stays at uncertainty.</strong> Edge-case flagging and context-dependent actions are where people still wanted to decide.</li><li><strong>Reliance grows with legibility.</strong> &ldquo;I would intervene more at first but if it can demonstrate that it's consistently able to do it correctly, I'm going to let it act on its own on my behalf more autonomously&rdquo; (P2).</li><li><strong>Interactive simulation is a methodological testbed</strong> for rapid iteration and alignment testing of agentic systems before live use.</li></ul>
+                        <ul class="bullet-list"><li><strong>Distributed cognition works as a design lens.</strong> Comfort and reliance tracked the three components, each answering one challenge: a state-tracking agent (C1), legible visualizations (C2), and adaptive policies (C3).</li><li><strong>Control stays at uncertainty.</strong> Edge-case flagging and context-dependent actions are where people still wanted to decide.</li><li><strong>Reliance grows with legibility.</strong> &ldquo;I would intervene more at first but if it can demonstrate that it's consistently able to do it correctly, I'm going to let it act on its own on my behalf more autonomously&rdquo; (P2).</li><li><strong>Interactive simulation is a methodological testbed</strong> for rapid iteration and alignment testing of agentic systems before live use.</li></ul>
                     </div>
                 </div>
             </div>
             <div class="summary-box">
                 <h4>Contributions</h4>
-                <ul class="bullet-list"><li>A distributed cognition approach to human-agent alignment in socially embedded tasks.</li><li>DoubleAgents: a coordination agent, dashboard visualization, and policy module that turns user edits into reusable alignment artifacts.</li><li>Interactive simulation as a methodological testbed, evaluated in a two-day study (n=10), three deployments, and a technical evaluation.</li></ul>
+                <ul class="bullet-list"><li>A distributed cognition approach to human-agent alignment in socially embedded tasks.</li><li>DoubleAgents, which maps each distributed-cognition mechanism to a component: state tracking &rarr; a coordination agent (offload, but keep control), representation &rarr; a dashboard (inspectability), and adaptive policies &rarr; a policy module that turns user edits into reusable alignment artifacts (elicit intent).</li><li>Interactive simulation as a methodological testbed, evaluated in a two-day study (n=10), three deployments, and a technical evaluation.</li></ul>
             </div>
         </div>
     </section>
