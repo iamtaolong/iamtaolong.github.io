@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Speaker Design: Challenges and Opportunities for the Design of Smart Speakers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A literature review of 35 papers synthesizing 127 VUI guidelines into five themes, plus interviews with 15 smart speaker users revealing four challenges and four opportunity spaces.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+:root {
+    --primary-color: #1e808f;
+    --primary-color-dark: #125d68;
+    --highlight-color: 116, 233, 251;
+    --cta-color: #77e7f8;
+    --cta-color-hover: #1e808f;
+    --secondary-color: #f4fcfe;
+    --border-color: #ddf0f4;
+    --tint: #f3fdfe; --tint-2: #dff8fb; --tint-3: #e7fafd;
+    --tint-4: #e3f9fc; --tint-5: #eefcfe; --tint-6: #f8feff;
+    --line: #a5e0e9; --pill-border: #bee8ef;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* Smart Speaker Design</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list"><li><a href="#gap" data-section="gap">Literature</a></li><li><a href="#interviews" data-section="interviews">Interviews</a></li><li><a href="#opportunities" data-section="opportunities">Opportunities</a></li><li><a href="#bibtex" data-section="bibtex">BibTeX</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="../assets/images/alexa.gif" alt="">
+            <img class="hl hl2" src="../assets/images/alexa.gif" alt="">
+            <img class="hl hl3" src="../assets/images/alexa.gif" alt="">
+            <img class="hl hl4" src="../assets/images/alexa.gif" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">Challenges and Opportunities for</span><span class="ln">the <span class="highlight highlight-bold">Design of Smart Speakers</span></span></h1>
+            <p class="hero-authors">Tao Long, Lydia B. Chilton</p>
+            <p class="hero-institution">Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">AAAI Workshop 2023</span></p>
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="https://arxiv.org/abs/2306.05741" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/alexa/thumb.png" alt="First page of the Smart Speaker Design paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+            <div class="cta-row"><a href="https://arxiv.org/abs/2306.05741" class="cta-button" target="_blank" rel="noopener noreferrer"><span>Read the Paper</span></a><a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex"><span>Copy BibTeX</span></a></div>
+            <div class="link-row"><a href="https://www.youtube.com/watch?v=zrkVK9l33Og&t=1s" class="link-button" target="_blank" rel="noopener noreferrer">Video &#8599;</a><a href="../assets/documents/2023_AlexaOppo_AAAIPoster.pdf" class="link-button" target="_blank" rel="noopener noreferrer">Poster &#8599;</a></div>
+            <p class="hero-note">Voice assistants are everywhere, yet still underused.<br>&mdash;&nbsp;A literature review and 15 interviews reveal why, and where designers can go next.</p>
+        </div>
+    </section>
+
+    <section id="gap">
+        <div class="container">
+            <span class="section-kicker">01 / study 1 &middot; literature review</span>
+            <h2>1/ What the Literature <span class="text-secondary">Says</span></h2>
+            <p class="text-secondary section-intro">Despite a growing market and body of VUI research, smart speakers still feel underused. We reviewed 35 papers and synthesized <span class="highlight highlight-bold">127 design guidelines into five themes</span>.</p>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">35</span><span class="stat-label">papers reviewed</span></div><div class="stat-tile"><span class="stat-number">127</span><span class="stat-label">design guidelines synthesized</span></div><div class="stat-tile"><span class="stat-number">5</span><span class="stat-label">themes</span></div><div class="stat-tile"><span class="stat-number">51</span><span class="stat-label">Enhance Basic Usability</span></div><div class="stat-tile"><span class="stat-number">26</span><span class="stat-label">Customize for User Context</span></div><div class="stat-tile"><span class="stat-number">24</span><span class="stat-label">Speak Users' Language</span></div></div>
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/alexa/litinfo.png" alt="Where the guidelines come from" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The Reviewed Literature</span>
+                            <div class="figure-title">Where the guidelines come from</div>
+                            <p class="figure-caption">Descriptive data for the 35 papers: by year, method, and venue.</p>
+                            <ul class="bullet-list"><li>30 papers reported user-experience studies, 10 offered guidelines or theory, and 5 did both.</li><li>ACM CHI was the most common venue, with 20 papers.</li><li>Remaining themes: <strong>Design for Simpler Interactions (16)</strong> and <strong>Establish Trust (10)</strong>.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-xs">
+                        <img src="files/alexa/teakettle.png" alt="Attention graph of a boiling tea kettle" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Calm Technology</span>
+                            <div class="figure-title">Attention graph of a boiling tea kettle</div>
+                            <p class="figure-caption">An example from Case's principles of calm technology, used as a lens on voice interaction.</p>
+                            <ul class="bullet-list"><li>Calm technology moves information between the center and periphery of attention.</li><li>It motivates designs that support a user's primary task instead of demanding conversation.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Guidelines emphasize error prevention and control, context, natural language, shorter and simpler conversations, and trust.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="interviews">
+        <div class="container">
+            <span class="section-kicker">02 / study 2 &middot; 15 interviews</span>
+            <h2>2/ Why Users <span class="text-secondary">Stop Using Them</span></h2>
+            <p class="text-secondary section-intro">We interviewed 15 smart speaker users about their use and non-use, and distilled four design challenges that contribute most to non-use.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/alexa/interaction.png" alt="Long responses and a misunderstood command" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; A Frustrating Interaction</span>
+                            <div class="figure-title">Long responses and a misunderstood command</div>
+                            <p class="figure-caption">A frustrating interaction with Alexa: the response was first tediously long, then a misunderstanding of the user's command.</p>
+                            <ul class="bullet-list"><li><strong>Challenge 1: Inefficiency of input and output.</strong></li><li><strong>Challenge 2: Lack of capability for complex tasks.</strong></li><li><strong>Challenge 3: Poor discoverability.</strong></li><li><strong>Challenge 4: Misleading mental model.</strong></li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words</span>
+                        <div class="figure-title">Why people fall back to their phones</div>
+                        
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">I'll ask [Alexa] to play a song, and she won't recognize it&hellip; That's why I just [play the music directly] from my phone.</p><span class="quote-who">&mdash; P5</span></div><div class="quote-card"><p class="quote-text">[I] wouldn't trust her to do a very complex search&hellip; There's no way to easily go back. There's no &lsquo;let me go back and clarify.&rsquo;</p><span class="quote-who">&mdash; P3</span></div><div class="quote-card"><p class="quote-text">No one really tells you, as a user, what other existing skills there are in Alexa out of the box.</p><span class="quote-who">&mdash; P14</span></div><div class="quote-card"><p class="quote-text">I only use it for the most basic functions, [but I know] it can do all these things.</p><span class="quote-who">&mdash; P2</span></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Unmatched expectations for efficiency and capability lead to frustration, self-blame, and eventually abandonment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="opportunities">
+        <div class="container">
+            <span class="section-kicker">03 / four opportunity spaces</span>
+            <h2>3/ Opportunities <span class="text-secondary">for Designers</span></h2>
+            <p class="text-secondary section-intro">Based on how people do and do not use their speakers, we identify four opportunity spaces.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/alexa/dogfern.png" alt="Information support during a primary task" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; A Fulfilling Interaction</span>
+                            <div class="figure-title">Information support during a primary task</div>
+                            <p class="figure-caption">A fulfilling interaction with Alexa: the user needs to find information in an emergency.</p>
+                            <ul class="bullet-list"><li><strong>Opportunity 1:</strong> explore use cases that provide supporting information while doing a primary task, such as cooking, driving, or childcare.</li><li><strong>Opportunity 2:</strong> focus on short commands rather than extended conversations.</li><li><strong>Opportunity 3:</strong> improve input efficiency by learning user preferences.</li><li><strong>Opportunity 4:</strong> enhance discoverability through social learning from observations and videos.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words</span>
+                        <div class="figure-title">Learning by watching others</div>
+                        
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">There is a guy in the kitchen showing all the things he was doing with his Alexa while cooking. That's how I learned.</p><span class="quote-who">&mdash; P2</span></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Takeaways</h4>
+                <ul class="bullet-list"><li>Design for multitasking and information support.</li><li>Build on users' mental models of smart speakers.</li><li>Integrate calm design principles so the device supports rather than demands attention.</li></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">If this work is useful to you, here is a citation you can copy.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@misc{long2023challengesopportunitiesdesignsmart,
+      title={Challenges and Opportunities for the Design of Smart Speakers}, 
+      author={Tao Long and Lydia B. Chilton},
+      year={2023},
+      eprint={2306.05741},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2306.05741}, 
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long, Lydia B. Chilton &middot; AAAI Workshop 2023</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open'); });
+    }
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(l) { return document.getElementById(l.getAttribute('href').replace('#', '')); });
+    function onScroll() {
+        var pos = window.scrollY + 80, act = -1;
+        for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].offsetTop <= pos) act = i; }
+        navLinks.forEach(function(l, i) { l.classList.toggle('active', i === act); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+        onScroll();
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!'; btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            function fallback() {
+                var r = document.createRange(); r.selectNode(text);
+                window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done();
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(raw).then(done).catch(fallback); } else { fallback(); }
+        });
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@inproceedings{gero2026planning,
+author = {Gero, Katy Ilonka and Long, Tao and Schnitzler, Carly and Dhillon, Paramveer},
+title = {From Planning to Revision: How AI Writing Support at Different Stages Alters Ownership},
+year = {2026},
+isbn = {9798400725630},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3800645.3813003},
+doi = {10.1145/3800645.3813003},
+booktitle = {Proceedings of the 2026 Designing Interactive Systems Conference},
+pages = {2903–2934},
+numpages = {32},
+location = {Singapore, Singapore},
+series = {DIS '26}
+}

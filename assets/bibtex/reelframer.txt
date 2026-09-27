@@ -1,0 +1,14 @@
+@inproceedings{wang2024reelframer,
+author = {Wang, Sitong and Menon, Samia and Long, Tao and Henderson, Keren and Li, Dingzeyu and Crowston, Kevin and Hansen, Mark and Nickerson, Jeffrey V and Chilton, Lydia B},
+title = {ReelFramer: Human-AI Co-Creation for News-to-Video Translation},
+year = {2024},
+isbn = {9798400703300},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3613904.3642868},
+doi = {10.1145/3613904.3642868},
+booktitle = {Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems},
+numpages = {20},
+location = {Honolulu, HI, USA},
+series = {CHI '24}
+}

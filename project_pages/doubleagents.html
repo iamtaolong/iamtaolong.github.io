@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoubleAgents: Human-Agent Alignment in a Socially Embedded Workflow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DoubleAgents fosters human-AI alignment through distributed cognition: a coordination agent, a legible dashboard, and a policy module that turns edits into reusable alignment artifacts.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+:root {
+    --primary-color: #254fb1;
+    --primary-color-dark: #183b8b;
+    --highlight-color: 116, 156, 251;
+    --cta-color: #779ef8;
+    --cta-color-hover: #254fb1;
+    --secondary-color: #f4f7fe;
+    --border-color: #dde3f4;
+    --tint: #f3f6fe; --tint-2: #dfe7fb; --tint-3: #e7eefd;
+    --tint-4: #e3ebfc; --tint-5: #eef3fe; --tint-6: #f8faff;
+    --line: #a5b9e9; --pill-border: #beccef;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* DoubleAgents</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list"><li><a href="#gap" data-section="gap">Alignment Gap</a></li><li><a href="#system" data-section="system">System</a></li><li><a href="#study" data-section="study">Study</a></li><li><a href="#bibtex" data-section="bibtex">BibTeX</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="../assets/images/doubleagents.gif" alt="">
+            <img class="hl hl2" src="../assets/images/doubleagents.gif" alt="">
+            <img class="hl hl3" src="../assets/images/doubleagents.gif" alt="">
+            <img class="hl hl4" src="../assets/images/doubleagents.gif" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">DoubleAgents: <span class="highlight highlight-bold">Human-Agent Alignment</span></span><span class="ln">in a Socially Embedded Workflow</span></h1>
+            <p class="hero-authors">Tao Long*, Xuanming Zhang*, Sitong Wang, Zhou Yu, Lydia B. Chilton</p>
+            <p class="hero-institution">Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">HCOMP 2026</span></p>
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="https://arxiv.org/abs/2509.12626" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/doubleagents/thumb.png" alt="First page of the DoubleAgents paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+            <div class="cta-row"><a href="https://arxiv.org/abs/2509.12626" class="cta-button" target="_blank" rel="noopener noreferrer"><span>Read the Paper</span></a><a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex"><span>Copy BibTeX</span></a></div>
+            <div class="link-row"><a href="https://www.youtube.com/watch?v=91sLWnRBaO4&feature=youtu.be" class="link-button" target="_blank" rel="noopener noreferrer">Video &#8599;</a></div>
+            <p class="hero-note">Agents can only act on your behalf if they are aligned with preferences you may not be able to spell out upfront.<br>&mdash;&nbsp;DoubleAgents makes alignment something you do by using the system.</p>
+        </div>
+    </section>
+
+    <section id="gap">
+        <div class="container">
+            <span class="section-kicker">01 / the problem</span>
+            <h2>1/ Why Alignment Is Hard: <span class="text-secondary">Socially Embedded Tasks</span></h2>
+            <p class="text-secondary section-intro">Aligning agentic AI with user intent is critical for delegating complex, socially embedded tasks&mdash;but user preferences are often <span class="highlight highlight-bold">implicit, evolving, and hard to specify upfront</span>. We study this in a concrete setting: organizing a university seminar series over email.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/doubleagents/teaser.png" alt="Alignment as something you do over repeated runs" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Overview</span>
+                            <div class="figure-title">Alignment as something you do over repeated runs</div>
+                            <p class="figure-caption">From an initial setup&mdash;a goal, simulated personas, and seed policies and templates&mdash;users iteratively align the system by reviewing plans, approving actions, handling edge cases, and refining artifacts.</p>
+                            <ul class="bullet-list"><li>Each run produces a finalized speaker-slot allocation <strong>and</strong> a set of user-aligned artifacts: policies, email templates, and stop hooks.</li><li>Those artifacts persist and transfer to future coordination tasks, so alignment compounds instead of restarting.</li><li>Grounded in <strong>distributed cognition</strong>: the system takes on tracking and drafting so the user can focus on judgment at points of uncertainty.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/doubleagents/diagram.png" alt="Policy-guided planning with human oversight and simulated respondents" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Day-by-Day Workflow</span>
+                            <div class="figure-title">Policy-guided planning with human oversight and simulated respondents</div>
+                            <p class="figure-caption">The coordination agent runs a day-by-day loop against LLM-simulated speakers, each with their own persona.</p>
+                            <ul class="bullet-list"><li>Inputs are the organizer's goal, seminar slots, speaker personas, and a toolbox of callable functions.</li><li>Each day the agent summarizes state, finds relevant policies, proposes a plan, and drafts actions for the user to approve.</li><li>When a reply falls outside known policy, such as a request to present over Zoom, the agent <strong>flags the edge case</strong> to the user.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Delegating socially embedded work is not a one-time specification problem. It is an iterative process in which the agent's reasoning has to stay legible and the user's edits have to become something the system can reuse.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="system">
+        <div class="container">
+            <span class="section-kicker">02 / system</span>
+            <h2>2/ DoubleAgents: <span class="text-secondary">A Distributed-Cognition System</span></h2>
+            <p class="text-secondary section-intro">DoubleAgents organizes interaction around three components that split the cognitive work between the person and the agent, plus a simulation mode for rehearsing before going live.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/doubleagents/system.png" alt="Policies, a coordination agent, and a dashboard" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The Interface</span>
+                            <div class="figure-title">Policies, a coordination agent, and a dashboard</div>
+                            <p class="figure-caption">A snapshot of DoubleAgents coordinating four speakers across seminar slots.</p>
+                            <ul class="bullet-list"><li><strong>Policies:</strong> encode evolving user preferences and procedures, and can be added, edited, or deleted as the user learns what they want.</li><li><strong>Coordination agent:</strong> tracks state, plans next steps, suggests actions, and surfaces the policies guiding each decision.</li><li><strong>Dashboard visualization:</strong> externalizes assignments, timelines, and communication history so the user can read the situation at a glance.</li><li>User edits are turned into reusable <strong>coordination policies, email templates, and stop hooks</strong> that improve behavior over time.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <div class="figure-gallery" style="--cols:2"><img src="files/doubleagents/plan_gen.png" alt="Plans, actions, emails, and flags the user can review" loading="lazy"><img src="files/doubleagents/action_gen.png" alt="Plans, actions, emails, and flags the user can review" loading="lazy"><img src="files/doubleagents/email.png" alt="Plans, actions, emails, and flags the user can review" loading="lazy"><img src="files/doubleagents/flag.png" alt="Plans, actions, emails, and flags the user can review" loading="lazy"></div>
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Step by Step</span>
+                            <div class="figure-title">Plans, actions, emails, and flags the user can review</div>
+                            <p class="figure-caption">Pop-ups for a generated plan, the actions that follow it, a drafted email, and an edge-case flag raised when Prof. B asks about Zoom.</p>
+                            <ul class="bullet-list"><li>Every plan and action is shown with its rationale before anything is sent.</li><li>Flags hand the decision back to the user, whose answer becomes a pending action the system can carry out.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Rather than asking users to write the perfect prompt, the system lets them correct it in context. Every correction is captured as an artifact the agent can apply next time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="container">
+            <span class="section-kicker">03 / two-day study, n=10 &middot; three deployments</span>
+            <h2>3/ Study, Deployments &amp; <span class="text-secondary">Discussion</span></h2>
+            <p class="text-secondary section-intro">We evaluated DoubleAgents through a two-day in-lab interactive simulation study (n=10), three real-world deployments, and a technical evaluation.</p>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">4.70&rarr;6.50<span style="font-size:1rem;">/7</span></span><span class="stat-label">comfort letting AI decide what needs doing each day (p&lt;0.005)</span></div><div class="stat-tile"><span class="stat-number">4.90&rarr;5.75<span style="font-size:1rem;">/7</span></span><span class="stat-label">reliance on DoubleAgents across sessions (p=0.02)</span></div><div class="stat-tile"><span class="stat-number">2.7&rarr;4.6<span style="font-size:1rem;">/7</span></span><span class="stat-label">comfort letting AI draft <em>and send</em> initial outreach emails</span></div><div class="stat-tile"><span class="stat-number">n=10</span><span class="stat-label">in-lab interactive simulation study over two days</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">real-world deployments with seminar organizers</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">distributed-cognition components: policies, agent, visualization</span></div></div>
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/doubleagents/result.png" alt="Comfort with delegation grew, but not evenly" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Comfort Over Time</span>
+                            <div class="figure-title">Comfort with delegation grew, but not evenly</div>
+                            <p class="figure-caption">Average comfort with automating (a) planning and (b) execution across sessions (1&ndash;7).</p>
+                            <ul class="bullet-list"><li>Planning comfort rose across all four sub-tasks, from roughly 5/7 before to around 6.5/7 after.</li><li>For execution, comfort with the AI only <strong>drafting</strong> emails was already high and rose to nearly 6.8/7.</li><li>Comfort with the AI <strong>drafting and sending</strong> started far lower (around 3/7) and stayed lower, reaching about 4.3/7.</li><li>Clarification emails showed no significant change: participants still wanted control at points of uncertainty.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words &mdash; Lab Study</span>
+                        <div class="figure-title">What made delegation feel safe</div>
+                        
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">I found that the agent's recent actions followed exactly the policies I had in mind &mdash; super aligned.</p><span class="quote-who">&mdash; P3</span></div><div class="quote-card"><p class="quote-text">[It was] pretty good at figuring out plans, keeping track of who's responded, who's not, who's available, who's not, like what to do moving forward.</p><span class="quote-who">&mdash; P7</span></div><div class="quote-card"><p class="quote-text">It made me trust the system because I know it won't just execute something random&hellip; It flags when it doesn't know&hellip;</p><span class="quote-who">&mdash; P1, on issue flagging</span></div></div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="callout-box" style="margin-top:0;">
+                        <span class="figure-label">Deployments</span>
+                        <h3>Simulation prepared organizers for the real thing</h3>
+                        <p class="text-secondary">Two organizers used DoubleAgents for real email-heavy coordination. Both attributed their willingness to offload to explicit, editable policies and templates that made the agent's reasoning legible, and used simulation with real invitee names and persona-specific edge cases to refine them first.</p>
+                        <div class="callout-quote">"DoubleAgents was really helpful and saved me a lot of time&hellip; The simulation part cannot be skipped." &mdash; Q1, deployment organizer</div>
+                        <p class="text-secondary" style="margin-bottom:0;">Deployment still surfaced unanticipated dynamics that needed ongoing policy and tone adjustments&mdash;as Q1 put it, &ldquo;real life is super complex.&rdquo;</p>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">Discussion</span>
+                        <div class="figure-title">What this means for alignment systems</div>
+                        <ul class="bullet-list"><li><strong>Distributed cognition works as a design lens.</strong> Comfort and reliance tracked the three components: policies, a state-tracking agent, and legible visualizations.</li><li><strong>Control stays at uncertainty.</strong> Edge-case flagging and context-dependent actions are where people still wanted to decide.</li><li><strong>Reliance grows with legibility.</strong> &ldquo;I would intervene more at first but if it can demonstrate that it's consistently able to do it correctly, I'm going to let it act on its own on my behalf more autonomously&rdquo; (P2).</li><li><strong>Interactive simulation is a methodological testbed</strong> for rapid iteration and alignment testing of agentic systems before live use.</li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Contributions</h4>
+                <ul class="bullet-list"><li>A distributed cognition approach to human-agent alignment in socially embedded tasks.</li><li>DoubleAgents: a coordination agent, dashboard visualization, and policy module that turns user edits into reusable alignment artifacts.</li><li>Interactive simulation as a methodological testbed, evaluated in a two-day study (n=10), three deployments, and a technical evaluation.</li></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">If this work is useful to you, here is a citation you can copy.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@inproceedings{long2026doubleagents,
+author = {Long, Tao and Zhang, Xuanming and Wang, Sitong and Yu, Zhou and Chilton, Lydia B},
+title = {DoubleAgents: Human-Agent Alignment in a Socially Embedded Workflow},
+year = {2026},
+isbn = {9798400728945},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3834580.3838737},
+doi = {10.1145/3834580.3838737},
+booktitle = {Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment},
+pages = {23–44},
+numpages = {22},
+location = {Alexandria, VA, USA},
+series = {HCOMP &#x27;26}
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long*, Xuanming Zhang*, Sitong Wang, Zhou Yu, Lydia B. Chilton &middot; HCOMP 2026</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open'); });
+    }
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(l) { return document.getElementById(l.getAttribute('href').replace('#', '')); });
+    function onScroll() {
+        var pos = window.scrollY + 80, act = -1;
+        for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].offsetTop <= pos) act = i; }
+        navLinks.forEach(function(l, i) { l.classList.toggle('active', i === act); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+        onScroll();
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!'; btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            function fallback() {
+                var r = document.createRange(); r.selectNode(text);
+                window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done();
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(raw).then(done).catch(fallback); } else { fallback(); }
+        });
+    });
+})();
+</script>
+</body>
+</html>

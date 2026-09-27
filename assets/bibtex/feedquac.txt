@@ -1,0 +1,15 @@
+@inproceedings{long2025feedquac,
+author = {Long, Tao and Wannamaker, Kendra and Vermeulen, Jo and Fitzmaurice, George and Matejka, Justin},
+title = {FeedQUAC: Quick Unobtrusive AI-Generated Commentary},
+year = {2025},
+isbn = {9798400721786},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3765766.3765861},
+doi = {10.1145/3765766.3765861},
+booktitle = {Proceedings of the 13th International Conference on Human-Agent Interaction},
+pages = {452–455},
+numpages = {4},
+location = {Yokohama, Japan},
+series = {HAI '25}
+}

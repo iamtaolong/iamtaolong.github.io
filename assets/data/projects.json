@@ -5,8 +5,12 @@
         "authors": "Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn",
         "status": "Under Review",
         "description": "As coding assistants become autonomous, developers run parallel sessions. We identified PILOT:  five supervisory practices as Planning, Isolating, Logging, Observing, and Triaging. We present ParallelPilot, an interface support increasing ticket throughput by 63% and perceived efficiency by 1.69 pts, while reducing tracking effort, context switching, and bookkeeping.",
+        "pdf": "project_pages/files/parallelpilot/ParallelPilot_CHI2027.pdf",
+        "bibtex": "assets/bibtex/parallelpilot.txt",
         "image": "assets/images/parallelpilot.png",
-        "icon": "assets/images/parallelpilot-logo.png"
+        "icon": "assets/images/parallelpilot-logo.png",
+        "project": "https://iamtaolong.github.io/project_pages/parallelpilot.html",
+        "webpage_image": "project_pages/files/parallelpilot/page_preview.jpg"
       },
       {
         "id": "doubleagents",
@@ -14,10 +18,27 @@
         "authors": "Tao Long*, Xuanming Zhang*, Sitong Wang, Zhou Yu, Lydia Chilton",
         "status": "HCOMP 2026",
         "description": "DoubleAgents fosters human-AI alignment through distributed cognition by supporting exception handling, codifying reusable rules for agents, exposing transparent state tracking, and preserving user control over usages.",
+        "bibtex": "assets/bibtex/doubleagents.txt",
         "image": "assets/images/doubleagentsteaser.png",
         "icon": "assets/images/doubleagents.gif",
         "pdf": "https://arxiv.org/abs/2509.12626",
-        "video": "https://www.youtube.com/watch?v=91sLWnRBaO4&feature=youtu.be"
+        "video": "https://www.youtube.com/watch?v=91sLWnRBaO4&feature=youtu.be",
+        "project": "https://iamtaolong.github.io/project_pages/doubleagents.html",
+        "webpage_image": "project_pages/files/doubleagents/page_preview.jpg"
+      },
+      {
+        "id": "spear",
+        "title": "Interactive Human-AI Alignment: Five Principles of SPEAR",
+        "short_title": "SPEAR",
+        "authors": "Tao Long, Lydia B. Chilton",
+        "status": "HCOMP 2026",
+        "description": "A position paper reframing human-AI alignment as an ongoing interaction design problem, with five principles: Specification, Process, and Evaluation within a task, plus Adaptation and Recalibration across tasks and sessions.",
+        "bibtex": "assets/bibtex/spear.txt",
+        "image": "assets/images/spear.png",
+        "icon": "assets/images/spear.svg",
+        "pdf": "assets/documents/2026_SPEAR_HCOMP.pdf",
+        "project": "https://iamtaolong.github.io/project_pages/spear.html",
+        "webpage_image": "project_pages/files/spear/page_preview.jpg"
       },
       {
       "id": "feedquac",
@@ -25,19 +46,26 @@
       "authors": "Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka",
       "status": "HAI 2025",
       "description": "FeedQUAC delivers ambient, read-aloud commentary from personas via shortcut keys and auditory cues.",
+      "bibtex": "assets/bibtex/feedquac.txt",
       "image": "assets/images/feedquack.png",
       "icon": "assets/images/feedquack1.webp",
-      "pdf": "https://arxiv.org/abs/2504.16416"
+      "pdf": "https://arxiv.org/abs/2504.16416",
+      "project": "https://iamtaolong.github.io/project_pages/feedquac.html",
+      "webpage_image": "project_pages/files/feedquac/page_preview.jpg"
     },
     {
       "id": "artkritlongitudinal",
       "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
+      "short_title": "ArtKrit Longitudinal",
       "authors": "Catherine Liu*, Tao Long*, Asya Vaisberg, Chau Vu, Jiaju Ma, Jingyi Li",
       "status": "DIS 2026 Honorable Mention (Top 5%)",
       "description": "Deployed an artistic support tool for three weeks with designers embedded in 3 small, supportive artist networks.",
+      "bibtex": "assets/bibtex/artkritlongitudinal.txt",
       "image": "assets/images/artkritlongitudinal.png",
       "icon": "assets/images/artkritlongitudinal.gif",
-      "pdf": "https://arxiv.org/abs/2604.26935"
+      "pdf": "https://arxiv.org/abs/2604.26935",
+      "project": "https://iamtaolong.github.io/project_pages/artkrit.html",
+      "webpage_image": "project_pages/files/artkrit/page_preview.jpg"
     },
     {
       "id": "katyownership",
@@ -45,6 +73,7 @@
       "authors": "Katy Gero, Tao Long, Carly Schnitzler, Paramveer Dhillon",
       "status": "DIS 2026",
       "description": "A study with 253 participants shows that AI writing assistance reduces ownership overall, with the largest drop when AI supports drafting rather than planning or revising.",
+      "bibtex": "assets/bibtex/katyownership.txt",
       "image": "assets/images/katyownership.png",
       "icon": "assets/images/katyownership.jpeg",
       "pdf": "https://arxiv.org/abs/2604.11009"
@@ -55,6 +84,7 @@
       "authors": "Tao Long, Bingcan Guo",
       "status": "NE Agents Day 2026",
       "description": "A position paper argues that agentic AI evaluation should move beyond benchmarks to capture the lived, longitudinal dynamics of human-agent collaboration, including trust, delegation, and real user success.",
+      "bibtex": "assets/bibtex/beyondbenchmark.txt",
       "image": "assets/images/beyondbenchmark.png",
       "icon": "assets/images/beyondbenchmark.gif",
       "pdf": "https://iamtaolong.github.io/assets/documents/2026_BeyondBenchmarks_NEAgentsDay.pdf",
@@ -66,6 +96,7 @@
       "authors": "Tony Zhou, Tao Long, Ding Li, Gary Hsieh",
       "status": "CHI 2026 EA",
       "description": "An interview and corpus study (n=11 interviews; 15,749 reflections) presents a system that scaffolds research reflection without replacing author voice",
+      "bibtex": "assets/bibtex/behindthepaper.txt",
       "image": "assets/images/behindthepaper.png",
       "icon": "assets/images/behindthepaper.gif",
       "pdf": "https://dl.acm.org/doi/10.1145/3772363.3798731"
@@ -76,6 +107,7 @@
       "authors": "Jeffrey Basoah, Daniel Chechelnitsky, Tao Long, Katharina Reinecke, Chrysoula Zerva, Kaitlyn Zhou, Mark Díaz, Maarten Sap",
       "status": "FAccT 2025",
       "description": "A study with 985 participants reveals sociolect-infused LLMs influence trust, reliance, and social presence.",
+      "bibtex": "assets/bibtex/sociolect.txt",
       "image": "assets/images/sociolect.png",
       "icon": "assets/images/sociolect1.gif",
       "pdf": "https://arxiv.org/abs/2505.05660"
@@ -83,13 +115,16 @@
     {
       "id": "longitudinalworkshop",
       "title": "Facilitating Longitudinal Interaction Studies of AI Systems",
+      "short_title": "Longitudinal AI Workshop",
       "authors": "Tao Long, Sitong Wang, Émilie Fabre, Tony Wang, Anup Sathya, Jason Wu, Savvas Dimitrios Petridis, Ding Li, David Ledo, Tuhin Chakrabarty, Yue Jiang, Jingyi Li, Tiffany Tseng, Ken Nakagaki, Qian Yang, Nikolas Martelaro,  Jeffrey Nickerson, Lydia Chilton",
       "status": "UIST 2025 Workshop Organized",
       "description": "A workshop to facilitate discussion and advance research on long-term user studies in HCI.",
+      "bibtex": "assets/bibtex/longitudinalworkshop.txt",
       "image": "assets/images/longitudinalslides1.png",
       "icon": "assets/images/workshoicon.gif",
       "pdf": "assets/documents/2025_Longitudinal_Workshop.pdf",
-      "project": "https://longitudinal-workshop.github.io/"
+      "project": "https://longitudinal-workshop.github.io/",
+      "webpage_image": "project_pages/files/longitudinalworkshop/page_preview.jpg"
     },
     {
       "id": "generativedisco",
@@ -103,7 +138,7 @@
       "video": "https://youtu.be/q22I53jHbuU",
       "tweetorial": "https://twitter.com/taolongg/status/1648720386236850184?s=20",
       "demo": "https://github.com/hellovivian/generative-disco",
-      "bibtex": "assets/documents/2024_Disco.text"
+      "bibtex": "assets/bibtex/generativedisco.txt"
     },
     {
       "id": "longitudinal",
@@ -117,7 +152,9 @@
       "video": "https://www.youtube.com/watch?v=_I4fyh02Q4w",
       "tweetorial": "https://x.com/taolongg/status/1831018388476588469",
       "demo": "http://taolongitudinal.pythonanywhere.com/",
-      "bibtex": "assets/documents/2024_Disco.text"
+      "bibtex": "assets/bibtex/longitudinal.txt",
+      "project": "https://iamtaolong.github.io/project_pages/novelty.html",
+      "webpage_image": "project_pages/files/novelty/page_preview.jpg"
     },
     {
       "id": "reelframer",
@@ -130,7 +167,7 @@
       "pdf": "https://arxiv.org/abs/2304.09653",
       "video": "https://www.youtube.com/watch?v=WQZcbdp5yJQ",
       "tweetorial": "https://twitter.com/taolongg/status/1649621523877986305?s=20",
-      "bibtex": "assets/documents/2024_ReelFramer_CHI.text"
+      "bibtex": "assets/bibtex/reelframer.txt"
     },
     {
       "id": "socialdynamics",
@@ -144,7 +181,7 @@
       "video": "https://youtu.be/Rx5N7sv3a68",
       "tweetorial": "https://twitter.com/taolongg/status/1648807802025005058?s=2",
       "press": "https://www.wired.com/story/artificial-intelligence-writing-art/",
-      "bibtex": "assets/documents/2023_SocialDynamics_CHI.txt"
+      "bibtex": "assets/bibtex/socialdynamics.txt"
     },
     {
       "id": "tweetorial",
@@ -157,13 +194,15 @@
       "pdf": "https://arxiv.org/abs/2305.12265",
       "video": "https://www.youtube.com/watch?v=eLjq3TVtygA",
       "tweetorial": "https://x.com/taolongg/status/1806091973369221365",
-      "project": "http://language-play.com/tech-tweets/",
+      "project": "https://iamtaolong.github.io/project_pages/tweetorial.html",
+      "webpage_image": "project_pages/files/tweetorial/page_preview.jpg",
       "demo": "http://taolongitudinal.pythonanywhere.com/",
-      "bibtex": "assets/documents/2023_TechTweetorial_ICCC.txt"
+      "bibtex": "assets/bibtex/tweetorial.txt"
     },
     {
       "id": "alexa",
       "title": "Challenges and Opportunities for the Design of Smart Speakers",
+      "short_title": "Smart Speaker Design",
       "authors": "Tao Long, Lydia Chilton",
       "status": "AAAI Workshop 2023",
       "icon": "assets/images/alexa.gif",
@@ -171,7 +210,9 @@
       "image": "assets/images/alexa.png",
       "pdf": "https://arxiv.org/abs/2306.05741",
       "video": "https://www.youtube.com/watch?v=zrkVK9l33Og&t=1s",
-      "bibtex": "/assets/documents/2023_AlexaOppo_AAAIPaper.txt"
+      "bibtex": "assets/bibtex/alexa.txt",
+      "project": "https://iamtaolong.github.io/project_pages/alexa.html",
+      "webpage_image": "project_pages/files/alexa/page_preview.jpg"
     },
     {
       "id": "audienceimpression",
@@ -179,6 +220,7 @@
       "authors": "Grace Li, Yuanyang Teng, Juna Kawai-Yue, Unaisah Ahmed, Anatta Tantiwongse, Jessica Y. Liang, Dorothy Zhang, Kynnedy Simone Smith, Tao Long, Mina Lee, Lydia Chilton",
       "status": "Under Review",
       "description": "Social media techniques boost science engagement, but preferences and scientist comfort levels vary widely.",
+      "bibtex": "assets/bibtex/audienceimpression.txt",
       "image": "assets/images/audienceimpression.png",
       "icon": "assets/images/audienceimpression.gif",
       "pdf": "https://arxiv.org/abs/2502.05287"
@@ -193,7 +235,7 @@
       "icon": "assets/images/cyberball.gif",
       "pdf": "assets/documents/2023_Cyberball_CSCW.pdf",
       "code": "https://github.com/iamtaolong/virtual-cyberball",
-      "bibtex": "assets/documents/2023_Cyberball_CSCW.txt"
+      "bibtex": "assets/bibtex/cyberball.txt"
     },
     {
       "id": "rights4health",
@@ -207,7 +249,7 @@
       "video": "https://www.youtube.com/watch?v=eqkzDvIYuwo",
       "project": "https://rights4health.cornell.edu/",
       "press": "https://news.cornell.edu/stories/2022/12/better-digital-tools-could-help-immigrants-access-benefits",
-      "bibtex": "assets/documents/2022_Stakeholders_Asylum_CSCW.txt"
+      "bibtex": "assets/bibtex/rights4health.txt"
     }
   ]
   

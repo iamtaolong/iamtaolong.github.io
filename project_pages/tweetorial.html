@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweetorial Hooks: Generative AI Tools to Motivate Science on Social Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HookIncubator helps STEM experts co-create compelling hooks for Twitter threads (Tweetorials) using LLM scaffolding.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+:root {
+    --primary-color: #6628bd;
+    --primary-color-dark: #4f1b98;
+    --highlight-color: 172, 116, 251;
+    --cta-color: #ad77f8;
+    --cta-color-hover: #6628bd;
+    --secondary-color: #f8f4fe;
+    --border-color: #e6ddf4;
+    --tint: #f8f3fe; --tint-2: #ebdffb; --tint-3: #f0e7fd;
+    --tint-4: #eee3fc; --tint-5: #f5eefe; --tint-6: #fbf8ff;
+    --line: #c1a5e9; --pill-border: #d2beef;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* Tweetorial Hooks</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list"><li><a href="#gap" data-section="gap">The Hook</a></li><li><a href="#prompting" data-section="prompting">Prompting Study</a></li><li><a href="#study" data-section="study">User Study</a></li><li><a href="#bibtex" data-section="bibtex">BibTeX</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="../assets/images/tweetorial.gif" alt="">
+            <img class="hl hl2" src="../assets/images/tweetorial.gif" alt="">
+            <img class="hl hl3" src="../assets/images/tweetorial.gif" alt="">
+            <img class="hl hl4" src="../assets/images/tweetorial.gif" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">Tweetorial Hooks: <span class="highlight highlight-bold">Generative AI Tools</span></span><span class="ln">to Motivate Science on Social Media</span></h1>
+            <p class="hero-authors">Tao Long, Dorothy Zhang, Grace Li, Batool Taraif, Samia Menon, Kynnedy Smith, Sitong Wang, Katy Gero, Lydia B. Chilton</p>
+            <p class="hero-institution">Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">ICCC 2023</span></p>
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="https://arxiv.org/abs/2305.12265" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/tweetorial/thumb.png" alt="First page of the Tweetorial Hooks paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+            <div class="cta-row"><a href="https://arxiv.org/abs/2305.12265" class="cta-button" target="_blank" rel="noopener noreferrer"><span>Read the Paper</span></a><a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex"><span>Copy BibTeX</span></a></div>
+            <div class="link-row"><a href="https://www.youtube.com/watch?v=eLjq3TVtygA" class="link-button" target="_blank" rel="noopener noreferrer">Video &#8599;</a><a href="http://language-play.com/tech-tweets/" class="link-button" target="_blank" rel="noopener noreferrer">Project Site &#8599;</a><a href="https://x.com/taolongg/status/1806091973369221365" class="link-button" target="_blank" rel="noopener noreferrer">Tweetorial Thread &#8599;</a></div>
+            <p class="hero-note">STEM experts struggle to write the first tweet that hooks readers.<br>&mdash;&nbsp;HookIncubator uses LLM scaffolding to find relatable everyday experiences.</p>
+        </div>
+    </section>
+
+    <section id="gap">
+        <div class="container">
+            <span class="section-kicker">01 / the problem</span>
+            <h2>1/ The Hook <span class="text-secondary">Problem</span></h2>
+            <p class="text-secondary section-intro">Tweetorials are threads in which experts explain STEM topics on social media. The first tweet, the <span class="highlight highlight-bold">hook</span>, decides whether anyone keeps reading, and it is the hardest part to write.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/tweetorial/wildfire.png" alt="Hook, narrative, and payoff" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Anatomy of a Tweetorial</span>
+                            <div class="figure-title">Hook, narrative, and payoff</div>
+                            <p class="figure-caption">A Tweetorial about the California wildfires, annotated for narrative structure.</p>
+                            <ul class="bullet-list"><li>A good hook contains a <strong>relatable detail</strong> and an <strong>intriguing question</strong>.</li><li>It avoids jargon and sparks curiosity before the narrative and payoff begin.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Experts know the science but often lack a feel for what is relatable to a general audience. LLMs can help find everyday experiences that connect to technical topics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prompting">
+        <div class="container">
+            <span class="section-kicker">02 / study 1 &middot; prompt engineering</span>
+            <h2>2/ Study 1: <span class="text-secondary">Prompting Strategies</span></h2>
+            <p class="text-secondary section-intro">Before building a tool, we asked how well an LLM can write hooks on its own and which prompting strategy works best.</p>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">30</span><span class="stat-label">computer science topics</span></div><div class="stat-tile"><span class="stat-number">3</span><span class="stat-label">prompting strategies compared</span></div><div class="stat-tile"><span class="stat-number">270</span><span class="stat-label">hooks rated by each annotator</span></div><div class="stat-tile"><span class="stat-number">2.93</span><span class="stat-label">PS1 (instructions only) average out of 5</span></div><div class="stat-tile"><span class="stat-number">3.49</span><span class="stat-label">PS2 (examples + instructions) average</span></div><div class="stat-tile"><span class="stat-number">3.47</span><span class="stat-label">PS3 (chained user details) average</span></div></div>
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/tweetorial/prompting.png" alt="Instructions, examples, and chained user details" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Three Strategies</span>
+                            <div class="figure-title">Instructions, examples, and chained user details</div>
+                            <p class="figure-caption">An illustration of the three prompting strategies.</p>
+                            <ul class="bullet-list"><li><strong>PS1</strong> gives instructions only; <strong>PS2</strong> adds five example hooks; <strong>PS3</strong> chains prompts for everyday examples, common experiences, then a personal anecdote.</li><li>Hooks came from GPT-3 (text-davinci-003) and were rated by three annotators with professional training in communication and writing.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/tweetorial/rubric.png" alt="Scoring hooks on three requirements" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Annotation Rubric</span>
+                            <div class="figure-title">Scoring hooks on three requirements</div>
+                            <p class="figure-caption">The five-point rubric annotators used.</p>
+                            <ul class="bullet-list"><li>R1: jargon-free. R2: includes a relatable and specific example. R3: sparks curiosity.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/tweetorial/annotation.png" alt="Examples helped; chaining did not add more" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Annotator Scores</span>
+                            <div class="figure-title">Examples helped; chaining did not add more</div>
+                            <p class="figure-caption">Average scores for each prompting strategy on the rubric.</p>
+                            <ul class="bullet-list"><li>All three strategies were good at avoiding jargon.</li><li>PS2 and PS3 were about 1 point better on relatability and nearly 1 point better on curiosity than PS1.</li><li>PS3 did not beat PS2: it added specific details that were often not relatable, such as &ldquo;Amazon Web Services' Identity and Access Management.&rdquo;</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Examples teach the model the style of a good hook. But LLM output alone stays uneven, so user interaction remains essential.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="container">
+            <span class="section-kicker">03 / study 2 &middot; user study, 10 writers</span>
+            <h2>3/ HookIncubator: <span class="text-secondary">User Study &amp; Discussion</span></h2>
+            <p class="text-secondary section-intro">Study 2 turned the scaffolding into a tool, the Tweetorial Hook Incubator, and tested it with ten writers who wrote hooks with and without it.</p>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">2.87 vs 4.00</span><span class="stat-label">mental demand with vs. without the system (/7, p=0.004)</span></div><div class="stat-tile"><span class="stat-number">5.73 vs 4.50</span><span class="stat-label">self-rated performance with vs. without (/7, p=0.001)</span></div><div class="stat-tile"><span class="stat-number">8 / 10</span><span class="stat-label">finished the with-system hook without using Google</span></div><div class="stat-tile"><span class="stat-number">10 / 10</span><span class="stat-label">said they would use the tool in the future</span></div></div>
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card fig-sm">
+                        <img src="files/tweetorial/system.png" alt="Accept, adapt, or write your own at every step" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The Workflow</span>
+                            <div class="figure-title">Accept, adapt, or write your own at every step</div>
+                            <p class="figure-caption">An example of writing a hook about AJAX with the tool.</p>
+                            <ul class="bullet-list"><li>Users can follow the workflow top to bottom, start from the middle, go back, or restart.</li><li>At each step they can accept LLM outputs, adapt them, use their own responses, or regenerate.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/tweetorial/tlx.png" alt="Writing hooks felt less demanding and went better" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Task Load</span>
+                            <div class="figure-title">Writing hooks felt less demanding and went better</div>
+                            <p class="figure-caption">User study NASA TLX results.</p>
+                            <ul class="bullet-list"><li>Without the system, all ten users found it hard to come up with concrete, specific examples of abstract topics.</li><li>With it, users found it easy to brainstorm many ideas and to simplify language for a broad audience.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words</span>
+                        <div class="figure-title">From an ocean of search results to a few strong ideas</div>
+                        
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">[Searching Google felt like an] ocean of information.</p><span class="quote-who">&mdash; P2 &amp; P5, without the system</span></div><div class="quote-card"><p class="quote-text">Easy to generate and regenerate&hellip; easy to find strong ideas&hellip; reminded me of what I already knew.</p><span class="quote-who">&mdash; P1, P2, P4, P6 &amp; P7, with the system</span></div><div class="quote-card"><p class="quote-text">Apparently we're gonna lose $10.5 trillion to criminals over the internet by 2025. Isn't that horrendous?</p><span class="quote-who">&mdash; P4, adding a surprising fact to an LLM hook</span></div></div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">Discussion</span>
+                        <div class="figure-title">Interactivity preserves correctness and authenticity</div>
+                        <ul class="bullet-list"><li>LLMs can contextualize technical information into relatable, engaging hooks.</li><li>Writers still removed jargon (P10 expanded &ldquo;ISPs&rdquo; into &ldquo;Internet Service Providers&rdquo;) and rewrote robotic phrasing into their own voice.</li><li>LLMs sometimes give inaccurate examples or experiences non-technical readers would not relate to, so <strong>user interaction is essential</strong>.</li><li>Similar tools could help journalists, medical professionals, or public service organizations reach their audiences.</li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Scaffolding the writing process, rather than replacing the writer, reduces cognitive load and helps people write better hooks while keeping the writing correct, effective, and authentic.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">If this work is useful to you, here is a citation you can copy.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@inproceedings{long2023tweetorial,
+author = {Long, Tao and Zhang, Dorothy and Li, Grace and Taraif, Batool and Menon, Samia and Smith, Kynnedy Simone and Wang, Sitong and Gero, Katy Ilonka and Chilton, Lydia B.},
+title = {Tweetorial Hooks: Generative AI Tools to Motivate Science on Social Media},
+booktitle = {Proceedings of the 14th International Conference on Computational Creativity},
+editor = {Pease, Alison and Cunha, Jo{\~a}o Miguel and Ackerman, Maya and Brown, Daniel G.},
+pages = {44--53},
+year = {2023},
+publisher = {Association for Computational Creativity},
+location = {Waterloo, Ontario, Canada},
+series = {ICCC &#x27;23},
+url = {https://computationalcreativity.net/iccc23/papers/ICCC-2023_paper_53.pdf},
+eprint = {2305.12265},
+archivePrefix = {arXiv}
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long, Dorothy Zhang, Grace Li, Batool Taraif, Samia Menon, Kynnedy Smith, Sitong Wang, Katy Gero, Lydia B. Chilton &middot; ICCC 2023</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open'); });
+    }
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(l) { return document.getElementById(l.getAttribute('href').replace('#', '')); });
+    function onScroll() {
+        var pos = window.scrollY + 80, act = -1;
+        for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].offsetTop <= pos) act = i; }
+        navLinks.forEach(function(l, i) { l.classList.toggle('active', i === act); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+        onScroll();
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!'; btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            function fallback() {
+                var r = document.createRange(); r.selectNode(text);
+                window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done();
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(raw).then(done).catch(fallback); } else { fallback(); }
+        });
+    });
+})();
+</script>
+</body>
+</html>

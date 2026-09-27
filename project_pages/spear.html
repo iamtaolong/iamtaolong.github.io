@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPEAR: Interactive Human-AI Alignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SPEAR reframes human-AI alignment as an ongoing interaction design problem, with five principles: Specification, Process, Evaluation, Adaptation, and Recalibration.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+:root {
+    --primary-color: #b93b27;
+    --primary-color-dark: #932a1a;
+    --highlight-color: 251, 134, 116;
+    --cta-color: #f88877;
+    --cta-color-hover: #b93b27;
+    --secondary-color: #fef5f4;
+    --border-color: #f4e0dd;
+    --tint: #fef4f3; --tint-2: #fbe3df; --tint-3: #fdeae7;
+    --tint-4: #fce7e3; --tint-5: #fef1ee; --tint-6: #fff9f8;
+    --line: #e9aea5; --pill-border: #efc4be;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* SPEAR</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list"><li><a href="#reframe" data-section="reframe">Reframing</a></li><li><a href="#spear-principles" data-section="spear-principles">SPEAR</a></li><li><a href="#mechanisms" data-section="mechanisms">Mechanisms</a></li><li><a href="#bibtex" data-section="bibtex">BibTeX</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="../assets/images/spear.svg" alt="">
+            <img class="hl hl2" src="../assets/images/spear.svg" alt="">
+            <img class="hl hl3" src="../assets/images/spear.svg" alt="">
+            <img class="hl hl4" src="../assets/images/spear.svg" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">Interactive <span class="highlight highlight-bold">Human-AI Alignment:</span></span><span class="ln">Five Principles of SPEAR</span></h1>
+            <p class="hero-authors">Tao Long, Lydia B. Chilton</p>
+            <p class="hero-institution">Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">HCOMP 2026</span></p>
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="../assets/documents/2026_SPEAR_HCOMP.pdf" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/spear/thumb.png" alt="First page of the SPEAR paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+            <div class="cta-row"><a href="../assets/documents/2026_SPEAR_HCOMP.pdf" class="cta-button" target="_blank" rel="noopener noreferrer"><span>Read the Paper</span></a><a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex"><span>Copy BibTeX</span></a></div>
+            
+            <p class="hero-note">Alignment does not end when a model is deployed.<br>&mdash;&nbsp;SPEAR treats it as something people and AI keep negotiating, maintaining, and repairing in use.</p>
+        </div>
+    </section>
+
+    <section id="reframe">
+        <div class="container">
+            <span class="section-kicker">01 / position</span>
+            <h2>1/ From a Pipeline <span class="text-secondary">to an Interaction</span></h2>
+            <p class="text-secondary section-intro">Alignment is often framed as a <span class="highlight highlight-bold">pre-deployment optimization problem</span>: collect human feedback, learn preferences or principles, fine-tune, and deploy. That has driven major progress, but it under-specifies what happens once AI systems act in situated, long-term, and social contexts.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block"><div class="sp-reframe">
+  <div class="sp-rf-row">
+    <span class="sp-rf-label">alignment as a pipeline</span>
+    <div class="sp-chain"><span>collect human feedback</span><i>&rarr;</i><span>learn an objective</span><i>&rarr;</i><span>fine-tune</span><i>&rarr;</i><span class="sp-chain-end">deploy &ldquo;aligned&rdquo; system</span></div>
+  </div>
+  <div class="sp-rf-row">
+    <span class="sp-rf-label sp-rf-label-new">alignment as interaction</span>
+    <div class="sp-chain sp-chain-loop"><span>develop</span><i>&rarr;</i><span>maintain</span><i>&rarr;</i><span>repair</span><i class="sp-loopback">&#8634;</i><span class="sp-chain-note">shared understanding &#183; appropriate agency &#183; calibrated reliance</span></div>
+  </div>
+</div></div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">Why the pipeline is not enough</span>
+                        <div class="figure-title">Intent is rarely complete, stable, or fully specifiable in advance</div>
+                        <ul class="bullet-list"><li>Users may not know exactly what they want until they see what the system produces.</li><li>They refine goals across turns, discover new uses, change preferences, and form new expectations as AI enters everyday work.</li><li>Alignment is <strong>bidirectional</strong>: AI adapts to people, and people adapt to AI, updating mental models, trust, and behavior.</li></ul>
+                    </div>
+                </div>
+                <div class="figure-block"><div class="callout-box" style="margin-top:0;">
+  <span class="figure-label">An HCI definition of interactive human-AI alignment</span>
+  <p class="sp-definition">Alignment is the <span class="highlight highlight-bold">ongoing, interactive process</span> through which humans and AI systems develop, maintain, and repair shared understanding, appropriate agency, and calibrated reliance over time.</p>
+</div></div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Alignment cannot be understood only as a property encoded in model weights before deployment. It emerges through interaction after deployment, which makes it an interaction design problem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="spear-principles">
+        <div class="container">
+            <span class="section-kicker">02 / five principles</span>
+            <h2>2/ SPEAR: <span class="text-secondary">Five Pillars of Interactive Alignment</span></h2>
+            <p class="text-secondary section-intro">SPEAR asks five interactive alignment questions. The first three, adopted from Terry et al., form the <span class="highlight highlight-bold">core loop within a task</span>. The last two extend that loop <span class="highlight highlight-bold">across tasks and beyond sessions</span>.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block"><div class="sp-diagram-wrap"><svg class="sp-diagram" viewBox="0 0 960 450" role="img" aria-labelledby="spear-title spear-desc"><title id="spear-title">SPEAR: five principles of interactive human-AI alignment</title><desc id="spear-desc">Within each task, Specification, Process, and Evaluation form a core alignment loop. Across tasks and sessions, Adaptation carries what the AI learned forward, and Recalibration carries what the person learned forward.</desc><defs><marker id="sp-head-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="sp-mk-a"/></marker><marker id="sp-head-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" class="sp-mk-r"/></marker></defs><g class="sp-loop"><circle class="sp-ring" cx="215" cy="225" r="76"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(161.3 171.3) rotate(315)"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(268.7 171.3) rotate(405)"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(215.0 301.0) rotate(180)"/><circle class="sp-node" cx="139" cy="225" r="22"/><text class="sp-node-t" x="139" y="232">S</text><circle class="sp-node" cx="215" cy="149" r="22"/><text class="sp-node-t" x="215" y="156">P</text><circle class="sp-node" cx="291" cy="225" r="22"/><text class="sp-node-t" x="291" y="232">E</text><text class="sp-lbl" x="109" y="230" text-anchor="end">Specification</text><text class="sp-lbl" x="215" y="117" text-anchor="middle">Process</text><text class="sp-lbl" x="321" y="230" text-anchor="start">Evaluation</text><text class="sp-center" x="215" y="221">core loop</text><text class="sp-center sp-center-2" x="215" y="239">within a task</text></g><g class="sp-loop sp-faded"><circle class="sp-ring" cx="505" cy="225" r="76"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(451.3 171.3) rotate(315)"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(558.7 171.3) rotate(405)"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(505.0 301.0) rotate(180)"/><circle class="sp-node" cx="429" cy="225" r="22"/><text class="sp-node-t" x="429" y="232">S</text><circle class="sp-node" cx="505" cy="149" r="22"/><text class="sp-node-t" x="505" y="156">P</text><circle class="sp-node" cx="581" cy="225" r="22"/><text class="sp-node-t" x="581" y="232">E</text></g><g class="sp-loop sp-faded-2"><circle class="sp-ring" cx="795" cy="225" r="76"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(741.3 171.3) rotate(315)"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(848.7 171.3) rotate(405)"/><path class="sp-arrow" d="M -7 -6 L 7 0 L -7 6 Z" transform="translate(795.0 301.0) rotate(180)"/><circle class="sp-node" cx="719" cy="225" r="22"/><text class="sp-node-t" x="719" y="232">S</text><circle class="sp-node" cx="795" cy="149" r="22"/><text class="sp-node-t" x="795" y="156">P</text><circle class="sp-node" cx="871" cy="225" r="22"/><text class="sp-node-t" x="871" y="232">E</text></g><text class="sp-dots" x="650.0" y="233">&#183; &#183; &#183;</text><text class="sp-task" x="215" y="343">Task 1 &#183; book the HCOMP flight</text><text class="sp-task" x="505" y="343">Task 2 &#183; the next trip</text><text class="sp-task" x="795" y="343">Task n</text><path class="sp-link sp-link-a" d="M 245 131 Q 360.0 44 475 131" marker-end="url(#sp-head-a)"/><path class="sp-link sp-link-r" d="M 245 359 Q 360.0 441 475 359" marker-end="url(#sp-head-r)"/><path class="sp-link sp-link-a" d="M 535 131 Q 650.0 44 765 131" marker-end="url(#sp-head-a)"/><path class="sp-link sp-link-r" d="M 535 359 Q 650.0 441 765 359" marker-end="url(#sp-head-r)"/><g class="sp-badge-a"><circle cx="360.0" cy="87" r="17"/><text x="360.0" y="93">A</text></g><text class="sp-link-lbl" x="360.0" y="57" text-anchor="middle">Adaptation &#183; AI carries forward what it learned</text><g class="sp-badge-r"><circle cx="360.0" cy="400" r="17"/><text x="360.0" y="406">R</text></g><text class="sp-link-lbl" x="360.0" y="441" text-anchor="middle">Recalibration &#183; people update trust &amp; expectations</text></svg><div class="sp-legend"><span><i class="sp-dot sp-dot-core"></i>S &#183; P &#183; E: the core loop within a task (Terry et al.)</span><span><i class="sp-dot sp-dot-a"></i>A: AI adapts to people, across tasks</span><span><i class="sp-dot sp-dot-r"></i>R: people recalibrate to AI, beyond sessions</span></div></div></div>
+                <div class="figure-block"><div class="sp-group"><div class="sp-group-h"><span class="sp-group-tag sp-tag-core">within a task</span> the core alignment loop</div>
+<div class="sp-grid sp-grid-3"><div class="sp-card sp-card-core">
+  <div class="sp-head"><span class="sp-letter">S</span><div><div class="sp-name">Specification</div><div class="sp-sub">intent grounding</div></div></div>
+  <p class="sp-q">How do people express intent, and how do people and AI reach a shared understanding?</p>
+  <div class="sp-ex"><span class="sp-ex-label">&#9992;&#65039; booking a flight to HCOMP 2026</span>
+    <div class="sp-ex-row sp-ex-bad"><span>&#10007;</span><span>Asked for an &ldquo;affordable and convenient&rdquo; flight, the assistant just picks one.</span></div>
+    <div class="sp-ex-row sp-ex-good"><span>&#10003;</span><span>It proposes an interpretation: &ldquo;LGA&ndash;DCA under $400, 9 a.m.&ndash;6 p.m.?&rdquo; The user repairs it: &ldquo;JFK is fine if it saves at least $100.&rdquo;</span></div>
+  </div>
+</div><div class="sp-card sp-card-core">
+  <div class="sp-head"><span class="sp-letter">P</span><div><div class="sp-name">Process</div><div class="sp-sub">agency coordination</div></div></div>
+  <p class="sp-q">How does AI decide when to act, ask, defer, or pause in ways that match what the user would want?</p>
+  <div class="sp-ex"><span class="sp-ex-label">&#9992;&#65039; booking a flight to HCOMP 2026</span>
+    <div class="sp-ex-row sp-ex-bad"><span>&#10007;</span><span>The company card has expired, so the assistant pays with the user's personal card and reports &ldquo;All set.&rdquo;</span></div>
+    <div class="sp-ex-row sp-ex-good"><span>&#10003;</span><span>Booking the flight is not permission to choose how to pay. It pauses and asks before switching cards.</span></div>
+  </div>
+</div><div class="sp-card sp-card-core">
+  <div class="sp-head"><span class="sp-letter">E</span><div><div class="sp-name">Evaluation</div><div class="sp-sub">success inspectability</div></div></div>
+  <p class="sp-q">How do people and AI agree on what counts as success?</p>
+  <div class="sp-ex"><span class="sp-ex-label">&#9992;&#65039; booking a flight to HCOMP 2026</span>
+    <div class="sp-ex-row sp-ex-bad"><span>&#10007;</span><span>&ldquo;Your flight is confirmed.&rdquo;</span></div>
+    <div class="sp-ex-row sp-ex-good"><span>&#10003;</span><span>&ldquo;$350, arrives 12:30 p.m., 30 minutes past your deadline,&rdquo; with <em>Find an earlier flight</em> and <em>View cancellation terms</em>.</span></div>
+  </div>
+</div></div></div>
+<div class="sp-group"><div class="sp-group-h"><span class="sp-group-tag sp-tag-across">across tasks &#183; beyond sessions</span> the loop extended over time</div>
+<div class="sp-grid sp-grid-2"><div class="sp-card sp-card-a">
+  <div class="sp-head"><span class="sp-letter">A</span><div><div class="sp-name">Adaptation</div><div class="sp-sub">over time</div></div></div>
+  <p class="sp-q">What should AI carry forward from past interactions, and what should it leave behind?</p>
+  <div class="sp-ex"><span class="sp-ex-label">&#9992;&#65039; booking a flight to HCOMP 2026</span>
+    <div class="sp-ex-row sp-ex-bad"><span>&#10007;</span><span>&ldquo;JFK if it saves $100&rdquo; quietly becomes the default for every future trip.</span></div>
+    <div class="sp-ex-row sp-ex-good"><span>&#10003;</span><span>&ldquo;Keep the $100 airport trade-off for future trips?&rdquo; or &ldquo;The company account is available again. Switch back?&rdquo;</span></div>
+  </div>
+</div><div class="sp-card sp-card-r">
+  <div class="sp-head"><span class="sp-letter">R</span><div><div class="sp-name">Recalibration</div><div class="sp-sub">human-to-AI alignment</div></div></div>
+  <p class="sp-q">How do people update their trust, expectations, and behavior as they learn what AI can(not) do?</p>
+  <div class="sp-ex"><span class="sp-ex-label">&#9992;&#65039; booking a flight to HCOMP 2026</span>
+    <div class="sp-ex-row sp-ex-bad"><span>&#10007;</span><span>&ldquo;It will now remember my $100 airport trade-off,&rdquo; when it cannot.</span></div>
+    <div class="sp-ex-row sp-ex-good"><span>&#10003;</span><span>&ldquo;Your airport preference applies to this booking only; it has not been saved for future trips.&rdquo;</span></div>
+  </div>
+</div></div></div></div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Each principle names a point where alignment can succeed or fail after deployment, and each has a concrete interaction that makes it negotiable instead of implicit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mechanisms">
+        <div class="container">
+            <span class="section-kicker">03 / bridging HCI and alignment</span>
+            <h2>3/ Interaction Mechanisms <span class="text-secondary">as Alignment Mechanisms</span></h2>
+            <p class="text-secondary section-intro">These questions are not entirely new. HCI has studied closely related problems for decades. What is new is the <span class="highlight highlight-bold">scale, opacity, agency, and adaptivity</span> of contemporary AI systems, which makes those theories newly relevant to alignment.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block"><span class="figure-label">HCI foundations for each principle</span><div class="figure-title">Old theories, new alignment problems</div><div class="sp-found"><div class="sp-found-row sp-card-core"><span class="sp-letter">S</span><span class="sp-found-name">Specification</span><div class="sp-chips"><span>grounding &amp; repair</span></div></div><div class="sp-found-row sp-card-core"><span class="sp-letter">P</span><span class="sp-found-name">Process</span><div class="sp-chips"><span>distributed cognition</span><span>mixed-initiative interaction</span><span>activity theory</span></div></div><div class="sp-found-row sp-card-core"><span class="sp-letter">E</span><span class="sp-found-name">Evaluation</span><div class="sp-chips"><span>gulfs of evaluation &amp; execution</span><span>HAI guidelines</span><span>explainability</span><span>agent visibility</span></div></div><div class="sp-found-row sp-card-a"><span class="sp-letter">A</span><span class="sp-found-name">Adaptation</span><div class="sp-chips"><span>adaptation &amp; appropriation</span><span>structuration theory</span></div></div><div class="sp-found-row sp-card-r"><span class="sp-letter">R</span><span class="sp-found-name">Recalibration</span><div class="sp-chips"><span>computers as social actors</span><span>groupware &amp; social interaction</span><span>intentional stance</span></div></div></div></div>
+                <div class="figure-block"><span class="figure-label">Interaction design, reframed</span><div class="figure-title">Not interface details, but how alignment is negotiated, maintained, and repaired</div><div class="sp-chips sp-chips-lg"><span>clarification</span><span>pausing</span><span>visibility</span><span>onboarding</span><span>correction</span><span>explanation</span><span>customization</span><span>expectation-setting</span></div></div>
+                <div class="figure-block"><span class="figure-label">The role of people</span><div class="figure-title">From feedback providers to co-adapting participants</div><div class="sp-roles">
+  <div class="sp-role-from"><span class="sp-rf-label">humans in today's alignment pipelines</span><div class="sp-chips"><span>labels</span><span>rankings</span><span>demonstrations</span><span>evaluations</span></div></div>
+  <i class="sp-role-arrow">&rarr;</i>
+  <div class="sp-role-to"><span class="sp-rf-label sp-rf-label-new">humans in interactive alignment</span><div class="sp-chips sp-chips-accent"><span>situated collaborators</span><span>evaluators</span><span>appropriators</span><span>co-adapting participants</span></div></div>
+</div></div>
+            </div>
+            <div class="summary-box">
+                <h4>Takeaways</h4>
+                <ul class="bullet-list"><li>Treat alignment as an ongoing, interactive process, not only a pre-deployment property.</li><li>Design for all five questions: specification, process, evaluation, adaptation, and recalibration.</li><li>Support informed, revisable calibration rather than assuming more trust, less checking, or broader delegation is always better.</li></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">If this work is useful to you, here is a citation you can copy.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@inproceedings{long2026spear,
+author = {Long, Tao and Chilton, Lydia B.},
+title = {SPEAR: Five Principles for Interactive Human-Agent Alignment},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+booktitle = {Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment},
+location = {Alexandria, VA, USA},
+series = {HCOMP &#x27;26},
+url = {https://iamtaolong.github.io/project_pages/spear.html}
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long, Lydia B. Chilton &middot; HCOMP 2026</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open'); });
+    }
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(l) { return document.getElementById(l.getAttribute('href').replace('#', '')); });
+    function onScroll() {
+        var pos = window.scrollY + 80, act = -1;
+        for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].offsetTop <= pos) act = i; }
+        navLinks.forEach(function(l, i) { l.classList.toggle('active', i === act); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+        onScroll();
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!'; btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            function fallback() {
+                var r = document.createRange(); r.selectNode(text);
+                window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done();
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(raw).then(done).catch(fallback); } else { fallback(); }
+        });
+    });
+})();
+</script>
+</body>
+</html>

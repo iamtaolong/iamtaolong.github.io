@@ -1,0 +1,14 @@
+@inproceedings{zhou2026behind,
+author = {Zhou, Tony and Long, Tao and Hsieh, Gary and Li, Ding},
+title = {Behind The Paper: A Workflow for Supporting Personal Research Reflection},
+year = {2026},
+isbn = {9798400722813},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3772363.3798731},
+doi = {10.1145/3772363.3798731},
+booktitle = {Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
+numpages = {8},
+location = {Barcelona, Spain},
+series = {CHI EA '26}
+}

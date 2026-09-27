@@ -1,0 +1,14 @@
+@inproceedings{long2023tweetorial,
+author = {Long, Tao and Zhang, Dorothy and Li, Grace and Taraif, Batool and Menon, Samia and Smith, Kynnedy Simone and Wang, Sitong and Gero, Katy Ilonka and Chilton, Lydia B.},
+title = {Tweetorial Hooks: Generative AI Tools to Motivate Science on Social Media},
+booktitle = {Proceedings of the 14th International Conference on Computational Creativity},
+editor = {Pease, Alison and Cunha, Jo{\~a}o Miguel and Ackerman, Maya and Brown, Daniel G.},
+pages = {44--53},
+year = {2023},
+publisher = {Association for Computational Creativity},
+location = {Waterloo, Ontario, Canada},
+series = {ICCC '23},
+url = {https://computationalcreativity.net/iccc23/papers/ICCC-2023_paper_53.pdf},
+eprint = {2305.12265},
+archivePrefix = {arXiv}
+}

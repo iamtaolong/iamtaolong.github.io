@@ -1,0 +1,15 @@
+@inproceedings{long2026doubleagents,
+author = {Long, Tao and Zhang, Xuanming and Wang, Sitong and Yu, Zhou and Chilton, Lydia B},
+title = {DoubleAgents: Human-Agent Alignment in a Socially Embedded Workflow},
+year = {2026},
+isbn = {9798400728945},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3834580.3838737},
+doi = {10.1145/3834580.3838737},
+booktitle = {Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment},
+pages = {23–44},
+numpages = {22},
+location = {Alexandria, VA, USA},
+series = {HCOMP '26}
+}

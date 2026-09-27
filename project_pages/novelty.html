@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A three-week longitudinal study with 12 users showing a familiarization phase and increased perceived utility of a generative AI workflow through customization.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+:root {
+    --primary-color: #209734;
+    --primary-color-dark: #147123;
+    --highlight-color: 116, 251, 138;
+    --cta-color: #77f88d;
+    --cta-color-hover: #209734;
+    --secondary-color: #f4fef5;
+    --border-color: #ddf4e0;
+    --tint: #f3fef5; --tint-2: #dffbe4; --tint-3: #e7fdeb;
+    --tint-4: #e3fce8; --tint-5: #eefef1; --tint-6: #f8fff9;
+    --line: #a5e9b0; --pill-border: #beefc6;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* Not Just Novelty</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list"><li><a href="#gap" data-section="gap">Novelty Effect</a></li><li><a href="#study" data-section="study">Study</a></li><li><a href="#results" data-section="results">Results</a></li><li><a href="#bibtex" data-section="bibtex">BibTeX</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="../assets/images/longitudinalworkshop.gif" alt="">
+            <img class="hl hl2" src="../assets/images/longitudinalworkshop.gif" alt="">
+            <img class="hl hl3" src="../assets/images/longitudinalworkshop.gif" alt="">
+            <img class="hl hl4" src="../assets/images/longitudinalworkshop.gif" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">Not Just Novelty: A <span class="highlight highlight-bold">Longitudinal Study</span></span><span class="ln">on Utility and Customization of an AI Workflow</span></h1>
+            <p class="hero-authors">Tao Long, Katy Gero, Lydia B. Chilton</p>
+            <p class="hero-institution">Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">DIS 2024</span></p>
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="../assets/documents/2024_NotJustNovelty_DIS.pdf" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/novelty/thumb.png" alt="First page of the Not Just Novelty paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+            <div class="cta-row"><a href="../assets/documents/2024_NotJustNovelty_DIS.pdf" class="cta-button" target="_blank" rel="noopener noreferrer"><span>Read the Paper</span></a><a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex"><span>Copy BibTeX</span></a></div>
+            <div class="link-row"><a href="https://www.youtube.com/watch?v=_I4fyh02Q4w" class="link-button" target="_blank" rel="noopener noreferrer">Video &#8599;</a><a href="https://x.com/taolongg/status/1831018388476588469" class="link-button" target="_blank" rel="noopener noreferrer">Tweetorial Thread &#8599;</a><a href="http://taolongitudinal.pythonanywhere.com/" class="link-button" target="_blank" rel="noopener noreferrer">Demo &#8599;</a></div>
+            <p class="hero-note">Is generative AI useful after the novelty wears off?<br>&mdash;&nbsp;A three-week study with 12 users found utility went up, driven by prompt customization.</p>
+        </div>
+    </section>
+
+    <section id="gap">
+        <div class="container">
+            <span class="section-kicker">01 / the question</span>
+            <h2>1/ After the Novelty <span class="text-secondary">Wears Off</span></h2>
+            <p class="text-secondary section-intro">Generative AI brings impressive abilities, and many AI workflows chain model outputs with human interaction. But it is uncertain <span class="highlight highlight-bold">how useful these workflows are once the novelty fades</span>, and whether users take advantage of the customization they allow.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/novelty/example_hook.png" alt="Writing a Tweetorial hook for science communication" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The Task</span>
+                            <div class="figure-title">Writing a Tweetorial hook for science communication</div>
+                            <p class="figure-caption">An example hook about language models, annotated for the three requirements.</p>
+                            <ul class="bullet-list"><li>A good hook is <strong>jargon-free</strong>, uses a <strong>specific and relatable example</strong>, and <strong>sparks curiosity</strong>.</li><li>Here the relatable experience is a child using Alexa for math homework, which leads into how language models understand speech.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/novelty/workflow.png" alt="A step-by-step workflow for writing hooks" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The AI Workflow</span>
+                            <div class="figure-title">A step-by-step workflow for writing hooks</div>
+                            <p class="figure-caption">An existing AI workflow for science communication, used as the study system.</p>
+                            <ul class="bullet-list"><li>Users scaffold a relatable hook for a technical topic through chained LLM steps.</li><li>Each step is an editable prompt, so the workflow can be adapted to the user's own needs.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">A one-hour evaluation cannot separate genuine utility from novelty. A longitudinal design can.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="container">
+            <span class="section-kicker">02 / three weeks, 12 users</span>
+            <h2>2/ A Three-Week <span class="text-secondary">Longitudinal Study</span></h2>
+            <p class="text-secondary section-intro">Twelve PhD-level CS students each wrote 10 hooks in 10 separate sessions over three weeks, with weekly interviews.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/novelty/method.png" alt="Ten sessions over three weeks, with weekly interviews" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Study Timeline</span>
+                            <div class="figure-title">Ten sessions over three weeks, with weekly interviews</div>
+                            <p class="figure-caption">Timeline of study activities over three weeks.</p>
+                            <ul class="bullet-list"><li>Each session lasted around 20 minutes, followed by a 10-minute survey.</li><li>A semi-structured interview at the end of each week captured how use and attitudes changed.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/novelty/system.png" alt="Topic, quick generation, and editable prompts" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The Study System</span>
+                            <div class="figure-title">Topic, quick generation, and editable prompts</div>
+                            <p class="figure-caption">The first two steps of the system: enter a topic, review the generation prompt, then start.</p>
+                            <ul class="bullet-list"><li>Users can review and edit prompts at every step.</li><li>That editability is what makes customization, and eventually appropriation, possible.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">The design combines repeated sessions, weekly interviews, and before/after measures, so change over time is visible.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="container">
+            <span class="section-kicker">03 / results &amp; discussion</span>
+            <h2>3/ Familiarization, Customization &amp; <span class="text-secondary">Appropriation</span></h2>
+            <p class="text-secondary section-intro">There is a familiarization phase in which users explore the workflow and discover what is useful. After it, users understand the workflow and can anticipate its outputs.</p>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">4.27</span><span class="stat-label">sessions until familiarization ends, on average</span></div><div class="stat-tile"><span class="stat-number">120</span><span class="stat-label">sessions analyzed across 12 users</span></div><div class="stat-tile"><span class="stat-number">+14.9%</span><span class="stat-label">self-reported task performance after familiarization</span></div><div class="stat-tile"><span class="stat-number">+7.1%</span><span class="stat-label">self-reported time efficiency</span></div><div class="stat-tile"><span class="stat-number">8 / 12</span><span class="stat-label">felt more involvement led to more ownership</span></div><div class="stat-tile"><span class="stat-number">Prompts</span><span class="stat-label">where most of the added benefit comes from</span></div></div>
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/novelty/usefulness.png" alt="Surprisingly, utility rose after familiarization" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; System Usefulness</span>
+                            <div class="figure-title">Surprisingly, utility rose after familiarization</div>
+                            <p class="figure-caption">System usefulness before and after familiarization, across 12 users.</p>
+                            <ul class="bullet-list"><li>Perceived utility was rated <strong>higher</strong> after familiarization, so it is not just a novelty effect.</li><li>The increase mainly comes from users' ability to <strong>customize prompts</strong> and appropriate the system.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <div class="figure-gallery gallery-center" style="--cols:2"><img src="files/novelty/tlx.png" alt="Task load and hook quality before and after familiarization" loading="lazy"><img src="files/novelty/output.png" alt="Task load and hook quality before and after familiarization" loading="lazy"></div>
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Workload &amp; Hooks</span>
+                            <div class="figure-title">Task load and hook quality before and after familiarization</div>
+                            <p class="figure-caption">NASA Task Load Index (left) and requirement-based hook evaluation (right), averaged across 12 users.</p>
+                            <ul class="bullet-list"><li>Self-assessed hooks improved on being specific and relatable (5.80&rarr;6.43) and on sparking curiosity (5.69&rarr;6.25).</li><li>Before familiarization users were exploring; afterwards they understood the workflow and anticipated its outputs.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words</span>
+                        <div class="figure-title">From learning curve to a workflow of one's own</div>
+                        
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">I just remembered what each step is and&hellip; understood it&hellip; from the generation results of the step. So that kind of helped me to climb through the learning curve&hellip;</p><span class="quote-who">&mdash; P8</span></div><div class="quote-card"><p class="quote-text">[Now I] have my own fixed routine to generate hook&hellip; the output is satisfying for me, so I kinda stop exploring&hellip; so my workflow stops changing.</p><span class="quote-who">&mdash; P3</span></div><div class="quote-card"><p class="quote-text">After learning how I can edit the prompt, yes, [the system gets] more useful.</p><span class="quote-who">&mdash; P13</span></div><div class="quote-card"><p class="quote-text">After making more edits and being more engaged in the interaction, I feel a stronger connection to the tone and effort.</p><span class="quote-who">&mdash; P10</span></div></div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">Discussion</span>
+                        <div class="figure-title">Why the novelty does not wear off</div>
+                        <ul class="bullet-list"><li><strong>The workflow supports cognitively challenging steps</strong>, so real utility remains after the surprise fades.</li><li><strong>Workflows improve human-AI collaboration</strong> and mitigate the effect of AI errors.</li><li><strong>Ownership can shift.</strong> Some users became reviewers: &ldquo;I become more like a human reviewer to help guide the GPT&hellip; I think my ownership dropped a lot&rdquo; (P3).</li><li><strong>Design for appropriation.</strong> Customizable AI systems let users adapt them to their own needs.</li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Takeaways</h4>
+                <ul class="bullet-list"><li>Expect a familiarization phase, and evaluate after it.</li><li>Customization, not novelty, drives added utility over time.</li><li>Generative AI systems can be designed for appropriation.</li></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">If this work is useful to you, here is a citation you can copy.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@inproceedings{taolongitudinal,
+author = {Long, Tao and Gero, Katy Ilonka and Chilton, Lydia B},
+title = {Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow},
+year = {2024},
+isbn = {9798400705830},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643834.3661587},
+doi = {10.1145/3643834.3661587},
+abstract = {Generative AI brings novel and impressive abilities to help people in everyday tasks. There are many AI workflows that solve real and complex problems by chaining AI outputs together with human interaction. Although there is an undeniable lure of AI, it is uncertain how useful generative AI workflows are after the novelty wears off. Additionally, workflows built with generative AI have the potential to be easily customized to fit users’ individual needs, but do users take advantage of this? We conducted a three-week longitudinal study with 12 users to understand the familiarization and customization of generative AI tools for science communication. Our study revealed that there exists a familiarization phase, during which users were exploring the novel capabilities of the workflow and discovering which aspects they found useful. After this phase, users understood the workflow and were able to anticipate the outputs. Surprisingly, after familiarization the perceived utility of the system was rated higher than before, indicating that the perceived utility of AI is not just a novelty effect. The increase in benefits mainly comes from end-users’ ability to customize prompts, and thus potentially appropriate the system to their own needs. This points to a future where generative AI systems can allow us to design for appropriation.},
+booktitle = {Proceedings of the 2024 ACM Designing Interactive Systems Conference},
+pages = {782–803},
+numpages = {22},
+keywords = {AI chains, LLMs, customization, familiarization, generative AI, longitudinal user experience, mental model, novelty, ownership, scaffolding, science communication, technology appropriation, workflow},
+location = {Copenhagen, Denmark},
+series = {DIS &#x27;24}
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long, Katy Gero, Lydia B. Chilton &middot; DIS 2024</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open'); });
+    }
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(l) { return document.getElementById(l.getAttribute('href').replace('#', '')); });
+    function onScroll() {
+        var pos = window.scrollY + 80, act = -1;
+        for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].offsetTop <= pos) act = i; }
+        navLinks.forEach(function(l, i) { l.classList.toggle('active', i === act); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+        onScroll();
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!'; btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            function fallback() {
+                var r = document.createRange(); r.selectNode(text);
+                window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done();
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(raw).then(done).catch(fallback); } else { fallback(); }
+        });
+    });
+})();
+</script>
+</body>
+</html>

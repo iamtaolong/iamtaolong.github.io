@@ -1,0 +1,17 @@
+@inproceedings{taolongitudinal,
+author = {Long, Tao and Gero, Katy Ilonka and Chilton, Lydia B},
+title = {Not Just Novelty: A Longitudinal Study on Utility and Customization of an AI Workflow},
+year = {2024},
+isbn = {9798400705830},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643834.3661587},
+doi = {10.1145/3643834.3661587},
+abstract = {Generative AI brings novel and impressive abilities to help people in everyday tasks. There are many AI workflows that solve real and complex problems by chaining AI outputs together with human interaction. Although there is an undeniable lure of AI, it is uncertain how useful generative AI workflows are after the novelty wears off. Additionally, workflows built with generative AI have the potential to be easily customized to fit users’ individual needs, but do users take advantage of this? We conducted a three-week longitudinal study with 12 users to understand the familiarization and customization of generative AI tools for science communication. Our study revealed that there exists a familiarization phase, during which users were exploring the novel capabilities of the workflow and discovering which aspects they found useful. After this phase, users understood the workflow and were able to anticipate the outputs. Surprisingly, after familiarization the perceived utility of the system was rated higher than before, indicating that the perceived utility of AI is not just a novelty effect. The increase in benefits mainly comes from end-users’ ability to customize prompts, and thus potentially appropriate the system to their own needs. This points to a future where generative AI systems can allow us to design for appropriation.},
+booktitle = {Proceedings of the 2024 ACM Designing Interactive Systems Conference},
+pages = {782–803},
+numpages = {22},
+keywords = {AI chains, LLMs, customization, familiarization, generative AI, longitudinal user experience, mental model, novelty, ownership, scaffolding, science communication, technology appropriation, workflow},
+location = {Copenhagen, Denmark},
+series = {DIS '24}
+}

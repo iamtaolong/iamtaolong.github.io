@@ -18,7 +18,7 @@
 
   gtag('config', 'G-MESR77KXNS');
 </script>
-<script src="/assets/world.js"></script> 
+<script src="/assets/js/world.js"></script> 
 <script defer src="assets/js/script.js"></script>
 
 <!-- <script src="assets/js/calligraphy.js"></script> -->
@@ -150,7 +150,7 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
   <div id="projects-container" style="margin-left:15px; z-index: 120;"></div>
   <script>
     async function loadProjects() {
-      const res = await fetch('projects.json');
+      const res = await fetch('/assets/data/projects.json');
       const projects = await res.json();
       const container = document.getElementById('projects-container');
   
@@ -158,16 +158,32 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
         console.error('Missing #projects-container');
         return;
       }
-  
+
+      projects.sort((a, b) => (b.webpage_image ? 1 : 0) - (a.webpage_image ? 1 : 0));
+
+      const withPages = projects.filter(p => p.webpage_image && p.project);
+      if (withPages.length) {
+        const cards = withPages.map(p => `
+          <a class="pp-card" href="${p.project}" target="_blank" rel="noopener noreferrer">
+            <img src="${p.webpage_image}" alt="Project page for ${p.short_title || (p.title || '').split(':')[0]}" loading="lazy">
+            <span class="pp-card-title">${p.icon ? `<img src="${p.icon}" alt="">` : ''}${p.short_title || (p.title || '').split(':')[0]}</span>
+          </a>`).join('');
+        container.insertAdjacentHTML('beforeend', `
+          <details class="pp-drawer"${window.matchMedia('(max-width: 767.98px)').matches ? ' open' : ''}>
+            <summary><span class="pp-drawer-label"><img class="pp-new" src="/assets/images/new.gif" alt="new"> Project pages <span class="pp-count">${withPages.length}</span></span><span class="pp-drawer-hint"></span></summary>
+            <div class="pp-scroller">${cards}</div>
+          </details>`);
+      }
+
       projects.forEach(p => {
         const links = [
         p.pdf && `<a href="${p.pdf}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-file"></i>&nbsp;&nbsp;PDF&nbsp;&nbsp;&nbsp;</a>`,
-        p.arxiv && `<a href="${p.arxiv}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<img src="assets/images/arxiv-logo.svg" style="height: 1rem; filter: brightness(0%);">&nbsp;&nbsp;arXiv&nbsp;&nbsp;&nbsp;</a>`,
+        p.project && `<a href="${p.project}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;Project Page&nbsp;&nbsp;&nbsp;</a>`,
         p.video && `<a href="${p.video}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Video&nbsp;&nbsp;&nbsp;</a>`,
+        p.arxiv && `<a href="${p.arxiv}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<img src="assets/images/arxiv-logo.svg" style="height: 1rem; filter: brightness(0%);">&nbsp;&nbsp;arXiv&nbsp;&nbsp;&nbsp;</a>`,
         p.tweetorial && `<a href="${p.tweetorial}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;Tweetorial&nbsp;&nbsp;&nbsp;</a>`,
         p.code && `<a href="${p.code}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Code&nbsp;&nbsp;&nbsp;</a>`,
         p.demo && `<a href="${p.demo}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-gamepad" aria-hidden="true" style="font-size:1.1rem"></i>&nbsp;&nbsp;Demo&nbsp;&nbsp;&nbsp;</a>`,
-        p.project && `<a href="${p.project}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;Webpage&nbsp;&nbsp;&nbsp;</a>`,
         p.press && `<a href="${p.press}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;&nbsp;Press&nbsp;&nbsp;&nbsp;</a>`,
         p.bibtex && `<a href="${p.bibtex}" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;<i class="fa fa-quote-right"></i>&nbsp;&nbsp;BibTeX&nbsp;&nbsp;&nbsp;</a>`
       ].filter(Boolean).join('&nbsp;&nbsp;&nbsp;&nbsp;');
@@ -180,7 +196,19 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
       const html = `
   <div class="row mt-4" style="padding-bottom:1rem">
     <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-  ${p.image ? `
+  ${p.image && p.webpage_image && p.project ? `
+    <div class="tl-compare d-none d-md-block" tabindex="0" role="group"
+      data-teaser="${p.image}" data-href="${p.project}"
+      aria-label="${p.short_title || (p.title || '').split(':')[0]}: drag to compare the teaser figure with the project page. Click left to enlarge the teaser figure, right to open the project page."
+      title="Drag to compare. Left: enlarge teaser figure. Right: open project page.">
+      <img class="tl-cmp-base" src="${p.image}" alt="${p.title || ''}" draggable="false">
+      <div class="tl-cmp-top"><img src="${p.webpage_image}" alt="Project page for ${p.short_title || (p.title || '').split(':')[0]}" draggable="false" loading="lazy"></div>
+      <div class="tl-cmp-handle" aria-hidden="true"><span class="tl-cmp-knob"><i class="fa fa-caret-left"></i><i class="fa fa-caret-right"></i></span></div>
+      <span class="tl-cmp-tag tl-cmp-tag-l">teaser fig</span>
+      <span class="tl-cmp-tag tl-cmp-tag-r">project page <i class="fa fa-external-link"></i></span>
+    </div>
+    <img src="${p.image}" width="85%" class="d-md-none clickable-image hover-opacity" alt="${p.title || ''}">
+  ` : p.image ? `
     <img
       src="${p.image}"
       width="85%"
@@ -224,6 +252,62 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
 
         container.insertAdjacentHTML('beforeend', html);
       });
+
+      initCompares(container.querySelectorAll('.tl-compare'));
+    }
+
+    function initCompares(nodes) {
+      const els = Array.from(nodes);
+      if (!els.length) return;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let pos = 50, touched = false;
+      const setPos = v => { pos = Math.max(0, Math.min(100, v)); els.forEach(el => el.style.setProperty('--pos', pos + '%')); };
+      const markTouched = () => { if (!touched) { touched = true; els.forEach(el => el.classList.add('tl-touched')); } };
+      setPos(50);
+
+      els.forEach(el => {
+        let startX = 0, dragging = false, down = false;
+        const fromEvent = e => { const r = el.getBoundingClientRect(); return (e.clientX - r.left) / r.width * 100; };
+        el.addEventListener('pointerdown', e => {
+          down = true; dragging = false; startX = e.clientX;
+          el.setPointerCapture(e.pointerId);
+        });
+        el.addEventListener('pointermove', e => {
+          if (!down) return;
+          if (!dragging && Math.abs(e.clientX - startX) > 4) { dragging = true; markTouched(); els.forEach(x => x.classList.add('tl-dragging')); }
+          if (dragging) setPos(fromEvent(e));
+        });
+        el.addEventListener('pointerup', e => {
+          if (!down) return;
+          down = false; els.forEach(x => x.classList.remove('tl-dragging'));
+          if (dragging) return;
+          markTouched();
+          if (fromEvent(e) < pos) openImageModal(el.dataset.teaser);
+          else window.open(el.dataset.href, '_blank', 'noopener');
+        });
+        el.addEventListener('pointercancel', () => { down = false; dragging = false; els.forEach(x => x.classList.remove('tl-dragging')); });
+        el.addEventListener('keydown', e => {
+          if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); markTouched(); setPos(pos + (e.key === 'ArrowLeft' ? -8 : 8)); }
+          else if (e.key === 'Enter') window.open(el.dataset.href, '_blank', 'noopener');
+        });
+      });
+
+      if (reduceMotion || !('IntersectionObserver' in window)) return;
+      const io = new IntersectionObserver(entries => {
+        if (!entries.some(en => en.isIntersecting) || touched) return;
+        io.disconnect();
+        const keys = [50, 32, 68, 50], seg = 520;
+        const t0 = performance.now();
+        const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+        (function step(now) {
+          if (touched) return;
+          const t = (now - t0) / seg, i = Math.floor(t);
+          if (i >= keys.length - 1) { setPos(50); return; }
+          setPos(keys[i] + (keys[i + 1] - keys[i]) * ease(t - i));
+          requestAnimationFrame(step);
+        })(t0);
+      }, { threshold: 0.6 });
+      els.forEach(el => io.observe(el));
     }
   
     loadProjects();
@@ -876,7 +960,7 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
     }
   
     async function loadFlights() {
-        const flightRows = await d3.csv("flight.csv");
+        const flightRows = await d3.csv("/assets/data/flight.csv");
         flights = flightRows
             .map(row => ({
                 from: (row.From || row.from || "").trim(),
@@ -970,7 +1054,7 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
     if (!tableBody) return;
 
     try {
-      const response = await fetch('conference.json');
+      const response = await fetch('/assets/data/conference.json');
       if (!response.ok) throw new Error('Network response was not ok');
       const conferences = await response.json();
 

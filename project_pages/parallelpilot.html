@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ParallelPilot is a supervision cockpit for parallel AI coding, built on the PILOT framework (Planning, Isolating, Logging, Observing, Triaging). Under submission.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* ParallelPilot</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#gap" data-section="gap">Gap &amp; PILOT</a></li>
+                <li><a href="#probe" data-section="probe">ParallelPilot System</a></li>
+                <li><a href="#study" data-section="study">Study</a></li>
+                <li><a href="#bibtex" data-section="bibtex">BibTeX</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="agent-fleet-backdrop" aria-hidden="true">
+            <svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(60,90) rotate(-6)">
+                    <rect x="0" y="0" width="260" height="170" rx="12" fill="#fff" stroke="#a83a0c" stroke-width="3"/>
+                    <rect x="0" y="0" width="260" height="30" rx="12" fill="#ffb066"/>
+                    <circle cx="18" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="36" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="54" cy="15" r="5" fill="#a83a0c"/>
+                    <rect x="18" y="50" width="150" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="72" width="200" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="94" width="110" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="116" width="170" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="138" width="60" height="9" rx="4" fill="#ffb066"/>
+                </g>
+                <g transform="translate(360,40) rotate(4)">
+                    <rect x="0" y="0" width="290" height="190" rx="12" fill="#fff" stroke="#a83a0c" stroke-width="3"/>
+                    <rect x="0" y="0" width="290" height="30" rx="12" fill="#ffb066"/>
+                    <circle cx="18" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="36" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="54" cy="15" r="5" fill="#a83a0c"/>
+                    <rect x="18" y="52" width="220" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="76" width="140" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="100" width="190" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="124" width="90" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="148" width="230" height="9" rx="4" fill="#ffb066"/>
+                    <rect x="18" y="164" width="30" height="14" rx="3" fill="#a83a0c"/>
+                </g>
+                <g transform="translate(690,140) rotate(-3)">
+                    <rect x="0" y="0" width="230" height="150" rx="12" fill="#fff" stroke="#a83a0c" stroke-width="3"/>
+                    <rect x="0" y="0" width="230" height="30" rx="12" fill="#ffb066"/>
+                    <circle cx="18" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="36" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="54" cy="15" r="5" fill="#a83a0c"/>
+                    <rect x="18" y="50" width="130" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="72" width="180" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="94" width="90" height="9" rx="4" fill="#ffb066"/>
+                    <rect x="18" y="116" width="150" height="9" rx="4" fill="#f0c199"/>
+                </g>
+                <g transform="translate(120,340) rotate(3)">
+                    <rect x="0" y="0" width="250" height="160" rx="12" fill="#fff" stroke="#a83a0c" stroke-width="3"/>
+                    <rect x="0" y="0" width="250" height="30" rx="12" fill="#ffb066"/>
+                    <circle cx="18" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="36" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="54" cy="15" r="5" fill="#a83a0c"/>
+                    <rect x="18" y="50" width="170" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="72" width="120" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="94" width="200" height="9" rx="4" fill="#ffb066"/>
+                    <rect x="18" y="116" width="80" height="9" rx="4" fill="#f0c199"/>
+                </g>
+                <g transform="translate(470,320) rotate(-5)">
+                    <rect x="0" y="0" width="270" height="180" rx="12" fill="#fff" stroke="#a83a0c" stroke-width="3"/>
+                    <rect x="0" y="0" width="270" height="30" rx="12" fill="#ffb066"/>
+                    <circle cx="18" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="36" cy="15" r="5" fill="#a83a0c"/>
+                    <circle cx="54" cy="15" r="5" fill="#a83a0c"/>
+                    <rect x="18" y="52" width="200" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="76" width="150" height="9" rx="4" fill="#ffb066"/>
+                    <rect x="18" y="100" width="220" height="9" rx="4" fill="#d1490f"/>
+                    <rect x="18" y="124" width="100" height="9" rx="4" fill="#f0c199"/>
+                    <rect x="18" y="148" width="60" height="14" rx="3" fill="#a83a0c"/>
+                </g>
+            </svg>
+        </div>
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="files/parallelpilot/logo.png" alt="">
+            <img class="hl hl2" src="files/parallelpilot/logo.png" alt="">
+            <img class="hl hl3" src="files/parallelpilot/logo.png" alt="">
+            <img class="hl hl4" src="files/parallelpilot/logo.png" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">Supporting <span class="highlight highlight-bold">Coordination and Monitoring</span></span><span class="ln">in Parallel AI Coding</span></h1>
+            <p class="hero-authors">Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn</p>
+            <p class="hero-institution">Microsoft Research AI Frontiers &amp; Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">In Submission</span></p>
+
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="files/parallelpilot/ParallelPilot_CHI2027.pdf" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/parallelpilot/paper_thumbnail.png" alt="First page of the ParallelPilot paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+
+            <div class="cta-row">
+                <a href="files/parallelpilot/ParallelPilot_CHI2027.pdf" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    <span>Read the Paper</span>
+                </a>
+                <a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex">
+                    <span>Copy BibTeX</span>
+                </a>
+            </div>
+            <p class="hero-note">As coding agents grow autonomous, developers run several sessions at once<br>&mdash;&nbsp;this paper studies how they coordinate and monitor that fleet. &nbsp;&nbsp; Questions? <a href="mailto:long@cs.columbia.edu">Email us</a></p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <section id="gap">
+        <div class="container">
+            <span class="section-kicker">01 / formative study, N&#8202;=&#8202;14</span>
+            <h2>1/ The Gap &amp; Formative Insights: <span class="text-secondary">PILOT</span></h2>
+            <p class="text-secondary section-intro">AI coding assistants are shifting from autocomplete into autonomous agents, and developers are increasingly running several sessions concurrently rather than working through tickets one at a time. This does not just add more agents&mdash;it adds a new layer of <span class="highlight highlight-bold">coordination</span> and <span class="highlight highlight-bold">monitoring</span> around them. We interviewed 14 developers who already work this way to understand how they cope, and distilled their strategies into the PILOT framework.</p>
+
+            <div class="figure-stream">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/formative_bar.png" alt="Bar chart of participants' coding workflow distribution across no-AI, single-session AI, and parallel AI, by tool used">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Formative Survey</span>
+                            <div class="figure-title">Parallel AI coding is already mainstream, not a niche habit</div>
+                            <p class="figure-caption">Self-reported time allocation across 14 developers who regularly run parallel AI sessions, sorted by parallel usage.</p>
+                            <ul class="bullet-list">
+                                <li>Parallel multi-session AI use (<strong>45.3%</strong>) is nearly on par with single-session AI use (<strong>48.6%</strong>); only 6.1% of coding happens with no AI at all.</li>
+                                <li>CLI-based interfaces dominate (<strong>92.9%</strong> of participants), ahead of IDE-integrated chat and standalone web/desktop apps (78.6% each).</li>
+                                <li>Copilot (78.6%) and Claude/Claude Code (71.4%) are the most-used tools; three concurrent sessions is the typical setup.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-card figure-card-pair">
+                        <img src="files/parallelpilot/formative_illustration.jpg" alt="P5's sketched reflection on what parallel AI coding feels like">
+                        <img src="files/parallelpilot/formative_comic.png" alt="xkcd 303, Compiling, showing a developer using compile time to slack off">
+                    </div>
+                    <div class="figure-meta">
+                        <span class="figure-label">Fig. &mdash; "Compiling," Reframed</span>
+                        <div class="figure-title">Waiting no longer means disengaging</div>
+                        <p class="figure-caption">P5 invoked the classic <a href="https://xkcd.com/303/" target="_blank" rel="noopener noreferrer">xkcd&nbsp;#303</a> trope to explain how parallel AI coding changes idle time.</p>
+                        <ul class="bullet-list">
+                            <li>Instead of legitimately stepping away while code compiles, developers stay <strong>actively engaged</strong>&mdash;monitoring, answering, and redirecting several concurrent agents at once.</li>
+                            <li>Downtime becomes the trigger for opening another session, not a break from work.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words &mdash; Formative Study</span>
+                        <div class="figure-title">Why developers go parallel, and what it costs</div>
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">[Now] I can actually work on multiple things at once [&hellip;when] I have downtime or I'm waiting for things.</p><span class="quote-who">&mdash; P6</span></div><div class="quote-card"><p class="quote-text">I don't wanna wait sequentially for things to happen.</p><span class="quote-who">&mdash; P9</span></div><div class="quote-card"><p class="quote-text">After a while [running concurrent sessions]&hellip; if it's this feature and that's that feature, it'd be over your brain, fried quickly.</p><span class="quote-who">&mdash; P2</span></div><div class="quote-card"><p class="quote-text">I couldn't remember or even find what I had told Copilot to do in the first window by the time I got back to it.</p><span class="quote-who">&mdash; P6</span></div></div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/parallelpilot_pilot.png" alt="Diagram of the PILOT framework: Planning, Isolating, Logging, Observing, Triaging">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; The PILOT Framework</span>
+                            <div class="figure-title">Five supervisory practices, one shared bottleneck: attention</div>
+                            <p class="figure-caption">PILOT links two challenge areas&mdash;<strong>coordination</strong> (Plan, Isolate) and <strong>monitoring</strong> (Observe, Triage)&mdash;bridged by Logging, which preserves context across sessions.</p>
+                            <div class="pillar-grid">
+                                <div class="pillar-card">
+                                    <div class="pillar-letter">P</div>
+                                    <h4>Planning</h4>
+                                    <p>Scope what to delegate, set priorities, and prep agent context before launching sessions.</p>
+                                </div>
+                                <div class="pillar-card">
+                                    <div class="pillar-letter">I</div>
+                                    <h4>Isolating</h4>
+                                    <p>Decide what can run independently vs. what needs sequencing to avoid file conflicts.</p>
+                                </div>
+                                <div class="pillar-card">
+                                    <div class="pillar-letter">L</div>
+                                    <h4>Logging</h4>
+                                    <p>Externalize memory&mdash;what each agent was asked, tried, and why&mdash;before it's forgotten.</p>
+                                </div>
+                                <div class="pillar-card">
+                                    <div class="pillar-letter">O</div>
+                                    <h4>Observing</h4>
+                                    <p>Assemble a centralized view from makeshift terminals, monitors, and dashboards.</p>
+                                </div>
+                                <div class="pillar-card">
+                                    <div class="pillar-letter">T</div>
+                                    <h4>Triaging</h4>
+                                    <p>Catch completions, clarification requests, errors, and unexpected delays before they're missed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Developers already build ad hoc "control rooms"&mdash;terminal windows, markdown logs, custom dashboards, multi-monitor layouts&mdash;to coordinate and monitor parallel agents, but these workarounds stay brittle: sessions stall unnoticed, work gets lost track of, and context is hard to recover after switching away. PILOT synthesizes the five recurring strategies participants used to cope&mdash;the foundation for ParallelPilot.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <section id="probe">
+        <div class="container">
+            <span class="section-kicker">02 / system</span>
+            <h2>2/ ParallelPilot as a <span class="text-secondary">Design Probe</span></h2>
+            <p class="text-secondary section-intro">ParallelPilot is a supervision cockpit that instantiates PILOT as a lightweight layer over developers' existing agent CLIs, editors, and workspaces&mdash;rather than replacing them. It combines three integrated components, each mapped to complementary parts of PILOT.</p>
+
+            <div class="figure-stream">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/parallelpilot_overview.png" alt="ParallelPilot system overview showing the planning interface, run-logger, and ambient dashboard">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; System Overview</span>
+                            <div class="figure-title">Three components, mapped to PILOT</div>
+                            <p class="figure-caption">Tasks and specs feed into the planning interface; sessions launch and are automatically captured by the run-logger; the ambient dashboard synthesizes everything into a glanceable, triage-ready view.</p>
+                            <div class="component-grid">
+                                <div class="component-card">
+                                    <span class="figure-label">Plan &middot; Isolate</span>
+                                    <h4>Planning Interface</h4>
+                                    <p>Dependency-aware task preparation and scheduling across agent windows.</p>
+                                </div>
+                                <div class="component-card">
+                                    <span class="figure-label">Log</span>
+                                    <h4>Run-Logger</h4>
+                                    <p>Automatic capture of per-agent events and traces&mdash;session memory that bridges coordination and monitoring.</p>
+                                </div>
+                                <div class="component-card">
+                                    <span class="figure-label">Observe &middot; Triage</span>
+                                    <h4>Ambient Dashboard</h4>
+                                    <p>Glanceable status, progress summaries, and cues for which session needs you now.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/parallelpilot_plan.png" alt="ParallelPilot planning interface with task-relationship graph, execution timeline, and assistant panel">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Planning Interface</span>
+                            <div class="figure-title">Dependency-aware plan structuring and iteration</div>
+                            <p class="figure-caption">Walkthrough persona Amelia pastes her tickets and codebase into ParallelPilot and clicks Analyze &amp; Plan.</p>
+                            <ul class="bullet-list">
+                                <li><strong>Task analysis (left):</strong> distinguishes independent work, shared-file conflicts, and output dependencies&mdash;automatically flagging that two tickets both touch the same file.</li>
+                                <li><strong>Execution timeline (center):</strong> organizes tasks across agent windows and waves, so sequencing respects those dependencies.</li>
+                                <li><strong>Assistant panel (right):</strong> lets Amelia compare alternative window configurations and settle on a supervision load she can manage.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/parallelpilot_triage.png" alt="ParallelPilot ambient dashboard showing running, completed, and needs-input agent sessions">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Ambient Dashboard</span>
+                            <div class="figure-title">Glanceable status, attention cues, and direct terminal access</div>
+                            <p class="figure-caption">After stepping away, Amelia catches up in one glance: one ticket still running, one done and pending review, one needing her input.</p>
+                            <ul class="bullet-list">
+                                <li><strong>Color-coded state</strong> per session&mdash;running, completed pending review, or needs input&mdash;so nothing sits stalled unnoticed.</li>
+                                <li><strong>Session memory and progress summaries</strong> make it fast to reconstruct context after an interruption.</li>
+                                <li><strong>Direct terminal access</strong> from the dashboard lets her review results and respond to the agent without losing the overview.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Rather than another chat client, ParallelPilot is built for the managerial vantage point of supervising a fleet: it externalizes the dependency map before work starts, passively preserves context while it runs, and actively surfaces what needs a human's attention&mdash;without asking developers to give up the CLIs and editors they already use.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <section id="study">
+        <div class="container">
+            <span class="section-kicker">03 / within-subjects study, N&#8202;=&#8202;16</span>
+            <h2>3/ Study Insights &amp; <span class="text-secondary">Discussion</span></h2>
+            <p class="text-secondary section-intro">In a counterbalanced within-subjects study, 16 developers completed matched coding tasks with and without ParallelPilot. We measured objective throughput from logs, plus perceived coordination, monitoring, and control from surveys and interviews.</p>
+
+            <div class="stat-grid">
+                <div class="stat-tile"><span class="stat-number">+63%</span><span class="stat-label">tickets completed per minute vs. no-tool baseline</span></div>
+                <div class="stat-tile"><span class="stat-number">+1.50</span><span class="stat-label">more tickets fully completed, on average</span></div>
+                <div class="stat-tile"><span class="stat-number">+1.69<span style="font-size:1rem;">/7</span></span><span class="stat-label">perceived efficiency (survey scale)</span></div>
+                <div class="stat-tile"><span class="stat-number">+2.06<span style="font-size:1rem;">/7</span></span><span class="stat-label">understanding of task dependencies</span></div>
+                <div class="stat-tile"><span class="stat-number">&minus;1.88<span style="font-size:1rem;">/7</span></span><span class="stat-label">effort spent tracking parallel work</span></div>
+                <div class="stat-tile"><span class="stat-number">+2.56<span style="font-size:1rem;">/7</span></span><span class="stat-label">awareness of intervention cues</span></div>
+            </div>
+
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/study_method.png" alt="Counterbalanced within-subjects study design across four groups, each pairing ParallelPilot and baseline conditions with two different coding projects">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Study Design</span>
+                            <div class="figure-title">Counterbalanced within-subjects, project and order fully crossed</div>
+                            <p class="figure-caption">16 developers (4 groups of 4) each completed a ParallelPilot block and a baseline block, with condition order and project assignment (Sparkmatch / Kart) counterbalanced to rule out ordering and task effects.</p>
+                            <ul class="bullet-list">
+                                <li>Each block ran task intro, demo (ParallelPilot only), <strong>20 minutes of live coding</strong>, and a post-block survey, bookended by consent and a closing interview.</li>
+                                <li>Same task budget in both conditions isolates the effect of the tool itself, not extra time.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/study_dual_completer.png" alt="Bar chart comparing time spent planning and isolating versus launching and monitoring, with and without ParallelPilot">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Where the Time Goes</span>
+                            <div class="figure-title">ParallelPilot raises the ceiling on how much parallel work feels manageable</div>
+                            <p class="figure-caption">Average time split between Plan &amp; Isolate and Launch &amp; Monitoring, with and without the tool.</p>
+                            <ul class="bullet-list">
+                                <li>Total time-to-done dropped from <strong>~15.87 to ~12.43 minutes</strong>&mdash;faster in both phases, not just one.</li>
+                                <li>Launch + monitoring time fell from 11.52 to 9.35 minutes; planning &amp; isolating fell from 4.35 to 3.08 minutes.</li>
+                                <li>Clearer decomposition: dependency-understanding ratings rose from 3.44 to 5.50 (q&lt;0.001); perceived overlap/conflict between agents dropped from 3.06 to 2.13.</li>
+                                <li>Lighter monitoring: tracking effort fell from 4.63 to 2.75, and disruption when switching sessions fell from 4.50 to 2.69&mdash;while awareness of stalls, completions, and questions went up.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words &mdash; With ParallelPilot</span>
+                        <div class="figure-title">Less bookkeeping, clearer plans</div>
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">ParallelPilot is better at planning parallelization than me [&hellip; simply giving] Copilot a context dump.</p><span class="quote-who">&mdash; U4</span></div><div class="quote-card"><p class="quote-text">Convenient and easier to proceed&hellip; very easy to use. I don't have to do a lot of manual work; it's more efficient.</p><span class="quote-who">&mdash; U6</span></div><div class="quote-card"><p class="quote-text">[It helped me] keep track of overall progress better and manage multiple agents' contexts&hellip; keep them separate but still stay engaged in both.</p><span class="quote-who">&mdash; U1</span></div></div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="callout-box" style="margin-top:0;">
+                        <span class="figure-label">RQ3 &mdash; The Boundary of Supervision</span>
+                        <h3>Better attention did not automatically buy back trust</h3>
+                        <p class="text-secondary">Despite the gains above, perceived control (3.94&rarr;4.31) and self-rated intervention success (3.94&rarr;4.13) did not significantly improve. Confidence in interventions, output trust, and delegation confidence also stayed flat. When asked which condition made output easier to verify, 9 of 16 participants said <em>no difference</em>.</p>
+                        <p class="text-secondary" style="margin-bottom:0;">Making a fleet of agents <strong>observable</strong> is not the same as making its output <strong>verifiable</strong>&mdash;monitorability and trust are separable design problems.</p>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words &mdash; The Trade-off</span>
+                        <div class="figure-title">Awareness went up; hands-on familiarity went down</div>
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">Giving up my internal representation.</p><span class="quote-who">&mdash; U10</span></div><div class="quote-card"><p class="quote-text">[With ParallelPilot,] I [ended up] not thinking as hard.</p><span class="quote-who">&mdash; U16</span></div><div class="quote-card"><p class="quote-text">With ParallelPilot, I will focus less on what each agent is doing but overall progress.</p><span class="quote-who">&mdash; U5</span></div><div class="quote-card"><p class="quote-text">[My focus shifted] from hands-on implementation [to&hellip;] now high-level goals and roadmap.</p><span class="quote-who">&mdash; U11, comparing it to an engineer becoming a manager</span></div></div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/parallelpilot/study_corr.png" alt="Scatter plots of coordination and monitoring gains correlated against tickets completed, throughput, and perceived efficiency">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Exploratory Correlations</span>
+                            <div class="figure-title">Coordination gains track productivity; monitoring gains track how efficient it feels</div>
+                            <p class="figure-caption">Per-participant gain with ParallelPilot on each RQ2 composite, plotted against RQ1 outcome gains (Spearman &rho;).</p>
+                            <ul class="bullet-list">
+                                <li><strong>Coordination gain</strong> (Plan + Isolate) correlates with more tickets completed (&rho;=0.55, p=0.027) and higher throughput (&rho;=0.62, p=0.010).</li>
+                                <li><strong>Monitoring gain</strong> (Log + Observe/Triage) correlates with perceived efficiency (&rho;=0.62, p=0.011), but not with objective tickets completed or throughput.</li>
+                                <li>The two supervisory halves of PILOT pay off in different currencies&mdash;coordination for measurable output, monitoring for how manageable the work feels.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">Discussion</span>
+                        <div class="figure-title">What this means for supervising parallel agents</div>
+                        <ul class="bullet-list">
+                            <li><strong>Human management transfers, partly.</strong> Participants with prior management experience&mdash;engineering managers, PhD advisors&mdash;reused instincts like matching agents to tasks by "skillset" and running stand-up-style check-ins.</li>
+                            <li><strong>The abstraction tension.</strong> A higher-level view helps developers coordinate and monitor more agents at once, but by stepping back from implementation detail, it can leave them less equipped to judge whether the output is actually correct.</li>
+                            <li><strong>Design implication.</strong> Parallel coding tools need to connect high-level progress awareness with the implementation-level evidence developers still need to evaluate and redirect agent work&mdash;verification remains a fundamentally human task.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h4>Contributions</h4>
+                <ul class="bullet-list" style="margin-bottom:0;">
+                    <li><strong>PILOT</strong>&mdash;an empirically grounded framework of five supervisory practices for parallel AI coding, from a formative study of 14 developers.</li>
+                    <li><strong>ParallelPilot</strong>&mdash;a supervision cockpit operationalizing PILOT through dependency-aware planning, run-logging, and an ambient dashboard.</li>
+                    <li><strong>Empirical evidence</strong> from a controlled study (N=16) of higher throughput and lower tracking/context-switching burden&mdash;alongside a null result on perceived control that motivates connecting progress awareness to implementation-level evidence.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">ParallelPilot is currently in submission. If you'd like to reference this work in the meantime, here's a citation you can use&mdash;we'll update it with final venue details once it's published.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@misc{long2026parallelpilot,
+author = {Long, Tao and Shi, Weili and Mozannar, Hussein and Murad, Maya and Hosn, Rafah},
+title = {ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding},
+year = {2026},
+note = {Under review},
+url = {https://iamtaolong.github.io/project_pages/parallelpilot.html}
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn &middot; In Submission</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open');
+        });
+    }
+
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(link) {
+        return document.getElementById(link.getAttribute('href').replace('#', ''));
+    });
+    function onScroll() {
+        var scrollPos = window.scrollY + 80;
+        var activeIdx = -1;
+        for (var i = 0; i < sections.length; i++) {
+            if (sections[i] && sections[i].offsetTop <= scrollPos) activeIdx = i;
+        }
+        navLinks.forEach(function(link, idx) {
+            link.classList.toggle('active', idx === activeIdx);
+        });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', onScroll);
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(raw).then(done).catch(function() {
+                    var range = document.createRange();
+                    range.selectNode(text);
+                    window.getSelection().removeAllRanges();
+                    window.getSelection().addRange(range);
+                    done();
+                });
+            } else {
+                var range = document.createRange();
+                range.selectNode(text);
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+                done();
+            }
+        });
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@inproceedings{long2025facilitating,
+author = {Long, Tao and Wang, Sitong and Fabre, Émilie and Wang, Tony and Sathya, Anup and Wu, Jason and Petridis, Savvas Dimitrios and Li, Ding and Chakrabarty, Tuhin and Jiang, Yue and Li, Jingyi and Tseng, Tiffany and Nakagaki, Ken and Yang, Qian and Martelaro, Nikolas and Nickerson, Jeffrey V and Chilton, Lydia B},
+title = {Facilitating Longitudinal Interaction Studies of AI Systems},
+year = {2025},
+isbn = {9798400720369},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746058.3758469},
+doi = {10.1145/3746058.3758469},
+booktitle = {Adjunct Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+numpages = {5},
+location = {Busan, Republic of Korea},
+series = {UIST Adjunct '25}
+}

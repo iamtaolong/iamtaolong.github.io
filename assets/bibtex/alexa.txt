@@ -1,0 +1,9 @@
+@misc{long2023challengesopportunitiesdesignsmart,
+      title={Challenges and Opportunities for the Design of Smart Speakers}, 
+      author={Tao Long and Lydia B. Chilton},
+      year={2023},
+      eprint={2306.05741},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2306.05741}, 
+}

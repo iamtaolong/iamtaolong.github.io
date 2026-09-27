@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FeedQUAC: Quick Unobtrusive AI-Generated Commentary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FeedQUAC is a design companion that delivers real-time, read-aloud AI commentary from a variety of personas via shortcut keys, minimal screen space, and auditory cues.">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+:root {
+    --primary-color: #b3920f;
+    --primary-color-dark: #796515;
+    --highlight-color: 251, 224, 116;
+    --cta-color: #f8de77;
+    --cta-color-hover: #b3920f;
+    --secondary-color: #fefcf4;
+    --border-color: #f4efdd;
+    --tint: #fefcf3; --tint-2: #fbf6df; --tint-3: #fdf9e7;
+    --tint-4: #fcf7e3; --tint-5: #fefbee; --tint-6: #fffdf8;
+    --line: #e9dba5; --pill-border: #efe5be;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="back-wrap">
+        <a href="https://iamtaolong.github.io/" class="back-link" aria-label="Back to Tao Long's main page">
+            <span class="back-home" aria-hidden="true">
+                <svg class="back-house" viewBox="0 0 38 36"><path d="M3.2 17.4 C8.6 12.2 13.4 7.9 19.1 2.9 C24.4 7.6 29.6 12.1 34.9 17.2 M27.3 9.6 L27.1 4.6 L30.9 4.9 L31.2 12.6 M7.1 14.2 C6.7 20.3 7.3 26.8 6.9 33.1 C14.2 33.7 23.9 32.7 31.5 33.3 C31.1 26.4 31.7 20.1 31.2 14.4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="back-emoji">&#127825;</span>
+            </span>
+            <svg class="back-arrow" viewBox="0 0 64 44" aria-hidden="true"><path d="M56 38 C60 26 48 20 38 24 C28 28 32 40 41 34 C48 29 40 14 14 15 M14 15 L24 7 M14 15 L25 23" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="back-label"><span class="back-title">Tao's main page</span><span class="back-text">iamtaolong.github.io</span></span>
+        </a>
+        <div class="back-preview" aria-hidden="true">
+            <img src="files/home_preview.png" alt="">
+            <span>Tao's main page &rarr;</span>
+        </div>
+    </div>
+    <div class="container header-container">
+        <a href="#home" class="logo">* FeedQUAC</a>
+        <nav>
+            <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="nav-list"><li><a href="#gap" data-section="gap">Feedback Gap</a></li><li><a href="#system" data-section="system">System</a></li><li><a href="#study" data-section="study">Study</a></li><li><a href="#bibtex" data-section="bibtex">BibTeX</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-logos" aria-hidden="true">
+            <img class="hl hl1" src="../assets/images/feedquack1.webp" alt="">
+            <img class="hl hl2" src="../assets/images/feedquack1.webp" alt="">
+            <img class="hl hl3" src="../assets/images/feedquack1.webp" alt="">
+            <img class="hl hl4" src="../assets/images/feedquack1.webp" alt="">
+        </div>
+        <div class="container">
+            <h1><span class="ln">FeedQUAC: <span class="highlight highlight-bold">Quick Unobtrusive</span></span><span class="ln">AI-Generated Commentary</span></h1>
+            <p class="hero-authors">Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka</p>
+            <p class="hero-institution">Autodesk Research &amp; Columbia University</p>
+            <p class="hero-affil"><span class="status-pill">HAI 2025</span></p>
+            <div class="hero-visual-container">
+                <div class="paper-thumb-container">
+                    <a href="https://arxiv.org/abs/2504.16416" target="_blank" rel="noopener noreferrer" class="paper-thumb-link">
+                        <img src="files/feedquac/thumb.png" alt="First page of the FeedQUAC paper" class="paper-thumb">
+                    </a>
+                    <div class="paper-thumb-caption">read the paper &#8599;</div>
+                </div>
+            </div>
+            <div class="cta-row"><a href="https://arxiv.org/abs/2504.16416" class="cta-button" target="_blank" rel="noopener noreferrer"><span>Read the Paper</span></a><a href="#bibtex" class="cta-button cta-button-secondary" id="heroCopyBibtex"><span>Copy BibTeX</span></a></div>
+            
+            <p class="hero-note">Design thrives on feedback, but constant feedback is labor-intensive and disruptive.<br>&mdash;&nbsp;FeedQUAC delivers it as ambient, read-aloud commentary from personas, one hotkey away.</p>
+        </div>
+    </section>
+
+    <section id="gap">
+        <div class="container">
+            <span class="section-kicker">01 / formative analysis</span>
+            <h2>1/ The Feedback Gap &amp; <span class="text-secondary">Design Guidelines</span></h2>
+            <p class="text-secondary section-intro">Gathering feedback throughout the design process is valuable but slow, effortful, and interruptive. We asked how AI can provide <span class="highlight highlight-bold">effortless, ambient feedback</span> to 3D and CAD designers without pulling them out of their work.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/feedquac/formative.png" alt="How designers ask for and receive feedback today" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Design Forum Feedback</span>
+                            <div class="figure-title">How designers ask for and receive feedback today</div>
+                            <p class="figure-caption">A framework from analyzing design forums, showing question posts (feedback requests) and answer posts (feedback responses).</p>
+                            <ul class="bullet-list"><li>We analyzed top-ranked feedback-seeking posts from Polycount, an active community of professional and hobbyist 3D artists.</li><li>Questions carry visual context (sketches, images, links), textual context (motivations, goals), and varied question types.</li><li>Answers combine validation and encouragement, critiques and solutions, resources, and tailored suggestions.</li><li>The analysis, together with prior work on ambient technology, yielded <strong>six design guidelines</strong> for ambient AI feedback companions.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/feedquac/teaser.png" alt="An ambient companion that stays out of the way" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; FeedQUAC in Use</span>
+                            <div class="figure-title">An ambient companion that stays out of the way</div>
+                            <p class="figure-caption">Real-time, read-aloud, AI-generated feedback from diverse personas throughout the design process.</p>
+                            <ul class="bullet-list"><li>Feedback arrives via <strong>shortcut keys, minimal screen space, and auditory cues</strong>.</li><li>Designed to be quick and unobtrusive so the loop never interrupts the design workflow.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Human feedback is rich but slow and socially costly to request. The guidelines point toward feedback that is always available, context-aware, ambient, and low-stakes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="system">
+        <div class="container">
+            <span class="section-kicker">02 / system</span>
+            <h2>2/ FeedQUAC: <span class="text-secondary">An Ambient Design Companion</span></h2>
+            <p class="text-secondary section-intro">FeedQUAC sits beside the design tool and comments on what is on screen, in the voice of a persona you choose.</p>
+            
+            <div class="figure-stream" style="margin-top:40px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/feedquac/system.png" alt="Set up once, then one hotkey away" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Interface Walkthrough</span>
+                            <div class="figure-title">Set up once, then one hotkey away</div>
+                            <p class="figure-caption">Tanya, a CAD design student, uses FeedQUAC in Fusion 360 when she cannot reach her instructor's office hours.</p>
+                            <ul class="bullet-list"><li>Choose a persona, and capture the whole active window so other apps do not distract.</li><li>Set the frequency: for example emoji feedback every 30 seconds and audio feedback every 3 minutes.</li><li>Ask on demand with a hotkey (<code>Command + E</code> / <code>Command + R</code>) without leaving the design tool.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/feedquac/personas.png" alt="Different voices for different kinds of feedback" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Eight Personas</span>
+                            <div class="figure-title">Different voices for different kinds of feedback</div>
+                            <p class="figure-caption">Personas grouped by how positive they are, which aspect of design they focus on, and how human-like they are.</p>
+                            <ul class="bullet-list"><li><strong>Levels of positivity:</strong> constructive Mentor, supportive Cheerleader, and grumpy Critic.</li><li><strong>Aspects of design:</strong> aesthetic Designer, practical Analyst, and innovative CEO.</li><li>Two more personas span different levels of humanness, and playful duck icons and voices keep the tone light.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Summary</h4>
+                <p style="margin-bottom:0;">Delivery and content play complementary roles: a playful, low-friction delivery lowers the emotional barrier to feedback, while substantive content provides the value.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="container">
+            <span class="section-kicker">03 / design probe, 8 designers</span>
+            <h2>3/ Design Probe Study &amp; <span class="text-secondary">Discussion</span></h2>
+            <p class="text-secondary section-intro">Eight 3D designers used FeedQUAC in 25-minute design sessions as a design probe. We looked at how they requested feedback and how the lightweight, ambient format shaped their experience.</p>
+            <div class="stat-grid"><div class="stat-tile"><span class="stat-number">106</span><span class="stat-label">pieces of AI feedback across eight sessions</span></div><div class="stat-tile"><span class="stat-number">61 / 45</span><span class="stat-label">from the three-minute timer vs. requested by hotkey</span></div><div class="stat-tile"><span class="stat-number">13.25</span><span class="stat-label">feedback instances per participant on average</span></div><div class="stat-tile"><span class="stat-number">8 / 8</span><span class="stat-label">found receiving FeedQUAC feedback low-stakes</span></div><div class="stat-tile"><span class="stat-number">7 / 8</span><span class="stat-label">saw human feedback as higher-stakes than AI feedback</span></div><div class="stat-tile"><span class="stat-number">31</span><span class="stat-label">uses of the Critic, the most popular persona</span></div></div>
+            <div class="figure-stream" style="margin-top:56px;">
+                <div class="figure-block">
+                    <div class="figure-card">
+                        <img src="files/feedquac/log.png" alt="Some designers let it run; others took the hotkey" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Feedback Requests</span>
+                            <div class="figure-title">Some designers let it run; others took the hotkey</div>
+                            <p class="figure-caption">Feedback requests per participant: chosen persona, timing, and automatic vs. manual generation.</p>
+                            <ul class="bullet-list"><li>Five participants used both automatic and manual feedback, with their first manual request around 11 minutes in.</li><li>P2 and P4 relied solely on the automatic cycle; P8 used only manual requests (27 in total).</li><li>All eight personas were used: Critic 31 times, then CEO (14), Mentor (14), and Designer (13).</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/feedquac/survey_pressure_human.png" alt="AI feedback felt lower-stakes than asking people" loading="lazy"><img src="files/feedquac/survey_pressure_ai.png" alt="AI feedback felt lower-stakes than asking people" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Perceived Stakes</span>
+                            <div class="figure-title">AI feedback felt lower-stakes than asking people</div>
+                            <p class="figure-caption">How much pressure participants feel receiving human feedback vs. AI feedback in their 3D design process.</p>
+                            <ul class="bullet-list"><li>All eight participants found FeedQUAC feedback low-stakes and not stressful.</li><li>Seeking human feedback came with worries like &ldquo;Is my design good enough?&rdquo; and the sense that &ldquo;human mentors usually want to hear about milestones before you show them your work.&rdquo;</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-card fig-md">
+                        <img src="files/feedquac/survey_hotkeys.png" alt="Hotkeys and a minimal window kept it ambient" loading="lazy"><img src="files/feedquac/survey_display.png" alt="Hotkeys and a minimal window kept it ambient" loading="lazy">
+                        <div class="figure-meta">
+                            <span class="figure-label">Fig. &mdash; Ambience</span>
+                            <div class="figure-title">Hotkeys and a minimal window kept it ambient</div>
+                            <p class="figure-caption">Participants' ratings of how ambient the hotkeys and the minimal display felt.</p>
+                            <ul class="bullet-list"><li>All eight rated the hotkeys ambient to very ambient, lowering the barrier to ask for feedback.</li><li>Six found the voice not disturbing and seven found the floating emojis not disturbing&mdash;though even brief voice output takes a moment of attention.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">In Their Words</span>
+                        <div class="figure-title">Surprised to be understood</div>
+                        
+                        <div class="quote-grid"><div class="quote-card"><p class="quote-text">Alright, that's the most helpful comment I've gotten so far. It seems like it understands the joints, and it understood the color.</p><span class="quote-who">&mdash; P8</span></div><div class="quote-card"><p class="quote-text">[The] feedback is really relevant&hellip; [as] it knows what you are trying to do&hellip; I'd say, like, 90% of the time&hellip; This is surprisingly beyond my expectations.</p><span class="quote-who">&mdash; P5</span></div><div class="quote-card"><p class="quote-text">[It] made me feel more confident and comfortable about my design&hellip; I like that [FeedQUAC]&hellip; saw the vision that I was trying to [achieve].</p><span class="quote-who">&mdash; P1</span></div></div>
+                    </div>
+                </div>
+                <div class="figure-block">
+                    <div class="figure-meta" style="padding:0;">
+                        <span class="figure-label">Discussion</span>
+                        <div class="figure-title">What ambient AI feedback is good for</div>
+                        <ul class="bullet-list"><li><strong>Low-stakes feedback and validation.</strong> Playful characters and exaggerated voices can make critique feel less intimidating.</li><li><strong>Useful with limited information.</strong> Even without deep context, quick feedback helped designers keep moving.</li><li><strong>Complementary to human feedback.</strong> AI feedback is fast and always available; human feedback remains richer.</li><li>Participants asked for <strong>chat interaction and context curation</strong> as next steps.</li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box">
+                <h4>Contributions</h4>
+                <ul class="bullet-list"><li>Six design guidelines for ambient AI feedback companions in visual authoring environments, from a formative analysis of 3D design forums.</li><li>FeedQUAC, a lightweight design companion offering always-available, ambient, and playful feedback across eight personas.</li><li>Exploratory results from eight 3D designers showing perceived usefulness and a lower-stakes feedback experience.</li></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <div class="container">
+            <span class="section-kicker">cite</span>
+            <h2>BibTeX</h2>
+            <p class="text-secondary section-intro">If this work is useful to you, here is a citation you can copy.</p>
+            <div class="bibtex-wrap">
+                <button class="copy-btn" id="copyBibtex" type="button">Copy</button>
+                <pre class="bibtex-box" id="bibtexText">@inproceedings{long2025feedquac,
+author = {Long, Tao and Wannamaker, Kendra and Vermeulen, Jo and Fitzmaurice, George and Matejka, Justin},
+title = {FeedQUAC: Quick Unobtrusive AI-Generated Commentary},
+year = {2025},
+isbn = {9798400721786},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3765766.3765861},
+doi = {10.1145/3765766.3765861},
+booktitle = {Proceedings of the 13th International Conference on Human-Agent Interaction},
+pages = {452–455},
+numpages = {4},
+location = {Yokohama, Japan},
+series = {HAI &#x27;25}
+}</pre>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka &middot; HAI 2025</p>
+    <p><a href="https://iamtaolong.github.io/">iamtaolong.github.io</a> &nbsp;&middot;&nbsp; <a href="mailto:long@cs.columbia.edu">long@cs.columbia.edu</a></p>
+</footer>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hamburger');
+    var navList = document.getElementById('nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() { navList.classList.toggle('open'); });
+        hamburger.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') navList.classList.toggle('open'); });
+    }
+    var navLinks = document.querySelectorAll('nav a[data-section]');
+    var sections = Array.prototype.map.call(navLinks, function(l) { return document.getElementById(l.getAttribute('href').replace('#', '')); });
+    function onScroll() {
+        var pos = window.scrollY + 80, act = -1;
+        for (var i = 0; i < sections.length; i++) { if (sections[i] && sections[i].offsetTop <= pos) act = i; }
+        navLinks.forEach(function(l, i) { l.classList.toggle('active', i === act); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    document.addEventListener('DOMContentLoaded', function() {
+        onScroll();
+        var heroBtn = document.getElementById('heroCopyBibtex');
+        var btn = document.getElementById('copyBibtex');
+        var text = document.getElementById('bibtexText');
+        if (!btn || !text) return;
+        if (heroBtn) heroBtn.addEventListener('click', function() { btn.click(); });
+        btn.addEventListener('click', function() {
+            var raw = text.innerText;
+            function done() {
+                btn.textContent = 'Copied!'; btn.classList.add('copied');
+                setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+            }
+            function fallback() {
+                var r = document.createRange(); r.selectNode(text);
+                window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done();
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(raw).then(done).catch(fallback); } else { fallback(); }
+        });
+    });
+})();
+</script>
+</body>
+</html>

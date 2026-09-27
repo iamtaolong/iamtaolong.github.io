@@ -1,0 +1,9 @@
+@misc{li2026ithoughtsaythis,
+      title={"I never would have thought to say this": Example-Based Exploration to Balance Scientists' Writing Preferences with Public Science Communication Strategies}, 
+      author={Grace Li and Yuanyang Teng and Juna Kawai-Yue and Unaisah Ahmed and Anatta S. Tantiwongse and Jessica Y. Liang and Dorothy Zhang and Kynnedy Simone Smith and Tao Long and Mina Lee and Lydia B Chilton},
+      year={2026},
+      eprint={2502.05287},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2502.05287}, 
+}

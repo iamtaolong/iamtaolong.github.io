@@ -1,0 +1,11 @@
+@inproceedings{long2026spear,
+author = {Long, Tao and Chilton, Lydia B.},
+title = {SPEAR: Five Principles for Interactive Human-Agent Alignment},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+booktitle = {Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment},
+location = {Alexandria, VA, USA},
+series = {HCOMP '26},
+url = {https://iamtaolong.github.io/project_pages/spear.html}
+}

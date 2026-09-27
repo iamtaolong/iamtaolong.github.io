@@ -1,0 +1,17 @@
+@inproceedings{Multistakeholders_Cyberball,
+author = {Long, Tao and Pandita, Swati and Won, Andrea Stevenson},
+title = {Perspectives from Naive Participants and Experienced Social Science Researchers on Addressing Embodiment in a Virtual Cyberball Task},
+year = {2023},
+isbn = {9798400701290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3584931.3607014},
+doi = {10.1145/3584931.3607014},
+abstract = {We describe the design of an immersive virtual Cyberball task that included avatar customization, and user feedback on this design. We first created a prototype of an avatar customization template and added it to a Cyberball prototype built in the Unity3D game engine. Then, we conducted in-depth user testing and feedback sessions with 15 Cyberball stakeholders: five naive participants with no prior knowledge of Cyberball and ten experienced researchers with extensive experience using the Cyberball paradigm. We report the divergent perspectives of the two groups on the following design insights; designing for intuitive use, inclusivity, and realistic experiences versus minimalism. Participant responses shed light on how system design problems may contribute to or perpetuate negative experiences when customizing avatars. They also demonstrate the value of considering multiple stakeholders’ feedback in the design process for virtual reality, presenting a more comprehensive view in designing future Cyberball prototypes and interactive systems for social science research.},
+booktitle = {Computer Supported Cooperative Work and Social Computing},
+pages = {189–194},
+numpages = {6},
+keywords = {user experience, walkthrough, virtual reality, avatar customization, games, multi-stakeholders, cyberball task, inclusive design, qualitative research, semi-structured interviews, social science paradigm},
+location = {Minneapolis, MN, USA},
+series = {CSCW '23 Companion}
+}

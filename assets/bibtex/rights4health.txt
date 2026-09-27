@@ -1,0 +1,18 @@
+@article{Multistakeholders_Perspective_Digital_Asylum_Seekers,
+author = {Bhandari, Aparajita and Freed, Diana and Pilato, Tara and Taki, Faten and Kaur, Gunisha and Yale-Loehr, Stephen and Powers, Jane and Long, Tao and Bazarova, Natalya N.},
+title = {Multi-Stakeholder Perspectives on Digital Tools for U.S. Asylum Applicants Seeking Healthcare and Legal Information},
+year = {2022},
+issue_date = {November 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {CSCW2},
+url = {https://doi.org/10.1145/3555642},
+doi = {10.1145/3555642},
+abstract = {There is a concerning lack of clear and accurate information around accessing public benefits for asylum applicants in the United States (U.S.), which has been shown to negatively affect their healthcare engagement. Digital tools such as websites and mobile applications can be a potentially promising way to disseminate public benefits information to asylum applicants. The goal of this study is to understand the current informational needs of asylum applicants in the U.S. seeking legal information and resources regarding their individual rights to public health benefits and services. Through semi-structured interviews with 24 asylum applicants currently in the U.S. and 13 healthcare and legal professionals working with asylum applicants and other immigrants, we identify four key challenges and barriers to using currently available digital tools: information uncertainty, accessibility, emotional barriers, and contextual sensitivity. Our findings highlight the importance of considering multiple stakeholders' perspectives when designing tools within the immigration informational space. We provide targeted design recommendations to create digital tools for asylum seekers and the stakeholders who support them.},
+journal = {Proc. ACM Hum.-Comput. Interact.},
+month = {nov},
+articleno = {529},
+numpages = {21},
+keywords = {hci, refugees, immigrants, asylum seekers, information technologies, digital health, semi- structured interviews, qualitative research}
+}

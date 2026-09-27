@@ -1,0 +1,15 @@
+@inproceedings{liu2026artistic,
+author = {Liu, Catherine and Long, Tao and Lyubavina, Asya and Vu, Chau and Ma, Jiaju and Li, Jingyi},
+title = {Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit},
+year = {2026},
+isbn = {9798400725630},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3800645.3813084},
+doi = {10.1145/3800645.3813084},
+booktitle = {Proceedings of the 2026 Designing Interactive Systems Conference},
+pages = {2054–2070},
+numpages = {17},
+location = {Singapore, Singapore},
+series = {DIS '26}
+}

@@ -1,0 +1,21 @@
+@inproceedings{liu2025doublehatters,
+author = {Liu, Vivian and Long, Tao and Ma, Jenny and Raw, Nathan and Yang, Jiaxin and Tang, Claudia and Wang, Lulu Yueyi and Yang, Yumo and Chilton, Lydia},
+title = {Digital "Double Hatters": Augmenting Audiovisual Creative Work with a Generative Text-to-Video Workflow},
+booktitle = {Proceedings of the 58th Hawaii International Conference on System Sciences},
+year = {2025},
+pages = {2664--2673},
+publisher = {Hawaii International Conference on System Sciences},
+doi = {10.24251/hicss.2025.323},
+url = {https://hdl.handle.net/10125/109164},
+series = {HICSS-58}
+}
+
+@misc{liu2023generativediscotexttovideogeneration,
+      title={Generative Disco: Text-to-Video Generation for Music Visualization}, 
+      author={Vivian Liu and Tao Long and Nathan Raw and Lydia Chilton},
+      year={2023},
+      eprint={2304.08551},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2304.08551}, 
+}

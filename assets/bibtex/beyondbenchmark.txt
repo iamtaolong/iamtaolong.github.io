@@ -1,0 +1,7 @@
+@misc{long2026beyondbenchmarks,
+author = {Long, Tao and Guo, Bingcan},
+title = {Beyond Benchmarks: What Might User-Centered Evaluation of Agentic AI Look Like?},
+year = {2026},
+howpublished = {Extended abstract, New England Agents Day (NE Agents Day 2026)},
+url = {https://iamtaolong.github.io/assets/documents/2026_BeyondBenchmarks_NEAgentsDay.pdf}
+}
