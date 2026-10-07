@@ -3,5 +3,5 @@ author = {Long, Tao and Shi, Weili and Mozannar, Hussein and Murad, Maya and Hos
 title = {ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding},
 year = {2026},
 note = {Under review},
-url = {https://iamtaolong.github.io/project_pages/parallelpilot.html}
+url = {https://arxiv.org/abs/2609.33113}
 }

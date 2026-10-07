@@ -7,5 +7,5 @@ address = {New York, NY, USA},
 booktitle = {Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment},
 location = {Alexandria, VA, USA},
 series = {HCOMP '26},
-url = {https://iamtaolong.github.io/project_pages/spear.html}
+url = {https://arxiv.org/abs/2610.07204}
 }
