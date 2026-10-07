@@ -1,11 +1,11 @@
     [
       {
         "id": "spear",
-        "title": "Interactive Human-AI Alignment: Five Principles of SPEAR",
+        "title": "Interactive Human-Agent Alignment: Five Principles of SPEAR",
         "short_title": "SPEAR",
         "authors": "Tao Long, Lydia B. Chilton",
         "status": "HCOMP 2026",
-        "description": "A position paper reframing human-AI alignment as an ongoing interaction design problem, with five principles: Specification, Process, and Evaluation within a task, plus Adaptation and Recalibration across tasks and sessions.",
+        "description": "A position paper reframing human-agent alignment as an ongoing interaction design problem, with five principles: Specification, Process, and Evaluation within a task, plus Adaptation and Recalibration across tasks and sessions.",
         "bibtex": "assets/bibtex/spear.txt",
         "image": "assets/images/spear.png",
         "icon": "assets/images/spear.svg",
