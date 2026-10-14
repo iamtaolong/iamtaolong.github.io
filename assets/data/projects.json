@@ -1,10 +1,23 @@
     [
       {
+        "id": "parallelpilot",
+        "title": "ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding",
+        "authors": "Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn",
+        "status": "Under Review",
+        "description": "As coding assistants become autonomous, developers run parallel sessions. We identified PILOT, five supervisory practices: Planning, Isolating, Logging, Observing, and Triaging. We present ParallelPilot, an interface that increased ticket throughput by 63% and perceived efficiency by 1.69 points while reducing tracking effort, context switching, and bookkeeping.",
+        "pdf": "https://arxiv.org/abs/2609.33113",
+        "bibtex": "assets/bibtex/parallelpilot.txt",
+        "image": "assets/images/parallelpilot.png",
+        "icon": "assets/images/parallelpilot-logo.png",
+        "project": "https://iamtaolong.github.io/project_pages/parallelpilot.html",
+        "webpage_image": "project_pages/files/parallelpilot/page_preview.jpg"
+      },
+      {
         "id": "spear",
         "title": "Interactive Human-Agent Alignment: Five Principles of SPEAR",
         "short_title": "SPEAR",
         "authors": "Tao Long, Lydia B. Chilton",
-        "status": "HCOMP 2026",
+        "status": "HCOMP 2026 Best Talk Award",
         "description": "A position paper reframing human-agent alignment as an ongoing interaction design problem, with five principles: Specification, Process, and Evaluation within a task, plus Adaptation and Recalibration across tasks and sessions.",
         "bibtex": "assets/bibtex/spear.txt",
         "image": "assets/images/spear.png",
@@ -28,19 +41,6 @@
         "webpage_image": "project_pages/files/doubleagents/page_preview.jpg"
       },
       {
-        "id": "parallelpilot",
-        "title": "ParallelPilot: Supporting Coordination and Monitoring in Parallel AI Coding",
-        "authors": "Tao Long, Weili Shi, Hussein Mozannar, Maya Murad, Rafah Hosn",
-        "status": "Under Review",
-        "description": "As coding assistants become autonomous, developers run parallel sessions. We identified PILOT, five supervisory practices: Planning, Isolating, Logging, Observing, and Triaging. We present ParallelPilot, an interface that increased ticket throughput by 63% and perceived efficiency by 1.69 points while reducing tracking effort, context switching, and bookkeeping.",
-        "pdf": "https://arxiv.org/abs/2609.33113",
-        "bibtex": "assets/bibtex/parallelpilot.txt",
-        "image": "assets/images/parallelpilot.png",
-        "icon": "assets/images/parallelpilot-logo.png",
-        "project": "https://iamtaolong.github.io/project_pages/parallelpilot.html",
-        "webpage_image": "project_pages/files/parallelpilot/page_preview.jpg"
-      },
-      {
       "id": "feedquac",
       "title": "FeedQUAC: Quick Unobtrusive AI-Generated Commentary",
       "authors": "Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka",
@@ -58,7 +58,7 @@
       "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
       "short_title": "ArtKrit Longitudinal",
       "authors": "Catherine Liu*, Tao Long*, Asya Vaisberg, Chau Vu, Jiaju Ma, Jingyi Li",
-      "status": "DIS 2026 Honorable Mention (Top 5%)",
+      "status": "DIS 2026 Best Paper Honorable Mention (Top 5%)",
       "description": "Deployed an artistic support tool for three weeks with designers embedded in three small, supportive artist networks.",
       "bibtex": "assets/bibtex/artkritlongitudinal.txt",
       "image": "assets/images/artkritlongitudinal.png",
