@@ -9,16 +9,9 @@
 <title>Tao Long (he/him)</title>
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/minimap.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MESR77KXNS"></script>
+<!-- Google Analytics + click tracking + heatmaps (shared by all pages) -->
+<script src="/assets/js/analytics.js"></script>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script> <script src="https://unpkg.com/topojson-client@3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MESR77KXNS');
-</script>
 <script src="/assets/js/world.js"></script> 
 <script defer src="assets/js/script.js"></script>
 <script src="/assets/js/minimap.js"></script>
@@ -69,6 +62,8 @@
             <a class="nav-link "  aria-current="page" href="#news" style="font-weight:400!important;">news</a></li>
           <li class="nav-item"> 
             <a class="nav-link "    aria-current="page" href="#research" style="font-weight:400!important">research</a></li>
+          <li class="nav-item"> 
+            <a class="nav-link "    aria-current="page" href="#awards" style="font-weight:400!important;">awards</a></li>
           <li class="nav-item"> 
             <a class="nav-link "    aria-current="page" href="#teaching" style="font-weight:400!important;">teaching</a></li>
           <li class="nav-item">
@@ -276,9 +271,10 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
         { label: 'Travel', el: byId('news') },
         { label: 'Research', el: byId('research'),
           children: Array.from(container.querySelectorAll(':scope > .row[data-mm]')).map(r => ({ label: r.dataset.mm, el: r })) },
+        { label: 'Awards & Honors', el: byId('awards') },
         { label: 'Teaching & Services', el: byId('teaching'), children: [
           { label: 'TA \u00d79', el: document.querySelector('#teaching .row') },
-          { label: 'Reviewer \u00d7100 + 13 awards', el: byText('#teaching span', 'Conference Reviewer') },
+          { label: 'Reviewer \u00d7100 + 14 awards', el: byText('#teaching span', 'Conference Reviewer') },
           { label: 'Awards & Leadership', el: byText('#teaching span', 'PhD Representative') }
         ] },
         { label: 'Miscs', el: byId('misc'), children: logs }
@@ -347,6 +343,192 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
     
 
 <!-- Teaching -->
+<div class="container pb-3 px-0 px-md-3" style="padding-top: 1rem;" id="awards">
+  <h4 style="font-weight: 600 !important; padding-bottom: 1rem;"> Awards &amp; Honors</h4>
+  <div class="row">
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;">2026</span>
+        &nbsp; Best Paper Award Honorable Mention (Top 5%), ACM DIS <a href="project_pages/artkrit.html">(ArtKrit)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; People&rsquo;s Choice Best Poster Award Honorable Mention, ACM UIST <a href="project_pages/feedquac.html">(FeedQUAC)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Best Talk Award, ACM HCOMP <a href="project_pages/spear.html">(SPEAR)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Capital One AI PhD Fellowship <a href="https://www.capitalone.com/tech/ai/capital-one-fellows-2026-2027/" target="_blank" rel="noopener noreferrer">(news)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Special Recognition for Outstanding Reviews, ACM CHI, IUI
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Computer Science Service Award, Columbia University <a href="https://www.cs.columbia.edu/education/phd/awards/#service" target="_blank" rel="noopener noreferrer">(news)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;">2025</span>
+        &nbsp; Capital One AI PhD Fellowship <a href="https://www.capitalone.com/tech/ai/capital-one-fellows-2025-2026/" target="_blank" rel="noopener noreferrer">(news)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Capital One CAIRFI AI Research Award
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Meta PhD Forum First Cohort
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Autodesk Intern Alumni Presentation Stipend
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Special Recognition for Outstanding Reviews, ACM CHI, UIST, CSCW, IUI, DIS, C&amp;C
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Queer in AI Conference Travel Grant
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Computer Science Service Award, Columbia University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;">2024</span>
+        &nbsp; Qualcomm oSTEM Scholarship
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Teaching with AI Fellowship, Columbia University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; CRA-WP IDEALS Fellowship
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Special Recognition for Outstanding Reviews, ACM CHI, UIST, DIS
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;">2023</span>
+        &nbsp; Social Justice Mini-Grant (PI), Columbia University <a href="https://universitylife.columbia.edu/content/social-justice-mini-grant-recipients-2022-2023" target="_blank" rel="noopener noreferrer">(news)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Lead Teaching Fellowship, Columbia University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Gary Marsden Travel Award, ACM SIGCHI
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Google CS Research Mentorship Cohort
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Kraft Global Fellowship, Columbia University <a href="https://ouc.columbia.edu/news/kraft-global-fellows-nairobi-2023" target="_blank" rel="noopener noreferrer">(news)</a>
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; CRA-WP IDEALS Fellowship
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Queer in AI Conference Travel Grant
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Computer Science Service Award, Columbia University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;">2022</span>
+        &nbsp; Summa Cum Laude, Distinction with Honors &amp; Distinction in Research, Cornell University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Anson H. Rowe Award, Cornell University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Jane E. Brody Undergraduate Research Award, Cornell University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Fredric N. Gabler &rsquo;93 Memorial Research Endowment, Cornell University
+      </p>
+    </div>
+    <div class="col-12">
+      <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
+        <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display: inline-block; min-width: 2.4rem;"></span>
+        &nbsp; Outstanding Teaching Assistant Award, Cornell University
+      </p>
+    </div>
+  </div>
+</div>
+
 <div class="container pb-3 px-0 px-md-3" style="padding-top: 1rem;" id="teaching">
   <h4 style="font-weight: 600 !important; padding-bottom: 1rem;"> Teaching & Services</h4>
   <p style="font-size:.85rem">I enjoy teaching and service. My passion for teaching and socially impactful research significantly contributes to my decision to pursue a PhD and (possibly) an academic career in Computer Science. It helps me rethink myself, my role, and my responsibilities in better helping others with the resources I have. Always eager to contribute to new initiatives ;)</p>
@@ -423,14 +605,14 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
           <div class="col-12">
             <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
               <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important;">Conference Reviewer @</span>
-              &nbsp; CHI, IUI, DIS, UIST, C&C, CSCW, FAccT, GROUP, TEI, CHI PLAY (total 100 submissions, 13 review awards)
+              &nbsp; CHI, IUI, DIS, UIST, C&C, CSCW, FAccT, GROUP, TEI, CHI PLAY (total 100 submissions, 14 review awards)
             </p>
           </div>
 
           <div class="col-12">
             <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important;">
               <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important;">Conference Organizer @</span>
-              &nbsp; UIST 2024&ndash;2026 Web Chair, North East Agents Day 2026, IUI 2025&ndash;2026 PC, C&C 2025&ndash;2026 PC, CHI 2024/2025 Late-Breaking Work PC, DIS 2024 Session Chair
+              &nbsp; UIST 2024&ndash;2026 Web Chair, North East Agents Day 2026, IUI 2025&ndash;2027 PC, C&C 2025&ndash;2026 PC, CHI 2024/2025 Late-Breaking Work PC, DIS 2024 Session Chair
             </p>
           </div>
 
@@ -847,7 +1029,7 @@ travel log and Instagram @tao1ong - you can find links to those at the <a href="
         
        
           <i class="fas fa-location-dot mr-1"></i>Columbia University ♔ is <img style="width: auto; height: 23px;" id="weather_icon"><span id="weather">Loading...</span><br>
-          <span>&nbsp;&nbsp;Last Updated: Oct 2026. <a href="https://github.com/donghoon-io/donghoon-io.github.io" style="font-weight: 300;color:black !important"><i>Theme</i></a>
+          <span>&nbsp;&nbsp;Last Updated: Nov 2026. <a href="https://github.com/donghoon-io/donghoon-io.github.io" style="font-weight: 300;color:black !important"><i>Theme</i></a>
         </div>
         <div class="col-12 col-md-9 col-sm-8">
           <span>

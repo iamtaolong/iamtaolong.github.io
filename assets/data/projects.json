@@ -44,7 +44,7 @@
       "id": "feedquac",
       "title": "FeedQUAC: Quick Unobtrusive AI-Generated Commentary",
       "authors": "Tao Long, Kendra Wannamaker, Jo Vermeulen, George Fitzmaurice, Justin Matejka",
-      "status": "HAI 2025",
+      "status": "HAI 2025 &middot; UIST 2026 People’s Choice Best Poster Award Honorable Mention",
       "description": "FeedQUAC delivers ambient, read-aloud commentary from personas via shortcut keys and auditory cues.",
       "bibtex": "assets/bibtex/feedquac.txt",
       "image": "assets/images/feedquack.png",
