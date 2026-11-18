@@ -14,7 +14,7 @@
  */
 (function () {
   var GA_ID = 'G-MESR77KXNS';
-  var CLARITY_ID = ''; // e.g. 'abc123xyz' from clarity.microsoft.com -> Settings -> Overview
+  var CLARITY_ID = 'zfsjit7bs2'; // e.g. 'abc123xyz' from clarity.microsoft.com -> Settings -> Overview
 
   // ---- 1. Google Analytics ----
   var s = document.createElement('script');
