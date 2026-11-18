@@ -181,10 +181,7 @@ window.smartlook||(function(d) {
   c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
   })(document);
   smartlook('init', 'ad2ef059293128382c78093ca27675dd7fcaeb5a', { region: 'eu' });
-  window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-MESR77KXNS');
+  // Google Analytics is loaded by /assets/js/analytics.js (included in each page's <head>).
 
 function renderUpdates(updates) {
   const container = document.getElementById("updates-container");
