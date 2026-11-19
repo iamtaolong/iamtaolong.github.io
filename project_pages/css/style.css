@@ -255,36 +255,15 @@ nav a:hover { color: var(--primary-color); background: var(--tint-5); text-decor
 
 .paper-thumb-caption { font-size: 13px; color: rgb(120, 105, 92); margin-top: 10px; }
 
-/* Highlighter-marker effect, same as the home page, in each page's own
-   --highlight-color. Rests at 70% strength, goes full strength on hover. */
-@property --hl-a {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 0.7;
-}
-.highlight,
-main p > a:not([class]) {
-    --hl-a: 0.7;
+/* Highlight marker effect, orange */
+.highlight {
     font-weight: bolder;
-    background-image:
-        linear-gradient(104deg, rgba(var(--highlight-color),0) 0.9%, rgba(var(--highlight-color),calc(1 * var(--hl-a))) 2.4%, rgba(var(--highlight-color),calc(0.5 * var(--hl-a))) 5.8%, rgba(var(--highlight-color),calc(0.1 * var(--hl-a))) 93%, rgba(var(--highlight-color),calc(0.7 * var(--hl-a))) 96%, rgba(var(--highlight-color),0) 98%),
-        linear-gradient(183deg, rgba(var(--highlight-color),0) 0%, rgba(var(--highlight-color),calc(0.3 * var(--hl-a))) 7.9%, rgba(var(--highlight-color),0) 15%);
-    background-repeat: no-repeat;
-    background-size: 100% 80%, 100% 70%;
-    background-position: 0 80%, 0 80%;
-    padding: 2px 5px;
+    background: linear-gradient(104deg, rgba(var(--highlight-color),0) 0%, rgba(var(--highlight-color),1) 2.4%, rgba(var(--highlight-color),0.5) 5.8%, rgba(var(--highlight-color),0.1) 12%, rgba(var(--highlight-color),0.1) 90%, rgba(var(--highlight-color),0.7) 96%, rgba(var(--highlight-color),0.5) 98.5%, rgba(var(--highlight-color),0) 100%), linear-gradient(183deg, rgba(var(--highlight-color),0) 0%, rgba(var(--highlight-color),0.3) 7.9%, rgba(var(--highlight-color),0) 15%);
+    padding: 0 0.18em;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     border-radius: 7.5px;
-    transition: --hl-a 0.25s ease;
 }
-.highlight:hover,
-main p > a:not([class]):hover,
-main p > a:not([class]):focus-visible {
-    --hl-a: 1;
-}
-main p > a:not([class]) { color: var(--text-color); }
-main p > a:not([class]):hover { text-decoration: none; }
 .highlight-bold { font-weight: bold; color: #1a1310 !important; }
 
 .cta-button {
