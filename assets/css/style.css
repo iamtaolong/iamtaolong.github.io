@@ -104,30 +104,37 @@ p > a:hover {
   background-position: 0 80%; 
 } */
 
-/* Basic style for <a> inside <p> */
+/* Highlighter-marker strength. Registered so it can animate smoothly. */
+@property --hl-a {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0.7;
+}
+
+/* Basic style for <a> inside <p>: hand-drawn marker, shown at 70% strength */
 p > a {
+  --hl: 251, 140, 36;
+  --hl-a: 0.7;
   position: relative;
   font-weight: bolder;
   color: #000 !important;
-  background-image: 
-    linear-gradient(104deg, rgba(251, 140, 36, 0) 0.9%, rgba(251, 140, 36, 1) 2.4%, rgba(251, 140, 36, 0.5) 5.8%, rgba(251, 140, 36, 0.1) 93%, rgba(251, 140, 36, 0.7) 96%, rgba(251, 140, 36, 0) 98%), 
-    linear-gradient(183deg, rgba(251, 140, 36, 0) 0%, rgba(251, 140, 36, 0.3) 7.9%, rgba(251, 140, 36, 0) 15%);
+  background-image:
+    linear-gradient(104deg, rgba(var(--hl), 0) 0.9%, rgba(var(--hl), calc(1 * var(--hl-a))) 2.4%, rgba(var(--hl), calc(0.5 * var(--hl-a))) 5.8%, rgba(var(--hl), calc(0.1 * var(--hl-a))) 93%, rgba(var(--hl), calc(0.7 * var(--hl-a))) 96%, rgba(var(--hl), 0) 98%),
+    linear-gradient(183deg, rgba(var(--hl), 0) 0%, rgba(var(--hl), calc(0.3 * var(--hl-a))) 7.9%, rgba(var(--hl), 0) 15%);
   background-repeat: no-repeat;
-  background-size: 100% 30%, 100% 30%; /* initial small line effect */
-  background-position: 0 100%, 0 100%; /* position at bottom */
+  background-size: 100% 80%, 100% 70%;
+  background-position: 0 80%, 0 80%;
   padding: 2px 5px;
   border-radius: 7.5px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  transition: 
-    background-size 0.3s cubic-bezier(0, 0.8, 0.13, 1),
-    transform 0.3s cubic-bezier(0, 0.8, 0.13, 1);
+  transition: --hl-a 0.25s ease;
 }
 
-/* Hover effect: larger line + subtle zoom */
-p > a:hover {
-  background-size: 100% 80%, 100% 70%;
-  transform: scale(1.05);
+/* Hover: same marker at full strength (no size change, no zoom) */
+p > a:hover,
+p > a:focus-visible {
+  --hl-a: 1;
 }
 
 /* Opt-out: allow specific links to NOT have the orange highlight */
