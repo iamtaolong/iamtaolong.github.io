@@ -1,0 +1,17 @@
+@inproceedings{wang2026journalism,
+author = {Wang, Sitong and McKinnon-Crowley, Jocelyn and Long, Tao and Lua, Kian Loong and Crowston, Kevin and Nickerson, Jeffrey V. and Hansen, Mark and Chilton, Lydia B.},
+title = {The Role of Human Creativity in the Presence of AI Creativity Tools at Work: A Case Study on AI-Driven Content Transformation in Journalism},
+booktitle = {Proceedings of the 59th Hawaii International Conference on System Sciences},
+year = {2026},
+series = {HICSS-59}
+}
+
+@misc{wang2025journalism,
+      title={The Role of Human Creativity in the Presence of AI Creativity Tools at Work: A Case Study on AI-Driven Content Transformation in Journalism},
+      author={Sitong Wang and Jocelyn McKinnon-Crowley and Tao Long and Kian Loong Lua and Kevin Crowston and Jeffrey Nickerson and Mark Hansen and Lydia B. Chilton},
+      year={2025},
+      eprint={2502.05347},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2502.05347},
+}

@@ -68,6 +68,17 @@
       "webpage_image": "project_pages/files/artkrit/page_preview.jpg"
     },
       {
+      "id": "journalism",
+      "title": "The Role of Human Creativity in the Presence of AI Creativity Tools at Work: A Case Study on AI-Driven Content Transformation in Journalism",
+      "authors": "Sitong Wang, Jocelyn McKinnon-Crowley, Tao Long, Kian Loong Lua, Kevin Crowston, Jeffrey Nickerson, Mark Hansen, Lydia Chilton",
+      "status": "HICSS 2026",
+      "description": "A 14-week study of AI adoption in a newsroom, examining how journalists' creativity and skills shift as they use AI tools to transform news content across formats.",
+      "image": "assets/images/journalism.jpg",
+      "icon": "assets/images/journalism.gif",
+      "pdf": "https://arxiv.org/abs/2502.05347",
+      "bibtex": "assets/bibtex/journalism.txt"
+    },
+      {
       "id": "katyownership",
       "title": "From Planning to Revision: How AI Writing Support at Different Stages Alters Ownership",
       "authors": "Katy Gero, Tao Long, Carly Schnitzler, Paramveer Dhillon",
